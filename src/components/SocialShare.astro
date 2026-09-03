@@ -1,0 +1,139 @@
+---
+import { siteConfig } from '../data/site';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+
+interface Props {
+	locale?: LocaleCode;
+	path?: string;
+	title?: string;
+}
+
+const locale = Astro.props.locale ?? defaultLocale;
+const path = Astro.props.path ?? Astro.url.pathname;
+const pageUrl = new URL(path, siteConfig.url).href;
+const shareTitle = Astro.props.title ?? `${siteConfig.name} — Valorant cheats`;
+const encodedUrl = encodeURIComponent(pageUrl);
+const encodedTitle = encodeURIComponent(shareTitle);
+
+const shares = [
+	{
+		label: 'Share on X',
+		href: `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`,
+		icon: 'x',
+	},
+	{
+		label: 'Share on Facebook',
+		href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+		icon: 'facebook',
+	},
+	{
+		label: 'Share on Reddit',
+		href: `https://www.reddit.com/submit?url=${encodedUrl}&title=${encodedTitle}`,
+		icon: 'reddit',
+	},
+	{
+		label: 'Share by email',
+		href: `mailto:?subject=${encodedTitle}&body=${encodedUrl}`,
+		icon: 'email',
+	},
+];
+
+const heading = locale === 'de' ? 'Seite teilen' : 'Share this page';
+---
+
+<nav class="social-share" aria-label={heading}>
+	<p class="social-share__label">{heading}</p>
+	<ul class="social-share__list">
+		{
+			shares.map((share) => (
+				<li>
+					<a
+						class="social-share__link"
+						href={share.href}
+						target={share.icon === 'email' ? undefined : '_blank'}
+						rel={share.icon === 'email' ? undefined : 'noopener noreferrer'}
+					>
+						{share.icon === 'x' && (
+							<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+								<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" />
+							</svg>
+						)}
+						{share.icon === 'facebook' && (
+							<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+								<path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v7h3v-7h2.6l.4-3H14V9Z" />
+							</svg>
+						)}
+						{share.icon === 'reddit' && (
+							<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+								<path d="M14.2 14.3a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0Zm-4.2 0a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0ZM12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2Zm6.1 9.2c.4 0 .8.2 1 .5.5-.4 1.1-.7 1.8-.7.5 0 .9.4.9.9 0 .6-.5 1.1-1.1 1.2-.1 1.8-1.4 3.3-3.4 4.1 1 .7 1.6 1.6 1.6 2.6 0 .2-.2.4-.4.4h-9c-.2 0-.4-.2-.4-.4 0-1 .6-1.9 1.6-2.6-2-.8-3.3-2.3-3.4-4.1-.6-.1-1.1-.6-1.1-1.2 0-.5.4-.9.9-.9.7 0 1.3.3 1.8.7.2-.3.6-.5 1-.5.5 0 1 .3 1.2.8 1-.3 2.1-.5 3.2-.5s2.2.2 3.2.5c.2-.5.7-.8 1.2-.8Z" />
+							</svg>
+						)}
+						{share.icon === 'email' && (
+							<svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+								<path
+									d="M4.5 7.5h15v9h-15v-9Z"
+									stroke="currentColor"
+									stroke-width="1.6"
+									stroke-linejoin="round"
+								/>
+								<path d="m5 8.5 7 5 7-5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+							</svg>
+						)}
+						<span>{share.label}</span>
+					</a>
+				</li>
+			))
+		}
+	</ul>
+</nav>
+
+<style>
+	.social-share {
+		display: grid;
+		gap: 0.65rem;
+		margin: 0;
+		padding: 0;
+	}
+
+	.social-share__label {
+		margin: 0;
+		color: rgba(236, 232, 225, 0.55);
+		font-size: 0.72rem;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+	}
+
+	.social-share__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.social-share__link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		padding: 0.45rem 0.75rem;
+		border-radius: 999px;
+		border: 1px solid rgba(236, 232, 225, 0.14);
+		color: rgba(236, 232, 225, 0.82);
+		font-size: 0.78rem;
+		font-weight: 650;
+		text-decoration: none;
+		transition:
+			color 0.2s ease,
+			border-color 0.2s ease,
+			background 0.2s ease;
+	}
+
+	.social-share__link:hover,
+	.social-share__link:focus-visible {
+		color: #fff;
+		border-color: rgba(255, 70, 85, 0.45);
+		background: rgba(255, 70, 85, 0.12);
+	}
+</style>

@@ -298,7 +298,8 @@
 	padding: 1.25rem 0 0.5rem;
 }
 
-.whats-happening__hero-content h3 {
+.whats-happening__hero-content h3,
+.whats-happening__hero-title {
 	margin: 0 0 16px;
 	font-family: var(--font-sans);
 	font-size: 1rem;
@@ -460,7 +461,8 @@
 		width: 50%;
 	}
 
-	.whats-happening__hero-content h3 {
+	.whats-happening__hero-content h3,
+	.whats-happening__hero-title {
 		font-size: 1.25rem;
 	}
 

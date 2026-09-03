@@ -1,4 +1,5 @@
 ---
+import SocialShare from './SocialShare.astro';
 import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
@@ -8,49 +9,55 @@ import { valorantBrandLogo, valorantImages } from '../data/valorant';
 
 interface Props {
 	locale?: LocaleCode;
+	pageTitle?: string;
 }
 
 const locale = Astro.props.locale ?? defaultLocale;
 const ui = getUi(locale);
 const homeHref = getLocalizedPath('home', locale);
 const year = new Date().getUTCFullYear();
+const pageTitle = Astro.props.pageTitle ?? `${siteConfig.name} — Valorant cheats`;
 
 const primaryLinks = [
-	{ label: ui.nav.esp, href: getLocalizedPath('valorant-esp', locale) },
-	{ label: ui.nav.aimbot, href: getLocalizedPath('valorant-aimbot', locale) },
-	{ label: 'Wallhack', href: getLocalizedPath('wallhack', locale) },
-	{ label: 'Radar', href: getLocalizedPath('radar', locale) },
+	{ label: `${ui.nav.esp} wallhack`, href: getLocalizedPath('valorant-esp', locale) },
+	{ label: `${ui.nav.aimbot} soft aim`, href: getLocalizedPath('valorant-aimbot', locale) },
+	{ label: 'Wallhack guide', href: getLocalizedPath('wallhack', locale) },
+	{ label: 'Radar overlay', href: getLocalizedPath('radar', locale) },
 	{ label: ui.nav.pricing, href: getLocalizedPath('pricing', locale) },
-	{ label: ui.nav.setup, href: getLocalizedPath('setup', locale) },
-	{ label: 'Support', href: getLocalizedPath('support', locale) },
-	{ label: 'Privacy', href: getLocalizedPath('privacy', locale) },
-	{ label: 'Terms', href: getLocalizedPath('terms', locale) },
-	{ label: 'Refund', href: getLocalizedPath('refund', locale) },
-	{ label: ui.nav.faq, href: getLocalizedPath('faq', locale) },
-	{ label: 'Reviews', href: reviewsBasePath },
+	{ label: `${ui.nav.setup} guide`, href: getLocalizedPath('setup', locale) },
+	{ label: 'Contact support', href: getLocalizedPath('support', locale) },
+	{ label: 'Privacy policy', href: getLocalizedPath('privacy', locale) },
+	{ label: 'Terms of use', href: getLocalizedPath('terms', locale) },
+	{ label: 'Refund policy', href: getLocalizedPath('refund', locale) },
+	{ label: `${ui.nav.faq} answers`, href: getLocalizedPath('faq', locale) },
+	{ label: 'Buyer reviews', href: reviewsBasePath },
 ];
 
 const secondaryLinks = [
-	{ label: ui.nav.features, href: getLocalizedPath('features', locale) },
-	{ label: ui.nav.updates, href: getLocalizedPath('updates', locale) },
-	{ label: 'Undetected', href: getLocalizedPath('undetected', locale) },
-	{ label: 'Blog', href: '/blog/' },
-	{ label: 'Guides', href: '/guides/' },
-	{ label: 'Cheats', href: getLocalizedPath('hacks', locale) },
+	{ label: `${ui.nav.features} list`, href: getLocalizedPath('features', locale) },
+	{ label: `${ui.nav.updates} log`, href: getLocalizedPath('updates', locale) },
+	{ label: 'Undetected status', href: getLocalizedPath('undetected', locale) },
+	{ label: 'Valorant blog', href: '/blog/' },
+	{ label: 'Game guides', href: '/guides/' },
+	{ label: 'Cheats overview', href: getLocalizedPath('hacks', locale) },
 ];
 
 const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly');
 const lifetimePlan = productInfo.plans.find((plan) => plan.id === 'lifetime');
+const promoTitle =
+	locale === 'de' ? 'Bereit für Unentdecktes ESP & Aimbot für PC?' : 'Ready to buy Valorant cheats?';
+const promoCopy =
+	locale === 'de'
+		? `${siteConfig.name} — Unentdecktes ESP & Aimbot für PC. Sofortige Lieferung, Patch-Updates und Wallhack plus Radar in einer Lizenz.`
+		: `${productInfo.tagline}. Instant delivery, patch-day rebuilds, and ESP, aimbot, wallhack, and radar in one license.`;
+const checkoutLabel = locale === 'de' ? 'Jetzt bei Zadeyo kaufen' : 'Buy at checkout';
 ---
 
 <div class="site-footer" id="support-footer">
 	<section class="footer-promo" aria-labelledby="footer-promo-title">
 		<div class="footer-promo__panel">
-			<h2 id="footer-promo-title" class="footer-promo__title">Ready to buy Valorant cheats?</h2>
-			<p class="footer-promo__copy">
-				{productInfo.tagline}. Instant delivery, patch-day rebuilds, and ESP, aimbot, wallhack, and radar in one
-				license.
-			</p>
+			<h2 id="footer-promo-title" class="footer-promo__title">{promoTitle}</h2>
+			<p class="footer-promo__copy">{promoCopy}</p>
 			<div class="footer-promo__stats">
 				<div class="footer-promo__stat">
 					<span class="footer-promo__stat-value">{customerReviewStats.averageRating}</span>
@@ -70,18 +77,33 @@ const lifetimePlan = productInfo.plans.find((plan) => plan.id === 'lifetime');
 				class="button-standard button-standard--fill footer-promo__cta"
 				rel="noopener noreferrer"
 			>
-				{ui.nav.buyNow}
+				{checkoutLabel}
 			</a>
 		</div>
-		<div class="footer-promo__media" aria-hidden="true">
-			<img src={valorantImages.squadFight} alt="" width="960" height="640" loading="lazy" decoding="async" />
+		<div class="footer-promo__media">
+			<img
+				src={valorantImages.squadFight}
+				alt={ui.images.squadFight}
+				width="960"
+				height="640"
+				loading="lazy"
+				decoding="async"
+			/>
 		</div>
 	</section>
 
 	<footer class="footer">
 		<div class="content-center content-gutter--large footer__bar">
-			<a class="footer__brand" href={homeHref} aria-label={siteConfig.name}>
-				<img class="footer__brand-logo" src={valorantBrandLogo} alt="" width="32" height="32" decoding="async" />
+			<a class="footer__brand" href={homeHref}>
+				<img
+					class="footer__brand-logo"
+					src={valorantBrandLogo}
+					alt={siteConfig.logoAlt}
+					width="32"
+					height="32"
+					decoding="async"
+				/>
+				<span class="sr-only">{siteConfig.name} home</span>
 			</a>
 
 			<nav class="footer__nav" aria-label="Footer">
@@ -93,54 +115,57 @@ const lifetimePlan = productInfo.plans.find((plan) => plan.id === 'lifetime');
 				</div>
 			</nav>
 
-			<div class="footer__social" aria-label="Quick links">
-				<a class="footer__social-link" href={getLocalizedPath('support', locale)} aria-label="Support">
-					<svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-						<path
-							d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7A2.5 2.5 0 0 1 17.5 16H9l-5 4v-4.5A2.5 2.5 0 0 1 4 13.5v-7Z"
-							stroke="currentColor"
-							stroke-width="1.6"
-							stroke-linejoin="round"></path>
-					</svg>
-				</a>
-				<a class="footer__social-link" href={reviewsBasePath} aria-label="Reviews">
-					<svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-						<path
-							d="M12 3.5 14.6 9l5.9.5-4.5 3.8 1.4 5.7L12 16.8 6.6 19l1.4-5.7L3.5 9.5 9.4 9 12 3.5Z"
-							stroke="currentColor"
-							stroke-width="1.6"
-							stroke-linejoin="round"></path>
-					</svg>
-				</a>
-				<a class="footer__social-link" href={getLocalizedPath('faq', locale)} aria-label="FAQ">
-					<svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-						<path
-							d="M12 17.5v.5M9.5 9a2.5 2.5 0 1 1 4.2 1.8C12.8 11.6 12 12.2 12 13.5"
-							stroke="currentColor"
-							stroke-width="1.6"
-							stroke-linecap="round"></path>
-						<circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.6"></circle>
-					</svg>
-				</a>
-				<a
-					class="footer__social-link"
-					href={`mailto:${siteConfig.supportEmail}`}
-					aria-label={`Email ${siteConfig.supportEmail}`}
-				>
-					<svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-						<path
-							d="M4.5 7.5h15v9h-15v-9Z"
-							stroke="currentColor"
-							stroke-width="1.6"
-							stroke-linejoin="round"></path>
-						<path d="m5 8.5 7 5 7-5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path>
-					</svg>
-				</a>
+			<div class="footer__aside">
+				<SocialShare locale={locale} title={pageTitle} path={Astro.url.pathname} />
+				<div class="footer__social" aria-label="Quick links">
+					<a class="footer__social-link" href={getLocalizedPath('support', locale)}>
+						<svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+							<path
+								d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7A2.5 2.5 0 0 1 17.5 16H9l-5 4v-4.5A2.5 2.5 0 0 1 4 13.5v-7Z"
+								stroke="currentColor"
+								stroke-width="1.6"
+								stroke-linejoin="round"></path>
+						</svg>
+						<span class="sr-only">Contact support</span>
+					</a>
+					<a class="footer__social-link" href={reviewsBasePath}>
+						<svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+							<path
+								d="M12 3.5 14.6 9l5.9.5-4.5 3.8 1.4 5.7L12 16.8 6.6 19l1.4-5.7L3.5 9.5 9.4 9 12 3.5Z"
+								stroke="currentColor"
+								stroke-width="1.6"
+								stroke-linejoin="round"></path>
+						</svg>
+						<span class="sr-only">Buyer reviews</span>
+					</a>
+					<a class="footer__social-link" href={getLocalizedPath('faq', locale)}>
+						<svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+							<path
+								d="M12 17.5v.5M9.5 9a2.5 2.5 0 1 1 4.2 1.8C12.8 11.6 12 12.2 12 13.5"
+								stroke="currentColor"
+								stroke-width="1.6"
+								stroke-linecap="round"></path>
+							<circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.6"></circle>
+						</svg>
+						<span class="sr-only">FAQ answers</span>
+					</a>
+					<a class="footer__social-link" href={`mailto:${siteConfig.supportEmail}`}>
+						<svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+							<path
+								d="M4.5 7.5h15v9h-15v-9Z"
+								stroke="currentColor"
+								stroke-width="1.6"
+								stroke-linejoin="round"></path>
+							<path d="m5 8.5 7 5 7-5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path>
+						</svg>
+						<span class="sr-only">Email {siteConfig.supportEmail}</span>
+					</a>
+				</div>
 			</div>
 		</div>
 
 		<div class="content-center content-gutter--large footer__meta">
-			<p class="footer__copy">© {year} {siteConfig.name}. All Rights Reserved.</p>
+			<p class="footer__copy">© {year} {siteConfig.name}. {ui.footer.tagline}</p>
 			<a class="footer__top" href="#top">
 				To the surface
 				<span class="footer__top-icon" aria-hidden="true">▲</span>

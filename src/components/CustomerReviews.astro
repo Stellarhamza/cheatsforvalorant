@@ -64,9 +64,9 @@ const verifiedLabel = reviewsUi.verifiedLabel ?? 'Verified customer';
 							</p>
 						</div>
 					</div>
-					<h3 class="reviews__title">{review.title}</h3>
+					<p class="reviews__title">{review.title}</p>
 					<p class="reviews__text">{review.short}</p>
-					<a class="reviews__read" href={getReviewPath(review.slug)}>Read full review</a>
+					<a class="reviews__read" href={getReviewPath(review.slug)}>Read @{review.handle} review</a>
 				</article>
 			))
 		}

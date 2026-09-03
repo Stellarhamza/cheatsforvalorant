@@ -47,7 +47,7 @@ const groups = groupItems(items);
 	{
 		groups.map((group) => (
 			<div class="faq-list__group">
-				{group.category ? <h3 class="faq-list__category">{group.category}</h3> : null}
+				{group.category ? <p class="faq-list__category">{group.category}</p> : null}
 				<div class="faq-list__items">
 					{group.items.map((item) => (
 						<details class="faq-list__item">

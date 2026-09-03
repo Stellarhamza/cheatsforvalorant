@@ -70,11 +70,11 @@ export const uiStrings = {
 			buyNow: 'Zugang erhalten',
 			seeFeatures: 'Features ansehen',
 		},
-		trust: { status: 'Online', statusNote: 'Valorant Cheats ist für Valorant auf Windows-PC aktiv.', statusShort: 'Live', delivery: 'Sofortige digitale Lieferung', platform: 'Windows 10 & 11', antiCheat: 'Anti-Cheat-Wartung inklusive', antiCheatShort: 'Riot-Games-Anti-Cheat unterstützt' },
+		trust: { status: 'Online', statusNote: 'CheatsForValorant ist live — Unentdecktes ESP & Aimbot für PC.', statusShort: 'Live', delivery: 'Sofortige digitale Lieferung', platform: 'Windows 10 & 11', antiCheat: 'Anti-Cheat-Wartung inklusive', antiCheatShort: 'Riot-Games-Anti-Cheat unterstützt' },
 		product: { title: 'Valorant Cheats', addToCart: 'Zugang erhalten', monthly: 'Monatlich', lifetime: 'Lifetime', available: 'Jetzt verfügbar', gameBadge: 'Valorant', platformBadge: 'Windows-PC', statusBadge: 'Gepflegtes Paket' },
 		reviews: { title: 'Kundenbewertungen', subtitle: 'Über 1.000 Bewertungen von echten Käufern', outOf: 'von 5', countLabel: 'Bewertungen', seeAll: 'Alle Bewertungen' },
 		common: { buyNow: 'Zugang erhalten', readGuide: 'Guide lesen', language: 'Sprache', officialLanguageNote: 'Wähle deine Sprache — die gesamte Website wechselt sofort.', relatedPages: 'Verwandte Seiten' },
-		footer: { explore: 'Entdecken', help: 'Hilfe & Rechtliches', tagline: 'Undetected ESP, Wallhack, Radar und Aimbot für Valorant — Checkout über Zadeyo.' },
+		footer: { explore: 'Entdecken', help: 'Hilfe & Rechtliches', tagline: 'CheatsForValorant — Unentdecktes ESP & Aimbot für PC. Wallhack, Radar und Soft Aim — Checkout über Zadeyo.' },
 		images: { hero: 'Valorant Cheats Hero mit ESP und Aimbot', espWallhack: 'Valorant Cheats ESP Wallhack Player-Overlay auf Valorant', aimbotCombat: 'Valorant Aimbot Gefecht Vorschau', squadFight: 'Valorant Cheats Squad Fight Vorschau für Aimbot', playerEsp: 'Valorant enemy ESP wallhack Overlay für Valorant', headerArt: 'Valorant Header-Art für Valorant Cheats Seiten', cheatsPackage: 'Valorant Cheats Paket mit ESP Wallhack und Aimbot', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Valorant Competitive Kampf für undetected Cheats', openWorldTileset: 'Valorant Karte für Valorant ESP Wallhack Routen' },
 	},
 	pt: {

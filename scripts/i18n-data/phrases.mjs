@@ -33,11 +33,11 @@ export const phrases = {
 		legal: () => 'Contactez support@cheatsforvalorant.com pour le support ou les demandes légales.',
 	},
 	de: {
-		buy: 'Zugang erhalten', undetected: 'unentdeckt', maps: 'Competitive, Unrated und Spike Rush',
+		buy: 'Zugang erhalten', undetected: 'Unentdecktes', maps: 'Competitive, Unrated und Spike Rush',
 		win: 'Windows PC', delivery: 'sofortige digitale Lieferung', monthly: '$35/Monat', lifetime: '$150 Lifetime',
-		s1: (topic) => `${KW.product} bündelt ${KW.esp}, ${KW.radar} und ${KW.aimbot} als ${phrases.de.undetected} Paket für ${KW.game} auf ${phrases.de.win}. ${topic}`,
-		s2: () => `Lizenzen mit ${phrases.de.delivery} über ${KW.checkout} Checkout. ${phrases.de.monthly} und ${phrases.de.lifetime} inkl. ${KW.eac}-Wartung.`,
-		s3: () => `Updates-Seite nach ${KW.eac}-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.`,
+		s1: (topic) => `CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ${KW.esp}, ${KW.radar} und Soft Aim für ${KW.game} auf ${phrases.de.win}. ${topic}`,
+		s2: () => `Lizenzen mit ${phrases.de.delivery} über ${KW.checkout} Checkout. ${phrases.de.monthly} und ${phrases.de.lifetime} inkl. ${KW.eac}-Wartung für PC.`,
+		s3: () => `Updates-Seite nach ${KW.eac}-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.`,
 		legal: () => 'support@cheatsforvalorant.com für Support und rechtliche Anfragen.',
 	},
 	pt: {

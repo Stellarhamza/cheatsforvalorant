@@ -52,7 +52,6 @@ function galleryLinkLabel(href: string, src: string): string {
 						<a
 							href={slide.href}
 							class="gallery__marquee-slide"
-							aria-label={slide.linkLabel}
 							aria-hidden={index >= slides.length ? 'true' : undefined}
 							tabindex={index >= slides.length ? -1 : undefined}
 						>
@@ -67,6 +66,7 @@ function galleryLinkLabel(href: string, src: string): string {
 								decoding="async"
 								draggable="false"
 							/>
+							<span class="sr-only">{slide.linkLabel}</span>
 						</a>
 					))
 				}

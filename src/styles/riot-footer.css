@@ -162,6 +162,12 @@
 	color: #fff;
 }
 
+.footer__aside {
+	display: grid;
+	gap: 1rem;
+	justify-items: end;
+}
+
 .footer__social {
 	display: flex;
 	flex-wrap: wrap;
@@ -257,6 +263,10 @@
 
 	.footer__bar {
 		grid-template-columns: 1fr;
+	}
+
+	.footer__aside {
+		justify-items: start;
 	}
 
 	.footer__social {

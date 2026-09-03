@@ -37,6 +37,13 @@ const canonicalPath = getCanonicalPath('home', locale);
 const canonicalURL = new URL(canonicalPath, siteConfig.url).href;
 const heroImage = new URL(valorantImages.hero, siteConfig.url).href;
 
+const storeNote =
+	locale === 'de'
+		? 'CheatsForValorant — Unentdecktes ESP & Aimbot für PC: Wallhack, Soft Aim, Triggerbot und Radar in einer Lizenz.'
+		: 'ESP wallhack, aimbot, triggerbot, and radar — one undetected Valorant cheat license for Windows PC.';
+
+const localeSummary = locale === 'de' ? home.intro : productInfo.summary;
+
 const extraGraph: Record<string, unknown>[] = [
 	{
 		'@type': 'Product',
@@ -106,14 +113,43 @@ const extraGraph: Record<string, unknown>[] = [
 			subtitle={ui.hero.subtitle}
 			subtitleShort={ui.hero.subtitleShort}
 		/>
+		<section
+			class="site__section site__section--intro riot-section widget--spacing-padding-large"
+			aria-labelledby="home-intro-title"
+		>
+			<div class="content-center content-gutter--large home-intro">
+				<p class="home-intro__trust">{ui.trust.statusNote}</p>
+				<h2 id="home-intro-title" class="riot-heading">{home.sections[0]?.h2 ?? ui.product.title}</h2>
+				<p class="home-intro__lead">{home.intro}</p>
+				{
+					home.sections[0]?.paragraphs.map((paragraph) => (
+						<p class="home-intro__copy" set:html={paragraph} />
+					))
+				}
+				{
+					home.sections.slice(1).map((section) => (
+						<div class="home-intro__block">
+							<p class="home-intro__block-title">{section.h2}</p>
+							{section.paragraphs.map((paragraph) => (
+								<p class="home-intro__copy" set:html={paragraph} />
+							))}
+						</div>
+					))
+				}
+			</div>
+		</section>
 		<HomeWhatsHappening locale={locale} />
 		<HomeGamesShowcase locale={locale} />
-		<section class="site__section site__section--store riot-section widget--spacing-padding-large" id="store" aria-label={ui.product.title}>
+		<section
+			class="site__section site__section--store riot-section widget--spacing-padding-large"
+			id="store"
+			aria-label={ui.product.title}
+		>
 			<div class="content-center content-gutter--large section-stack store-stack">
-				<header class="section-head store-intro sr-only">
-					<h2 class="riot-heading">{ui.product.title}</h2>
-					<p class="section-head__copy store-intro__copy">{productInfo.summary}</p>
-					<p class="section-head__note store-intro__note">ESP wallhack, aimbot, triggerbot, and radar — one undetected Valorant cheat license for Windows PC.</p>
+				<header class="section-head store-intro">
+					<p class="store-intro__eyebrow">{ui.product.title}</p>
+					<p class="section-head__copy store-intro__copy">{localeSummary}</p>
+					<p class="section-head__note store-intro__note">{storeNote}</p>
 				</header>
 				<PricingFeatureList locale={locale} showRelatedPages={false} />
 			</div>
@@ -135,12 +171,60 @@ const extraGraph: Record<string, unknown>[] = [
 			</div>
 		</section>
 	</main>
-	<SiteFooter locale={locale} />
+	<SiteFooter locale={locale} pageTitle={title} />
 </Layout>
 
 <style>
 	.site {
 		overflow-x: clip;
+	}
+
+	.home-intro {
+		display: grid;
+		gap: 1rem;
+		max-width: 46rem;
+		padding-block: clamp(1.5rem, 3vw, 2.25rem);
+	}
+
+	.home-intro__trust {
+		margin: 0;
+		color: var(--color-orchid);
+		font-size: 0.78rem;
+		font-weight: 800;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+	}
+
+	.home-intro__lead,
+	.home-intro__copy {
+		margin: 0;
+		color: rgba(236, 232, 225, 0.78);
+		font-size: 1rem;
+		line-height: 1.65;
+	}
+
+	.home-intro__block {
+		display: grid;
+		gap: 0.65rem;
+		padding-top: 0.75rem;
+		border-top: 1px solid rgba(236, 232, 225, 0.08);
+	}
+
+	.home-intro__block-title {
+		margin: 0;
+		font-size: 0.95rem;
+		font-weight: 800;
+		letter-spacing: -0.02em;
+		color: #ece8e1;
+	}
+
+	.store-intro__eyebrow {
+		margin: 0 0 0.5rem;
+		font-size: 0.75rem;
+		font-weight: 800;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: var(--color-orchid);
 	}
 
 	.site__section--reviews,

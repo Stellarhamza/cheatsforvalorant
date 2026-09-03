@@ -43,15 +43,16 @@ const isActive = (href: string, linkPageId?: PageId) => {
 
 	<div class="nav__shell content-center content-gutter--large">
 		<div class="nav__start">
-			<a class="nav__brand" href={homeHref} aria-label={siteConfig.name}>
+			<a class="nav__brand" href={homeHref}>
 				<img
 					class="nav__brand-logo"
 					src={valorantBrandLogo}
-					alt=""
+					alt={siteConfig.logoAlt}
 					width="40"
 					height="40"
 					decoding="async"
 				/>
+				<span class="sr-only">{siteConfig.name} home</span>
 			</a>
 
 			<nav class="nav__links" id="nav-panel" data-nav-panel aria-label="Primary">

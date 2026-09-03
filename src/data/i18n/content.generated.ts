@@ -2999,7 +2999,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				trust: {
 					status: "Online",
-					statusNote: "Valorant Cheats ist für Valorant auf Windows-PC aktiv.",
+					statusNote: "CheatsForValorant ist live — Unentdecktes ESP & Aimbot für PC.",
 					statusShort: "Live",
 					delivery: "Sofortige digitale Lieferung",
 					platform: "Windows 10 & 11",
@@ -3033,7 +3033,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				footer: {
 					explore: "Entdecken",
 					help: "Hilfe & Rechtliches",
-					tagline: "Undetected ESP, Wallhack, Radar und Aimbot für Valorant — Checkout über Zadeyo.",
+					tagline: "CheatsForValorant — Unentdecktes ESP & Aimbot für PC. Wallhack, Radar und Soft Aim — Checkout über Zadeyo.",
 				},
 				images: {
 					hero: "Valorant Cheats Hero mit ESP und Aimbot",
@@ -3052,9 +3052,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				home: {
 					title: "Valorant Cheats 2026 | ESP, Wallhack & Aimbot",
 					description: "Undetected Valorant Cheats für Valorant auf PC. ESP Wallhack, Radar Hack und Aimbot mit Riot Games anti-cheat-Wartung. Sofortige digitale Lieferung.",
-					h1: "Valorant Cheats — Undetected ESP, Wallhack & Aimbot",
-					intro: "Undetected Windows PC Paket für Valorant: ESP Wallhack, Radar und Aimbot mit Riot Games anti-cheat-Wartung nach jedem Patch.",
-					imageAlt: "Valorant-cheats Hero mit ESP Wallhack und Aimbot undetected",
+					h1: "CheatsForValorant — Unentdecktes ESP & Aimbot für PC",
+					intro: "CheatsForValorant liefert Unentdecktes ESP & Aimbot für PC: Wallhack, Radar und Soft Aim in einer Windows-Lizenz, mit Riot Games anti-cheat-Wartung nach jedem Patch.",
+					imageAlt: "CheatsForValorant Hero — Unentdecktes ESP und Aimbot für PC",
 					galleryTitle: "Valorant Cheats Galerie — ESP, Aimbot und Wallhack",
 					heroImage: "/images/valorant-cheat-esp-corridor.jpg",
 					ctaPrimary: "Zugang erhalten",
@@ -3062,17 +3062,17 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					ctaSecondaryHref: "/features/",
 					sections: [
 						{
-							h2: "Warum Valorant Cheats 2026 führt",
+							h2: "Warum CheatsForValorant Unentdecktes ESP & Aimbot für PC anbietet",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Ideal um feindliche Squads in missions und Spike Rush zu lesen.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Ideal, um feindliche Squads in Competitive und Spike Rush zu lesen.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP Wallhack, Radar und Aimbot in einer Lizenz",
+							h2: "ESP, Aimbot und Radar in einer Lizenz für PC",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Eine Lizenz statt separater Tools.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Eine Lizenz statt separater Tools für Windows PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3081,7 +3081,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Valorant ESP 2026 | enemy boxes & Wallhack",
 					description: "Valorant ESP: enemy boxes, health bars, and wallhack overlays for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Valorant ESP — enemy boxes & Wallhack",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Valorant ESP for Competitive, Unrated und Spike Rush: enemy boxes, health bars, and wallhack overlays.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Valorant ESP for Competitive, Unrated und Spike Rush: enemy boxes, health bars, and wallhack overlays.",
 					imageAlt: "valorant-cheats valorant-esp enemy boxes, health bars, and wallhack overlays preview",
 					galleryTitle: "Valorant Cheats Valorant ESP gallery",
 					heroImage: "/images/valorant-cheat-esp-corridor.jpg",
@@ -3092,22 +3092,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Valorant ESP — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3116,7 +3116,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Valorant Aimbot 2026 | Soft Aim Controls",
 					description: "Valorant Aimbot: soft aim, FOV, and per-weapon Aimbot profiles for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Valorant Aimbot — Soft Aim Controls",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Valorant Aimbot for Competitive, Unrated und Spike Rush: soft aim, FOV, and per-weapon Aimbot profiles.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Valorant Aimbot for Competitive, Unrated und Spike Rush: soft aim, FOV, and per-weapon Aimbot profiles.",
 					imageAlt: "valorant-cheats valorant-aimbot soft aim, FOV, and per-weapon Aimbot profiles preview",
 					galleryTitle: "Valorant Cheats Valorant Aimbot gallery",
 					heroImage: "/images/valorant-cheat-aimbot-reyna.jpg",
@@ -3127,22 +3127,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Valorant Aimbot — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3151,7 +3151,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Features 2026 | Valorant Cheats Full Feature List",
 					description: "Features: ESP, aimbot, wallhack, and radar controls for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Features — Full Feature List",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Features for Competitive, Unrated und Spike Rush: ESP, aimbot, wallhack, and radar controls.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Features for Competitive, Unrated und Spike Rush: ESP, aimbot, wallhack, and radar controls.",
 					imageAlt: "valorant-cheats features ESP, aimbot, wallhack, and radar controls preview",
 					galleryTitle: "Valorant Cheats Features gallery",
 					heroImage: "/images/valorant-cheat-esp-stairs.jpg",
@@ -3162,22 +3162,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Features — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3186,7 +3186,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Preise 2026 | Valorant Cheats Monthly & Lifetime",
 					description: "Preise: $35 monthly or $150 lifetime licenses for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Preise — Monthly & Lifetime",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Preise for Competitive, Unrated und Spike Rush: $35 monthly or $150 lifetime licenses.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Preise for Competitive, Unrated und Spike Rush: $35 monthly or $150 lifetime licenses.",
 					imageAlt: "valorant-cheats pricing $35 monthly or $150 lifetime licenses preview",
 					galleryTitle: "Valorant Cheats Preise gallery",
 					heroImage: "/images/valorant-cheat-esp-stairs.jpg",
@@ -3197,22 +3197,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Preise — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3221,7 +3221,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Setup 2026 | Valorant Cheats PC Setup Guide",
 					description: "Setup: Windows PC activation and first-launch setup for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Setup — PC Setup Guide",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Setup for Competitive, Unrated und Spike Rush: Windows PC activation and first-launch setup.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Setup for Competitive, Unrated und Spike Rush: Windows PC activation and first-launch setup.",
 					imageAlt: "valorant-cheats setup Windows PC activation and first-launch setup preview",
 					galleryTitle: "Valorant Cheats Setup gallery",
 					heroImage: "/images/valorant-cheat-aimbot-knife.jpg",
@@ -3232,22 +3232,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Setup — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3256,7 +3256,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Updates 2026 | Anti-cheat maintenance Log",
 					description: "Updates: anti-cheat patch status and rebuild notes for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Updates — Anti-cheat maintenance Log",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Updates for Competitive, Unrated und Spike Rush: anti-cheat patch status and rebuild notes.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Updates for Competitive, Unrated und Spike Rush: anti-cheat patch status and rebuild notes.",
 					imageAlt: "valorant-cheats updates anti-cheat patch status and rebuild notes preview",
 					galleryTitle: "Valorant Cheats Updates gallery",
 					heroImage: "/images/valorant-cheat-esp-gekko.jpg",
@@ -3267,22 +3267,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Updates — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3291,7 +3291,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "FAQ 2026 | Valorant Cheats Common Answers",
 					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. FAQ for Competitive, Unrated und Spike Rush: ESP, soft aim, delivery, and anti-cheat questions.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. FAQ for Competitive, Unrated und Spike Rush: ESP, soft aim, delivery, and anti-cheat questions.",
 					imageAlt: "valorant-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Valorant Cheats FAQ gallery",
 					heroImage: "/images/valorant-cheat-aimbot-knife.jpg",
@@ -3302,22 +3302,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3326,7 +3326,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Support 2026 | Valorant Cheats Help & Contact",
 					description: "Support: order help and license support contact for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Support — Help & Contact",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Support for Competitive, Unrated und Spike Rush: order help and license support contact.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Support for Competitive, Unrated und Spike Rush: order help and license support contact.",
 					imageAlt: "valorant-cheats support order help and license support contact preview",
 					galleryTitle: "Valorant Cheats Support gallery",
 					heroImage: "/images/valorant-cheat-esp-stairs.jpg",
@@ -3337,22 +3337,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Support — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3361,7 +3361,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Undetected Cheats 2026 | Anti-cheat safe Status",
 					description: "Undetected Cheats: undetected maintenance after Riot Games anti-cheat patches for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Undetected Cheats — Anti-cheat safe Status",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Undetected Cheats for Competitive, Unrated und Spike Rush: undetected maintenance after Riot Games anti-cheat patches.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Undetected Cheats for Competitive, Unrated und Spike Rush: undetected maintenance after Riot Games anti-cheat patches.",
 					imageAlt: "valorant-cheats undetected undetected maintenance after Riot Games anti-cheat patches preview",
 					galleryTitle: "Valorant Cheats Undetected Cheats gallery",
 					heroImage: "/images/valorant-cheat-aimbot-knife.jpg",
@@ -3372,22 +3372,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Undetected Cheats — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3396,7 +3396,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Valorant Wallhack 2026 | ESP Visibility",
 					description: "Valorant Wallhack: wallhack ESP for agents, utility, and the spike for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Valorant Wallhack — ESP Visibility",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Valorant Wallhack for Competitive, Unrated und Spike Rush: wallhack ESP for agents, utility, and the spike.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Valorant Wallhack for Competitive, Unrated und Spike Rush: wallhack ESP for agents, utility, and the spike.",
 					imageAlt: "valorant-cheats wallhack wallhack ESP for agents, utility, and the spike preview",
 					galleryTitle: "Valorant Cheats Valorant Wallhack gallery",
 					heroImage: "/images/valorant-cheat-esp-gekko.jpg",
@@ -3407,22 +3407,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Valorant Wallhack — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3431,7 +3431,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Radar Hack 2026 | 2D Threat Overlay",
 					description: "Radar Hack: 2D radar cues for flanks and rotations for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Radar Hack — 2D Threat Overlay",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Radar Hack for Competitive, Unrated und Spike Rush: 2D radar cues for flanks and rotations.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Radar Hack for Competitive, Unrated und Spike Rush: 2D radar cues for flanks and rotations.",
 					imageAlt: "valorant-cheats radar 2D radar cues for flanks and rotations preview",
 					galleryTitle: "Valorant Cheats Radar Hack gallery",
 					heroImage: "/images/valorant-cheat-esp-gekko.jpg",
@@ -3442,22 +3442,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar Hack — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3466,7 +3466,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Anti-cheat bypass 2026 | Patch Maintenance",
 					description: "Anti-cheat bypass: how anti-cheat updates are handled for Valorant Cheats for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Anti-cheat bypass — Patch Maintenance",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Anti-cheat bypass for Competitive, Unrated und Spike Rush: how anti-cheat updates are handled for Valorant Cheats.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Anti-cheat bypass for Competitive, Unrated und Spike Rush: how anti-cheat updates are handled for Valorant Cheats.",
 					imageAlt: "valorant-cheats eac-bypass how anti-cheat updates are handled for Valorant Cheats preview",
 					galleryTitle: "Valorant Cheats Anti-cheat bypass gallery",
 					heroImage: "/images/valorant-cheat-esp-stairs.jpg",
@@ -3477,22 +3477,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Anti-cheat bypass — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3501,7 +3501,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Valorant Cheats 2026 2026 | Valorant Cheats Buyer Guide",
 					description: "Valorant Cheats 2026: 2026 Valorant cheats checklist before checkout for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Valorant Cheats 2026 — Buyer Guide",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Valorant Cheats 2026 for Competitive, Unrated und Spike Rush: 2026 Valorant cheats checklist before checkout.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Valorant Cheats 2026 for Competitive, Unrated und Spike Rush: 2026 Valorant cheats checklist before checkout.",
 					imageAlt: "valorant-cheats cheats-2026 2026 Valorant cheats checklist before checkout preview",
 					galleryTitle: "Valorant Cheats Valorant Cheats 2026 gallery",
 					heroImage: "/images/valorant-cheat-esp-corridor.jpg",
@@ -3512,22 +3512,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Valorant Cheats 2026 — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3536,7 +3536,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Valorant Cheats 2026 | ESP Aimbot Guide",
 					description: "Valorant Cheats: the Valorant Cheats pillar for ESP and Aimbot for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Valorant Cheats — ESP Aimbot Guide",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Valorant Cheats for Competitive, Unrated und Spike Rush: the Valorant Cheats pillar for ESP and Aimbot.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Valorant Cheats for Competitive, Unrated und Spike Rush: the Valorant Cheats pillar for ESP and Aimbot.",
 					imageAlt: "valorant-cheats hacks the Valorant Cheats pillar for ESP and Aimbot preview",
 					galleryTitle: "Valorant Cheats Valorant Cheats gallery",
 					heroImage: "/images/valorant-cheat-aimbot-knife.jpg",
@@ -3547,22 +3547,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Valorant Cheats — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3571,7 +3571,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Valorant Cheats Download 2026 | Instant Access",
 					description: "Valorant Cheats Download: digital license download after payment for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Valorant Cheats Download — Instant Access",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Valorant Cheats Download for Competitive, Unrated und Spike Rush: digital license download after payment.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Valorant Cheats Download for Competitive, Unrated und Spike Rush: digital license download after payment.",
 					imageAlt: "valorant-cheats cheat-download digital license download after payment preview",
 					galleryTitle: "Valorant Cheats Valorant Cheats Download gallery",
 					heroImage: "/images/valorant-cheat-esp-stairs.jpg",
@@ -3582,22 +3582,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Valorant Cheats Download — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3606,7 +3606,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Valorant Mod Menu 2026 | In-Game Toggles",
 					description: "Valorant Mod Menu: in-client ESP and soft aim toggles for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Valorant Mod Menu — In-Game Toggles",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Valorant Mod Menu for Competitive, Unrated und Spike Rush: in-client ESP and soft aim toggles.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Valorant Mod Menu for Competitive, Unrated und Spike Rush: in-client ESP and soft aim toggles.",
 					imageAlt: "valorant-cheats mod-menu in-client ESP and soft aim toggles preview",
 					galleryTitle: "Valorant Cheats Valorant Mod Menu gallery",
 					heroImage: "/images/valorant-cheat-esp-stairs.jpg",
@@ -3617,22 +3617,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Valorant Mod Menu — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3641,7 +3641,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Valorant Soft Aim 2026 | Smooth Aim Settings",
 					description: "Valorant Soft Aim: smooth soft aim settings for PC and controllers for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Valorant Soft Aim — Smooth Aim Settings",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Valorant Soft Aim for Competitive, Unrated und Spike Rush: smooth soft aim settings for PC and controllers.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Valorant Soft Aim for Competitive, Unrated und Spike Rush: smooth soft aim settings for PC and controllers.",
 					imageAlt: "valorant-cheats soft-aim smooth soft aim settings for PC and controllers preview",
 					galleryTitle: "Valorant Cheats Valorant Soft Aim gallery",
 					heroImage: "/images/valorant-cheat-aimbot-reyna.jpg",
@@ -3652,22 +3652,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Valorant Soft Aim — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3676,7 +3676,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Beste Valorant Cheats 2026 | Buyer Checklist",
 					description: "Beste Valorant Cheats: what to compare before buying Valorant cheats for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Beste Valorant Cheats — Buyer Checklist",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Beste Valorant Cheats for Competitive, Unrated und Spike Rush: what to compare before buying Valorant cheats.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Beste Valorant Cheats for Competitive, Unrated und Spike Rush: what to compare before buying Valorant cheats.",
 					imageAlt: "valorant-cheats best-cheats what to compare before buying Valorant cheats preview",
 					galleryTitle: "Valorant Cheats Beste Valorant Cheats gallery",
 					heroImage: "/images/valorant-cheat-esp-stairs.jpg",
@@ -3687,22 +3687,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Beste Valorant Cheats — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3711,7 +3711,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Valorant Aimbot Hack 2026 | Soft Aim Assist",
 					description: "Valorant Aimbot Hack: undetected Aimbot hack assist for Valorant for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Valorant Aimbot Hack — Soft Aim Assist",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Valorant Aimbot Hack for Competitive, Unrated und Spike Rush: undetected Aimbot hack assist for Valorant.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Valorant Aimbot Hack for Competitive, Unrated und Spike Rush: undetected Aimbot hack assist for Valorant.",
 					imageAlt: "valorant-cheats aimbot-hack undetected Aimbot hack assist for Valorant preview",
 					galleryTitle: "Valorant Cheats Valorant Aimbot Hack gallery",
 					heroImage: "/images/valorant-cheat-aimbot-reyna.jpg",
@@ -3722,22 +3722,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Valorant Aimbot Hack — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3746,7 +3746,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Valorant ESP Hack 2026 | Boxes & Utility",
 					description: "Valorant ESP Hack: ESP hack boxes, spike markers, and distance for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Valorant ESP Hack — Boxes & Utility",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Valorant ESP Hack for Competitive, Unrated und Spike Rush: ESP hack boxes, spike markers, and distance.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Valorant ESP Hack for Competitive, Unrated und Spike Rush: ESP hack boxes, spike markers, and distance.",
 					imageAlt: "valorant-cheats esp-hack ESP hack boxes, spike markers, and distance preview",
 					galleryTitle: "Valorant Cheats Valorant ESP Hack gallery",
 					heroImage: "/images/valorant-cheat-esp-corridor.jpg",
@@ -3757,22 +3757,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Valorant ESP Hack — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3781,7 +3781,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Valorant Unlock All 2026 | What It Means",
 					description: "Valorant Unlock All: unlock-all searches vs real ESP and Aimbot tools for Valorant. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "Valorant Unlock All — What It Means",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Valorant Unlock All for Competitive, Unrated und Spike Rush: unlock-all searches vs real ESP and Aimbot tools.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Valorant Unlock All for Competitive, Unrated und Spike Rush: unlock-all searches vs real ESP and Aimbot tools.",
 					imageAlt: "valorant-cheats unlock-all unlock-all searches vs real ESP and Aimbot tools preview",
 					galleryTitle: "Valorant Cheats Valorant Unlock All gallery",
 					heroImage: "/images/valorant-cheat-scope-yoru.jpg",
@@ -3792,22 +3792,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Valorant Unlock All — Competitive, Unrated und Spike Rush",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Read enemy agents with ESP wallhack.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
-							h2: "ESP wallhack & unentdeckt",
+							h2: "ESP wallhack & Unentdecktes",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Toggle overlays for Competitive, Unrated, and Spike Rush.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 					],
@@ -3816,7 +3816,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Datenschutz | Valorant Cheats",
 					description: "Datenschutz for Valorant Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Datenschutz",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Datenschutz for cheatsforvalorant.com and Valorant licenses.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Datenschutz for cheatsforvalorant.com and Valorant licenses.",
 					imageAlt: "valorant-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Valorant Cheats privacy resources",
 					heroImage: "/images/valorant-cheat-esp-corridor.jpg",
@@ -3827,15 +3827,15 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Erhobene Daten",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Contact email, Zadeyo order references, and basic site security data.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Contact email, Zadeyo order references, and basic site security data.",
 								"Payment details are processed by Zadeyo checkout — not stored on cheatsforvalorant.com.",
 							],
 						},
 						{
 							h2: "Datennutzung",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Support responses, order resolution, and legal compliance when required.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Support responses, order resolution, and legal compliance when required.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
@@ -3851,7 +3851,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Rückerstattung | Valorant Cheats",
 					description: "Rückerstattung for Valorant Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Rückerstattung",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Rückerstattung for cheatsforvalorant.com and Valorant licenses.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Rückerstattung for cheatsforvalorant.com and Valorant licenses.",
 					imageAlt: "valorant-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Valorant Cheats refund resources",
 					heroImage: "/images/valorant-cheat-esp-corridor.jpg",
@@ -3862,15 +3862,15 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Digitale Lieferung",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Contact email, Zadeyo order references, and basic site security data.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
 							h2: "Genehmigung",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Support responses, order resolution, and legal compliance when required.",
-								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Support responses, order resolution, and legal compliance when required.",
+								"Updates-Seite nach Riot Games anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft Unentdecktes Status auf PC.",
 							],
 						},
 						{
@@ -3886,7 +3886,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Nutzungsbedingungen | Valorant Cheats",
 					description: "Nutzungsbedingungen for Valorant Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Nutzungsbedingungen",
-					intro: "Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Nutzungsbedingungen for cheatsforvalorant.com and Valorant licenses.",
+					intro: "CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Nutzungsbedingungen for cheatsforvalorant.com and Valorant licenses.",
 					imageAlt: "valorant-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Valorant Cheats terms resources",
 					heroImage: "/images/valorant-cheat-esp-corridor.jpg",
@@ -3897,14 +3897,14 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Annahme",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Contact email, Zadeyo order references, and basic site security data.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Riot Games anti-cheat-Wartung für PC.",
 							],
 						},
 						{
 							h2: "Risiko",
 							paragraphs: [
-								"Valorant Cheats bündelt ESP wallhack, radar hack und Aimbot als unentdeckt Paket für Valorant auf Windows PC. Support responses, order resolution, and legal compliance when required.",
+								"CheatsForValorant bietet Unentdecktes ESP & Aimbot für PC — mit ESP wallhack, radar hack und Soft Aim für Valorant auf Windows PC. Support responses, order resolution, and legal compliance when required.",
 								"Using cheats may violate Valorant terms — you assume all ban risk.",
 							],
 						},
