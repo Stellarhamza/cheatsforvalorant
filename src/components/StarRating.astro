@@ -1,0 +1,69 @@
+---
+interface Props {
+	rating: number;
+	max?: number;
+	size?: 'sm' | 'md';
+	showValue?: boolean;
+	label?: string;
+}
+
+const { rating, max = 5, size = 'sm', showValue = false, label } = Astro.props;
+const clamped = Math.max(0, Math.min(max, rating));
+const filledCount = Math.round(clamped);
+const ariaLabel = label ?? `${clamped.toFixed(1)} out of ${max} stars`;
+---
+
+<div class:list={['star-rating', `star-rating--${size}`]} role="img" aria-label={ariaLabel}>
+	{
+		Array.from({ length: max }, (_, index) => {
+			const isFilled = index < filledCount;
+			return (
+				<svg class:list={['star-rating__star', { 'is-filled': isFilled }]} viewBox="0 0 20 20" aria-hidden="true">
+					<path
+						d="M10 1.75l2.05 4.15 4.58.67-3.31 3.23.78 4.56L10 12.9l-4.1 2.16.78-4.56-3.31-3.23 4.58-.67L10 1.75z"
+					/>
+				</svg>
+			);
+		})
+	}
+	{showValue && <span class="star-rating__value">{clamped.toFixed(1)}</span>}
+</div>
+
+<style>
+	.star-rating {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.18rem;
+	}
+
+	.star-rating--sm .star-rating__star {
+		width: 0.88rem;
+		height: 0.88rem;
+	}
+
+	.star-rating--md .star-rating__star {
+		width: 1rem;
+		height: 1rem;
+	}
+
+	.star-rating__star {
+		display: block;
+		flex-shrink: 0;
+	}
+
+	.star-rating__star path {
+		fill: rgba(229, 184, 74, 0.32);
+	}
+
+	.star-rating__star.is-filled path {
+		fill: #e5b84a;
+	}
+
+	.star-rating__value {
+		margin-left: 0.35rem;
+		color: var(--color-ink);
+		font-size: 0.92rem;
+		font-weight: 700;
+		line-height: 1;
+	}
+</style>

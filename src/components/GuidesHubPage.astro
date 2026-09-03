@@ -1,0 +1,140 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from './Navbar.astro';
+import SiteFooter from './SiteFooter.astro';
+import { siteConfig } from '../data/site';
+import {
+	absoluteGuideUrl,
+	getMixedExternalGuides,
+	getNativeValorantGuides,
+	guidesBasePath,
+} from '../data/guides/helpers';
+import ValorantAuthorityLinks from './ValorantAuthorityLinks.astro';
+import { getLocalizedPath } from '../data/i18n/routing';
+import { defaultLocale } from '../data/i18n/locales';
+
+import type { ResolvedExternalGuide } from '../data/guides/types';
+
+const locale = defaultLocale;
+const nativeGuides = getNativeValorantGuides();
+const otherGameGuides = getMixedExternalGuides();
+const homeHref = getLocalizedPath('home', locale);
+
+function externalGuideLabel(guide: ResolvedExternalGuide): string {
+	const topic = guide.title.match(/Guide:\s*(.+)$/i)?.[1]?.split('&')[0].trim() ?? 'Guide';
+	const shortTopic = topic.length > 18 ? `${topic.slice(0, 15).trimEnd()}…` : topic;
+	const date = new Date(`${guide.published}T00:00:00Z`);
+	const stamp = `${date.getUTCMonth() + 1}/${date.getUTCDate()}`;
+	return `${guide.gameName}: ${shortTopic} · ${stamp}`;
+}
+
+function nativeGuideLabel(title: string): string {
+	const trimmed = title.replace(/^Valorant\s+/i, '').trim();
+	return trimmed.length <= 38 ? trimmed : `${trimmed.slice(0, 35).trimEnd()}…`;
+}
+
+const title = 'Game Guides Hub | Valorant & Multi-Game Gameplay Guides';
+const description =
+	'Valorant progression guides plus dedicated gameplay guides for Fortnite, Tarkov, Valorant, Palworld, and dozens more titles.';
+
+const canonicalURL = absoluteGuideUrl();
+
+const extraGraph = [
+	{
+		'@type': 'CollectionPage',
+		'@id': `${canonicalURL}#collection`,
+		name: title,
+		description,
+		url: canonicalURL,
+		inLanguage: 'en',
+		isPartOf: { '@id': `${siteConfig.url}/#website` },
+	},
+];
+---
+
+<Layout
+	title={title}
+	description={description}
+	canonicalPath={guidesBasePath}
+	locale={locale}
+	breadcrumbs={[{ label: 'Home', href: homeHref }, { label: 'Guides' }]}
+	extraGraph={extraGraph}
+>
+	<Navbar locale={locale} />
+	<main class="guides content-page content-page--medium">
+		<header class="content-hero">
+			<p class="content-hero__eyebrow">Guides hub</p>
+			<h1>Game guides</h1>
+			<p class="content-hero__intro">
+				Start with our native Valorant progression guides, then browse dedicated gameplay guides for other
+				titles below.
+			</p>
+		</header>
+
+		<section class="content-section guides__section--native" aria-labelledby="native-guides-title">
+			<h2 id="native-guides-title" class="content-section__title">Valorant guides</h2>
+			<p class="content-section__intro">
+				Our primary guides covering Competitive, map rotations farming, factions, mission types, and patch notes.
+			</p>
+			<div class="content-grid content-grid--two">
+		{
+			nativeGuides.map((post, index) => (
+				<article class="ui-card">
+					<img
+						class="ui-card__media"
+						src={post.imageSrc}
+						alt={post.translation.imageAlt}
+						width="640"
+						height="360"
+						loading={index < 3 ? 'eager' : 'lazy'}
+						decoding="async"
+					/>
+					<div class="ui-card__body">
+						<span class="ui-card__cat">Valorant</span>
+						<h3 class="ui-card__title">
+							<a href={post.canonicalPath}>{nativeGuideLabel(post.translation.title)}</a>
+						</h3>
+						<p class="ui-card__copy">{post.translation.intro}</p>
+					</div>
+				</article>
+			))
+		}
+			</div>
+
+			<ValorantAuthorityLinks headingLevel="h3" />
+		</section>
+
+		<section class="content-section guides__section--external" aria-labelledby="external-guides-title">
+			<h2 id="external-guides-title" class="content-section__title">Other Games Guides</h2>
+			<p class="content-section__intro">
+				Gameplay guides for other titles — each article focuses on one game&apos;s core loop, progression,
+				and decision-making.
+			</p>
+
+			<div class="content-grid content-grid--two">
+				{
+					otherGameGuides.map((guide, index) => (
+						<article class="ui-card">
+							<img
+								class="ui-card__media"
+								src={guide.imageSrc}
+								alt={guide.imageAlt}
+								width="640"
+								height="360"
+								loading="lazy"
+								decoding="async"
+							/>
+							<div class="ui-card__body">
+								<span class="ui-card__cat">{guide.gameName}</span>
+								<h3 class="ui-card__title">
+									<a href={guide.canonicalPath}>{externalGuideLabel(guide)}</a>
+								</h3>
+							</div>
+						</article>
+					))
+				}
+			</div>
+		</section>
+	</main>
+	<SiteFooter locale={locale} />
+</Layout>

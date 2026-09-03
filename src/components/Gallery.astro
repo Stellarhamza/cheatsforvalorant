@@ -1,0 +1,189 @@
+---
+import { valorantImages } from '../data/valorant';
+import { getGalleryUi } from '../data/i18n/gallery-ui';
+import { localizeInternalHref } from '../data/i18n/routing';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import { contentSrc, contentSrcSet, galleryTileSizes } from '../lib/responsive-images';
+
+interface Props {
+	locale?: LocaleCode;
+	priority?: boolean;
+}
+
+const locale = Astro.props.locale ?? defaultLocale;
+const gallery = getGalleryUi(locale);
+
+const slides = valorantImages.gallery.map((image) => ({
+	src: contentSrc(image.src),
+	srcset: contentSrcSet(image.src),
+	alt: image.alt,
+	href: localizeInternalHref(image.href, locale),
+	linkLabel: galleryLinkLabel(localizeInternalHref(image.href, locale), image.src),
+}));
+const marqueeSlides = [...slides, ...slides];
+
+function galleryLinkLabel(href: string, src: string): string {
+	const file = src.match(/\/([^/]+?)(?:-\d+w)?\.(webp|jpg|jpeg|png)$/)?.[1] ?? '';
+	const labels: Record<string, string> = {
+		'valorant-cheats-main-menu': 'Main menu shot',
+		'valorant-esp-wallhack-overlay': 'ESP overlay shot',
+		'valorant-esp-enemy-boxes': 'ESP boxes shot',
+		'valorant-aimbot-combat': 'Aimbot combat shot',
+		'valorant-cheats-settings-panel': 'Settings panel shot',
+		'valorant-radar-hack-minimap': 'Radar minimap shot',
+		'valorant-cheats-combat-esp': 'Combat ESP shot',
+	};
+	if (labels[file]) return labels[file];
+	const slug = href.replace(/^\/|\/$/g, '').split('/').pop() ?? 'page';
+	return `Open ${slug.replace(/-/g, ' ')}`;
+}
+---
+
+<section class="gallery" id="gallery" aria-labelledby="gallery-title">
+	<header class="gallery__head sr-only">
+		<h2 id="gallery-title" class="riot-heading">{gallery.title}</h2>
+		<p class="gallery__sub">In-game ESP, aimbot, and radar screenshots. Click any image to open that page.</p>
+	</header>
+
+	<div class="gallery__layout gallery__layout--seo" aria-hidden="true">
+		<div class="gallery__marquee" aria-label="Valorant cheats image gallery">
+			<div class="gallery__marquee-track">
+				{
+					marqueeSlides.map((slide, index) => (
+						<a
+							href={slide.href}
+							class="gallery__marquee-slide"
+							aria-label={slide.linkLabel}
+							aria-hidden={index >= slides.length ? 'true' : undefined}
+							tabindex={index >= slides.length ? -1 : undefined}
+						>
+							<img
+								src={slide.src}
+								srcset={slide.srcset}
+								sizes={galleryTileSizes}
+								alt={slide.alt}
+								width="1280"
+								height="720"
+								loading={index === 0 ? 'eager' : 'lazy'}
+								decoding="async"
+								draggable="false"
+							/>
+						</a>
+					))
+				}
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.gallery {
+		width: 100%;
+	}
+
+	.gallery__layout--seo {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border: 0;
+	}
+
+	.gallery__layout--seo .gallery__marquee-track {
+		animation: none;
+	}
+
+	.gallery__eyebrow,
+	.gallery__title {
+		display: none;
+	}
+
+	.gallery__head {
+		margin-bottom: clamp(2rem, 4vw, 3rem);
+	}
+
+	.gallery__sub {
+		margin: 0.75rem 0 0;
+		color: var(--color-muted);
+		max-width: 44rem;
+		font-size: 0.94rem;
+		line-height: 1.6;
+	}
+
+	.gallery__layout {
+		display: grid;
+		gap: 0.85rem;
+		border: 1px solid rgba(255, 255, 255, 0.08);
+		border-radius: 1rem;
+		background: rgba(14, 18, 20, 0.72);
+		overflow: hidden;
+	}
+
+	.gallery__marquee {
+		overflow: hidden;
+		width: 100%;
+		padding: 1.15rem 0 1.25rem;
+		mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+	}
+
+	.gallery__marquee-track {
+		display: flex;
+		width: max-content;
+		gap: 0.75rem;
+		animation: gallery-marquee 48s linear infinite;
+		will-change: transform;
+	}
+
+	.gallery__marquee-slide {
+		display: block;
+		flex: 0 0 auto;
+		width: clamp(220px, 28vw, 320px);
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.gallery__marquee-slide img {
+		display: block;
+		width: 100%;
+		aspect-ratio: 16 / 10;
+		object-fit: cover;
+		border-radius: 0.75rem;
+		border: 1px solid rgba(255, 70, 85, 0.24);
+		background: var(--color-surface);
+	}
+
+	.gallery__marquee-slide:hover img {
+		border-color: rgba(255, 70, 85, 0.45);
+	}
+
+	@keyframes gallery-marquee {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(-50%);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.gallery__marquee {
+			overflow-x: auto;
+			mask-image: none;
+			scrollbar-width: none;
+		}
+
+		.gallery__marquee-track {
+			animation: none;
+		}
+	}
+
+	@media (max-width: 560px) {
+		.gallery__marquee-slide {
+			width: clamp(200px, 72vw, 280px);
+		}
+	}
+</style>

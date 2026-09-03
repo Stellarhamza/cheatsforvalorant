@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /images/
+
+# Prefer HTTPS canonical host: https://cheatsforvalorant.com
+# Primary sitemap index (English + 21 locales + images):
+Sitemap: https://cheatsforvalorant.com/sitemap-index.xml
+# English core pages shortcut:
+Sitemap: https://cheatsforvalorant.com/sitemap.xml

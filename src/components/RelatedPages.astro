@@ -1,0 +1,87 @@
+---
+import { getUi } from '../data/i18n';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import { getProductRelatedLinks, type InternalLink } from '../lib/internal-links';
+
+interface Props {
+	locale?: LocaleCode;
+	links?: InternalLink[];
+	title?: string;
+}
+
+const locale = Astro.props.locale ?? defaultLocale;
+const ui = getUi(locale);
+const title = Astro.props.title ?? ui.common.relatedPages;
+const links =
+	Astro.props.links ??
+	getProductRelatedLinks(locale, {
+		esp: ui.nav.esp,
+		aimbot: ui.nav.aimbot,
+		features: ui.nav.features,
+		setup: ui.nav.setup,
+		pricing: ui.nav.pricing,
+		updates: ui.nav.updates,
+		faq: ui.nav.faq,
+	});
+---
+
+{
+	links.length > 0 && (
+		<nav class="related-pages" aria-label={title}>
+			<p class="related-pages__label">{title}</p>
+			<div class="related-pages__row">
+				{links.map((link) => (
+					<a href={link.href} class="related-pages__link">
+						{link.label}
+					</a>
+				))}
+			</div>
+		</nav>
+	)
+}
+
+<style>
+	.related-pages {
+		margin-top: 1.25rem;
+		padding-top: 1.15rem;
+		border-top: 1px solid rgba(255, 70, 85, 0.12);
+	}
+
+	.related-pages__label {
+		margin: 0 0 0.65rem;
+		font-size: 0.72rem;
+		font-weight: 800;
+		color: var(--color-faint);
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+	}
+
+	.related-pages__row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.55rem;
+	}
+
+	.related-pages__link {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.55rem 0.85rem;
+		border-radius: 999px;
+		border: 1px solid rgba(255, 70, 85, 0.2);
+		background: var(--color-surface);
+		color: rgba(236, 232, 225, 0.78);
+		font-size: 0.8rem;
+		font-weight: 700;
+		transition:
+			color 0.2s ease,
+			border-color 0.2s ease,
+			background 0.2s ease;
+	}
+
+	.related-pages__link:hover,
+	.related-pages__link:focus-visible {
+		color: var(--color-ink);
+		border-color: rgba(255, 70, 85, 0.42);
+		background: var(--color-surface-raised);
+	}
+</style>

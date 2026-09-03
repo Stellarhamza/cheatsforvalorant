@@ -1,0 +1,76 @@
+---
+import { homeFaqs } from '../data/site';
+import { getLocalizedPath } from '../data/i18n/routing';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import FaqList from './FaqList.astro';
+
+interface Props {
+	title?: string;
+	locale?: LocaleCode;
+}
+
+const locale = Astro.props.locale ?? defaultLocale;
+const { title = 'Frequently asked questions' } = Astro.props;
+const faqHref = getLocalizedPath('faq', locale);
+---
+
+<section class="home-faq" aria-labelledby="home-faq-title">
+	<div class="section-head home-faq__head">
+		<h2 id="home-faq-title" class="riot-heading">
+			{title}
+		</h2>
+		<p class="section-head__copy home-faq__intro">
+			Quick answers about setup, features, Competitive and Spike Rush use, patch-day status, and support.
+		</p>
+	</div>
+
+	<FaqList items={homeFaqs} groupByCategory />
+
+	<div class="home-faq__footer sr-only">
+		<a class="home-faq__link" href={faqHref}>See all FAQ questions</a>
+		<a class="home-faq__link home-faq__link--muted" href="/blog/">Read Valorant guides</a>
+	</div>
+</section>
+
+<style>
+	.home-faq {
+		padding-block: 0;
+	}
+
+	.home-faq__head {
+		margin-bottom: clamp(2rem, 4vw, 2.75rem);
+	}
+
+	.home-faq :global(.faq-list) {
+		padding-bottom: clamp(0.5rem, 2vw, 1rem);
+	}
+
+	.home-faq__intro {
+		margin: 0;
+	}
+
+	.home-faq__footer {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem 1.5rem;
+		margin-top: 1.75rem;
+	}
+
+	.home-faq__link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		color: var(--color-orchid);
+		font-size: 0.9rem;
+		font-weight: 700;
+	}
+
+	.home-faq__link--muted {
+		color: var(--color-muted);
+		font-weight: 650;
+	}
+
+	.home-faq__link:hover {
+		color: var(--color-ink);
+	}
+</style>

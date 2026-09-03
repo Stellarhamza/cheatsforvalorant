@@ -1,0 +1,68 @@
+---
+import { getCheatShowcase } from '../data/cheat-showcase';
+import { getUi } from '../data/i18n';
+import { getLocalizedPath } from '../data/i18n/routing';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import ModuleIcon from './ModuleIcon.astro';
+
+interface Props {
+	locale?: LocaleCode;
+}
+
+const locale = Astro.props.locale ?? defaultLocale;
+const ui = getUi(locale);
+const modules = getCheatShowcase(locale);
+const pricingHref = getLocalizedPath('pricing', locale);
+const storeHref = '#store';
+---
+
+<section class="module-showcase widget--spacing-padding-large" aria-labelledby="cheat-showcase-title">
+	<div class="content-center content-gutter--large">
+		<header class="section-head module-showcase__head">
+			<div class="module-showcase__head-copy">
+				<h2 id="cheat-showcase-title" class="riot-heading">Included cheat modules</h2>
+				<p class="section-head__copy module-showcase__subtitle">
+					Every license ships with ESP, aimbot, wallhack, and radar. Open a module to see screenshots,
+					settings, and setup notes.
+				</p>
+			</div>
+			<a href={storeHref} class="button-standard button-standard--fill module-showcase__cta">
+				<span>{ui.nav.buyNow}</span>
+			</a>
+		</header>
+
+		<div class="module-showcase__grid">
+			{
+				modules.map((item) => (
+					<a href={item.href} class="module-card">
+						<div class="module-card__media">
+							<img src={item.image} alt={item.alt} width="640" height="400" loading="lazy" decoding="async" />
+						</div>
+						<div class="module-card__body">
+							<div class="module-card__title-row">
+								<ModuleIcon icon={item.icon} />
+								<h3 class="module-card__label">{item.label}</h3>
+								<svg class="module-card__arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+									<path
+										d="M5 12h14m-6-6l6 6-6 6"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+							<p class="module-card__desc">{item.desc}</p>
+						</div>
+					</a>
+				))
+			}
+		</div>
+
+		<div class="module-showcase__foot">
+			<a href={pricingHref} class="button-standard button-standard--black button-standard--small">
+				<span>Compare plans — {ui.nav.pricing}</span>
+			</a>
+		</div>
+	</div>
+</section>

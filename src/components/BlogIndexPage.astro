@@ -1,0 +1,163 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from './Navbar.astro';
+import SiteFooter from './SiteFooter.astro';
+import { blogUi, type LocaleCode } from '../data/i18n/locales';
+import {
+	absoluteBlogUrl,
+	getAllPostsForLocale,
+	getBlogBasePath,
+	getFeaturedPosts,
+	getPostsByCategory,
+} from '../data/blog/helpers';
+import { siteConfig } from '../data/site';
+import { getLocalizedPath } from '../data/i18n/routing';
+
+interface Props {
+	locale: LocaleCode;
+}
+
+const { locale } = Astro.props;
+const ui = blogUi[locale];
+const posts = getAllPostsForLocale(locale);
+const featured = getFeaturedPosts(locale, 3);
+const gameGuides = getPostsByCategory(locale, 'Valorant Game Guides');
+const productPosts = posts.filter((post) => post.category !== 'Valorant Game Guides');
+const canonicalPath = getBlogBasePath(locale);
+const canonicalURL = absoluteBlogUrl(locale);
+const homeHref = getLocalizedPath('home', locale);
+
+const articleListSchema = {
+	'@type': 'CollectionPage',
+	'@id': `${canonicalURL}#collection`,
+	name: ui.blogH1,
+	description: ui.blogDescription,
+	url: canonicalURL,
+	inLanguage: locale,
+	isPartOf: { '@id': `${siteConfig.url}/#website` },
+	mainEntity: {
+		'@type': 'ItemList',
+		itemListElement: posts.map((post, i) => ({
+			'@type': 'ListItem',
+			position: i + 1,
+			url: absoluteBlogUrl(locale, post.translation.slug),
+			name: post.translation.title,
+		})),
+	},
+};
+---
+
+<Layout
+	title={ui.blogTitle}
+	description={ui.blogDescription}
+	canonicalPath={canonicalPath}
+	locale={locale}
+	breadcrumbs={[{ label: ui.home, href: homeHref }, { label: ui.blogH1 }]}
+	extraGraph={[articleListSchema]}
+>
+	<Navbar locale={locale} />
+	<main class="blog content-page content-page--medium">
+		<header class="content-hero">
+			<p class="content-hero__eyebrow">Valorant guides &amp; product intel</p>
+			<h1>{ui.blogH1}</h1>
+			<p class="content-hero__intro">{ui.blogIntro}</p>
+		</header>
+
+		{
+			featured.length > 0 && (
+				<section class="content-featured" aria-label="Featured">
+					{
+						featured.map((post, index) => (
+							<a class="content-featured__card" href={post.canonicalPath}>
+								<img
+									src={post.imageSrc}
+									alt={post.translation.imageAlt}
+									width="640"
+									height="360"
+									loading={index === 0 ? 'eager' : 'lazy'}
+									decoding="async"
+									fetchpriority={index === 0 ? 'high' : undefined}
+								/>
+								<div>
+									<span class="ui-card__cat">{post.category}</span>
+									<h2>{post.translation.title}</h2>
+									<p>{post.translation.intro}</p>
+									<span class="ui-card__link">{ui.readMore}</span>
+								</div>
+							</a>
+						))
+					}
+				</section>
+			)
+		}
+
+		{
+			gameGuides.length > 0 && (
+				<section class="content-section" aria-labelledby="blog-game-guides">
+					<h2 id="blog-game-guides" class="content-section__title">
+						Valorant game guides
+					</h2>
+					<p class="content-section__intro">
+						Competitive, map rotations, factions, missions, and patch notes — with links to official Valorant
+						Wiki and Riot Games resources.
+					</p>
+					<div class="content-grid">
+						{gameGuides.map((post) => (
+							<a class="ui-card" href={post.canonicalPath}>
+								<img
+									class="ui-card__media"
+									src={post.imageSrc}
+									alt={post.translation.imageAlt}
+									width="480"
+									height="270"
+									loading="lazy"
+									decoding="async"
+								/>
+								<div class="ui-card__body">
+									<span class="ui-card__cat">{post.category}</span>
+									<h2 class="ui-card__title">{post.translation.title}</h2>
+									<p class="ui-card__copy">{post.translation.intro}</p>
+									<p class="ui-card__meta">
+										{ui.updated} {post.updated}
+									</p>
+								</div>
+							</a>
+						))}
+					</div>
+				</section>
+			)
+		}
+
+		<section class="content-section" aria-labelledby="blog-product-posts">
+			<h2 id="blog-product-posts" class="content-section__title">
+				Product guides &amp; comparisons
+			</h2>
+			<div class="content-grid" aria-label={ui.allPosts}>
+				{
+					productPosts.map((post) => (
+						<a class="ui-card" href={post.canonicalPath}>
+							<img
+								class="ui-card__media"
+								src={post.imageSrc}
+								alt={post.translation.imageAlt}
+								width="480"
+								height="270"
+								loading="lazy"
+								decoding="async"
+							/>
+							<div class="ui-card__body">
+								<span class="ui-card__cat">{post.category}</span>
+								<h2 class="ui-card__title">{post.translation.title}</h2>
+								<p class="ui-card__copy">{post.translation.intro}</p>
+								<p class="ui-card__meta">
+									{ui.updated} {post.updated}
+								</p>
+							</div>
+						</a>
+					))
+				}
+			</div>
+		</section>
+	</main>
+	<SiteFooter locale={locale} />
+</Layout>

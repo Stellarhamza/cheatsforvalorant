@@ -1,0 +1,173 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import PricingFeatureList from '../components/PricingFeatureList.astro';
+import Gallery from '../components/Gallery.astro';
+import HomeFaq from '../components/HomeFaq.astro';
+import HomeSeo from '../components/HomeSeo.astro';
+import HomeWhatsHappening from '../components/HomeWhatsHappening.astro';
+import HomeGamesShowcase from '../components/HomeGamesShowcase.astro';
+import CustomerReviews from '../components/CustomerReviews.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { getLocaleContent, getPageContent } from '../data/i18n';
+import { getCanonicalPath } from '../data/i18n/routing';
+import type { LocaleCode } from '../data/i18n/locales';
+import { defaultLocale } from '../data/i18n/locales';
+import { homeFaqs, productInfo, siteConfig, customerReviewStats, customerReviews } from '../data/site';
+import { valorantImages } from '../data/valorant';
+import {
+	buildAggregateOffer,
+	buildFaqSchemaNode,
+	buildSoftwareApplicationSchema,
+} from '../data/schema';
+import { heroPreloadSrc, heroSizes, heroSrcSet, heroIsExternal } from '../lib/responsive-images';
+
+interface Props {
+	locale: LocaleCode;
+}
+
+const { locale } = Astro.props;
+const { ui } = getLocaleContent(locale);
+const home = getPageContent(locale, 'home');
+
+const title = home.title;
+const description = home.description;
+const canonicalPath = getCanonicalPath('home', locale);
+const canonicalURL = new URL(canonicalPath, siteConfig.url).href;
+const heroImage = new URL(valorantImages.hero, siteConfig.url).href;
+
+const extraGraph: Record<string, unknown>[] =
+	locale === defaultLocale
+		? [
+	{
+		'@type': 'Product',
+		'@id': `${canonicalURL}#product`,
+		name: productInfo.name,
+		description: productInfo.summary,
+		image: heroImage,
+		brand: { '@type': 'Brand', name: productInfo.brand },
+		url: canonicalURL,
+		offers: buildAggregateOffer(canonicalURL),
+		aggregateRating: {
+			'@type': 'AggregateRating',
+			ratingValue: customerReviewStats.averageRating.toFixed(1),
+			reviewCount: customerReviewStats.totalCount,
+			bestRating: '5',
+			worstRating: '1',
+		},
+		review: customerReviews.map((review) => ({
+			'@type': 'Review',
+			author: { '@type': 'Person', name: review.handle },
+			datePublished: review.date,
+			reviewRating: {
+				'@type': 'Rating',
+				ratingValue: String(review.rating),
+				bestRating: '5',
+				worstRating: '1',
+			},
+			reviewBody: review.text,
+		})),
+	},
+	buildSoftwareApplicationSchema(canonicalURL, heroImage),
+	buildFaqSchemaNode(canonicalURL, homeFaqs),
+]
+		: [];
+---
+
+<Layout
+	title={title}
+	description={description}
+	canonicalPath={canonicalPath}
+	ogImage={siteConfig.defaultOgImage}
+	ogImageAlt={home.imageAlt}
+	locale={locale}
+	pageId="home"
+	breadcrumbs={[{ label: ui.nav.home }]}
+	extraGraph={extraGraph}
+	lcpImage={heroPreloadSrc}
+	lcpImageSrcSet={heroIsExternal ? undefined : heroSrcSet}
+	lcpImageSizes={heroSizes}
+>
+	<Navbar locale={locale} pageId="home" overlay />
+	<main class="site">
+		<Hero
+			locale={locale}
+			imageAlt={home.imageAlt}
+			accent={ui.hero.accent}
+			subtitle={ui.hero.subtitle}
+			subtitleShort={ui.hero.subtitleShort}
+		/>
+		<HomeWhatsHappening locale={locale} />
+		<HomeGamesShowcase locale={locale} />
+		<section class="site__section site__section--store riot-section widget--spacing-padding-large" id="store" aria-label={ui.product.title}>
+			<div class="content-center content-gutter--large section-stack store-stack">
+				<header class="section-head store-intro sr-only">
+					<h2 class="riot-heading">{ui.product.title}</h2>
+					<p class="section-head__copy store-intro__copy">{productInfo.summary}</p>
+					<p class="section-head__note store-intro__note">ESP wallhack, aimbot, triggerbot, and radar — one undetected Valorant cheat license for Windows PC.</p>
+				</header>
+				<PricingFeatureList locale={locale} showRelatedPages={false} />
+			</div>
+		</section>
+		<section class="site__section site__section--reviews riot-section widget--spacing-padding-large">
+			<div class="content-center content-gutter--large">
+				<CustomerReviews locale={locale} />
+			</div>
+		</section>
+		<section class="site__section site__section--faq riot-section widget--spacing-padding-large">
+			<div class="content-center content-gutter--large">
+				<HomeFaq locale={locale} />
+			</div>
+		</section>
+		{locale === defaultLocale && <HomeSeo />}
+		<section class="site__section site__section--gallery riot-section widget--spacing-padding-large is-seo-only">
+			<div class="content-center content-gutter--large">
+				<Gallery locale={locale} />
+			</div>
+		</section>
+	</main>
+	<SiteFooter locale={locale} />
+</Layout>
+
+<style>
+	.site {
+		overflow-x: clip;
+	}
+
+	.site__section--reviews,
+	.site__section--store,
+	.site__section--gallery {
+		content-visibility: auto;
+		contain-intrinsic-size: 1px 720px;
+		padding-block: 0;
+	}
+
+	.site__section--faq {
+		padding-block: clamp(2.5rem, 5vw, 3.5rem);
+	}
+
+	.site__section--gallery.is-seo-only {
+		padding-block: 0;
+		margin: 0;
+		contain-intrinsic-size: 1px 1px;
+	}
+
+	.store-intro__copy {
+		color: rgba(236, 232, 225, 0.78);
+	}
+
+	.store-intro__note {
+		margin: 0;
+	}
+
+	.store-stack {
+		gap: var(--section-stack-gap);
+	}
+
+	@media (max-width: 760px) {
+		.site__section--store {
+			contain-intrinsic-size: 1px 900px;
+		}
+	}
+</style>

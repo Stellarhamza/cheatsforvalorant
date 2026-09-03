@@ -1,0 +1,389 @@
+---
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { getUi } from '../data/i18n';
+import { getLocalizedPath, getNavForLocale, type PageId } from '../data/i18n/routing';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import { siteConfig } from '../data/site';
+import { valorantBrandLogo } from '../data/valorant';
+
+interface Props {
+	locale?: LocaleCode;
+	pageId?: PageId;
+	/** Home hero overlay: transparent, static (scrolls away), not sticky. */
+	overlay?: boolean;
+}
+
+const { locale = defaultLocale, pageId = 'home', overlay = false } = Astro.props;
+const ui = getUi(locale);
+const navLinks = getNavForLocale(locale, ui.nav);
+const ctaLabel = ui.nav.buyNow;
+const current = Astro.url.pathname;
+const homeHref = getLocalizedPath('home', locale);
+
+const isActive = (href: string, linkPageId?: PageId) => {
+	if (linkPageId === 'home') {
+		return current === href || current === `/${locale}/` || current === '/';
+	}
+	if (href === '/reviews/') {
+		return current === '/reviews/' || current.startsWith('/reviews/');
+	}
+	if (linkPageId === 'hacks') {
+		return (
+			current === href ||
+			current.startsWith(href) ||
+			current.startsWith('/valorant-cheats')
+		);
+	}
+	return current === href || current.startsWith(href);
+};
+---
+
+<header class:list={['nav', { 'nav--overlay': overlay }]} data-nav>
+	<div class="nav__backdrop" data-nav-backdrop hidden aria-hidden="true"></div>
+
+	<div class="nav__shell content-center content-gutter--large">
+		<div class="nav__start">
+			<a class="nav__brand" href={homeHref} aria-label={siteConfig.name}>
+				<img
+					class="nav__brand-logo"
+					src={valorantBrandLogo}
+					alt=""
+					width="40"
+					height="40"
+					decoding="async"
+				/>
+			</a>
+
+			<nav class="nav__links" id="nav-panel" data-nav-panel aria-label="Primary">
+				{
+					navLinks.map((link) => (
+						<a
+							href={link.href}
+							class:list={['nav__link', { 'is-active': isActive(link.href, link.pageId) }]}
+						>
+							{link.label}
+						</a>
+					))
+				}
+			</nav>
+		</div>
+
+		<div class="nav__actions">
+			<a href={siteConfig.checkoutUrl} class="button-standard button-standard--fill nav__cta" rel="noopener noreferrer">
+				<span>{ctaLabel}</span>
+			</a>
+			<LanguageSwitcher pageId={pageId} currentLocale={locale} />
+			<button
+				type="button"
+				class="nav__toggle"
+				aria-label="Open menu"
+				aria-expanded="false"
+				aria-controls="nav-panel"
+				data-nav-toggle
+			>
+				<span class="nav__toggle-icon" aria-hidden="true"></span>
+			</button>
+		</div>
+	</div>
+</header>
+
+<script>
+	const nav = document.querySelector('[data-nav]');
+	if (nav) {
+		const toggle = nav.querySelector('[data-nav-toggle]');
+		const panel = nav.querySelector('[data-nav-panel]');
+
+		const setOpen = (open: boolean) => {
+			toggle?.setAttribute('aria-expanded', String(open));
+			toggle?.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+			nav.classList.toggle('is-open', open);
+			document.body.classList.toggle('nav-open', open);
+			const backdrop = nav.querySelector('[data-nav-backdrop]') as HTMLElement | null;
+			if (backdrop) backdrop.hidden = !open;
+		};
+
+		toggle?.addEventListener('click', () => {
+			setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+		});
+
+		panel?.querySelectorAll('a').forEach((link) => {
+			link.addEventListener('click', () => setOpen(false));
+		});
+
+		document.addEventListener('keydown', (event) => {
+			if (event.key === 'Escape' && nav.classList.contains('is-open')) {
+				setOpen(false);
+			}
+		});
+
+		nav.addEventListener('click', (event) => {
+			const target = event.target as Element;
+			if (nav.classList.contains('is-open') && target.hasAttribute('data-nav-backdrop')) {
+				setOpen(false);
+			}
+		});
+	}
+</script>
+
+<style is:global>
+	body.nav-open {
+		overflow: hidden;
+	}
+</style>
+
+<style>
+	.nav {
+		position: sticky;
+		top: 0;
+		z-index: 80;
+		padding-top: env(safe-area-inset-top, 0px);
+		background: var(--color-surface);
+		border-bottom: 1px solid var(--color-border);
+	}
+
+	.nav--overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: transparent;
+		border-bottom: none;
+	}
+
+	.nav--overlay.is-open {
+		background: var(--color-surface);
+		border-bottom: 1px solid var(--color-border);
+	}
+
+	.nav--overlay .nav__link {
+		text-shadow: 0 1px 14px rgba(0, 0, 0, 0.55);
+	}
+
+	.nav--overlay .nav__brand-logo {
+		filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.45));
+	}
+
+	.nav__shell {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		padding-block: 0.85rem;
+	}
+
+	.nav__start {
+		display: flex;
+		align-items: center;
+		gap: clamp(1rem, 2.5vw, 1.75rem);
+		min-width: 0;
+		flex: 1;
+	}
+
+	.nav__brand {
+		flex-shrink: 0;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 2.5rem;
+		height: 2.5rem;
+		text-decoration: none;
+	}
+
+	.nav__brand-logo {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		object-position: center;
+	}
+
+	.nav__links {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 0.15rem;
+		min-width: 0;
+		overflow-x: auto;
+		scrollbar-width: none;
+	}
+
+	.nav__links::-webkit-scrollbar {
+		display: none;
+	}
+
+	.nav__link {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.5rem 0.8rem;
+		color: rgba(236, 232, 225, 0.72);
+		font-family: var(--font-sans);
+		font-size: 0.84rem;
+		font-weight: 600;
+		letter-spacing: -0.03em;
+		white-space: nowrap;
+		transition: color 0.2s ease;
+	}
+
+	.nav__link:hover,
+	.nav__link.is-active {
+		color: #ece8e1;
+	}
+
+	.nav__actions {
+		display: flex;
+		align-items: center;
+		gap: 0.45rem;
+		flex-shrink: 0;
+		margin-left: auto;
+	}
+
+	.nav__cta {
+		min-width: auto;
+		padding: 0.5rem 0.95rem;
+		font-size: 0.72rem;
+		white-space: nowrap;
+	}
+
+	.nav__toggle {
+		display: none;
+		place-items: center;
+		width: 2.35rem;
+		height: 2.35rem;
+		border: 1px solid rgba(236, 232, 225, 0.18);
+		background: transparent;
+		color: #ece8e1;
+		cursor: pointer;
+	}
+
+	.nav__toggle-icon,
+	.nav__toggle-icon::before,
+	.nav__toggle-icon::after {
+		display: block;
+		width: 16px;
+		height: 2px;
+		background: currentColor;
+		transition:
+			transform 0.25s ease,
+			opacity 0.2s ease;
+	}
+
+	.nav__toggle-icon {
+		position: relative;
+	}
+
+	.nav__toggle-icon::before,
+	.nav__toggle-icon::after {
+		content: '';
+		position: absolute;
+		left: 0;
+	}
+
+	.nav__toggle-icon::before {
+		top: -5px;
+	}
+
+	.nav__toggle-icon::after {
+		top: 5px;
+	}
+
+	.nav__toggle[aria-expanded='true'] .nav__toggle-icon {
+		background: transparent;
+	}
+
+	.nav__toggle[aria-expanded='true'] .nav__toggle-icon::before {
+		top: 0;
+		transform: rotate(45deg);
+	}
+
+	.nav__toggle[aria-expanded='true'] .nav__toggle-icon::after {
+		top: 0;
+		transform: rotate(-45deg);
+	}
+
+	.nav__backdrop {
+		display: none;
+	}
+
+	@media (max-width: 900px) {
+		.nav__start {
+			flex: 1;
+		}
+
+		.nav__backdrop {
+			display: block;
+			position: fixed;
+			inset: 0;
+			z-index: -1;
+			background: rgba(0, 0, 0, 0.72);
+			cursor: pointer;
+		}
+
+		.nav__backdrop[hidden] {
+			display: none;
+		}
+
+		.nav__links {
+			position: fixed;
+			inset: calc(3.75rem + env(safe-area-inset-top, 0px)) 20px auto;
+			z-index: 1;
+			display: grid;
+			gap: 0.25rem;
+			width: auto;
+			min-width: 12rem;
+			max-height: calc(100dvh - 5rem);
+			padding: 0.75rem;
+			background: var(--color-surface-raised);
+			border: 1px solid var(--color-border);
+			overflow-y: auto;
+			scrollbar-width: none;
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+			transform: translateY(-8px);
+			transition:
+				opacity 0.2s ease,
+				transform 0.2s ease,
+				visibility 0.2s ease;
+		}
+
+		.nav__links::-webkit-scrollbar {
+			display: none;
+		}
+
+		.nav.is-open .nav__links {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: auto;
+			transform: translateY(0);
+		}
+
+		.nav__link {
+			padding: 0.85rem 0.75rem;
+			font-size: 0.95rem;
+		}
+
+		.nav__toggle {
+			display: grid;
+		}
+
+		.nav__cta {
+			padding: 0.45rem 0.7rem;
+			font-size: 0.68rem;
+		}
+
+		.nav__actions {
+			gap: 0.35rem;
+		}
+	}
+
+	@media (max-width: 560px) {
+		.nav__shell {
+			gap: 0.5rem;
+		}
+
+		.nav__brand {
+			width: 2.15rem;
+			height: 2.15rem;
+		}
+	}
+</style>

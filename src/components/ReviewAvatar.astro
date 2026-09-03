@@ -1,0 +1,48 @@
+---
+import { getReviewAvatarInitials, getReviewAvatarPalette } from '../lib/review-avatar';
+
+interface Props {
+	handle: string;
+	size?: number;
+}
+
+const { handle, size = 44 } = Astro.props;
+const initials = getReviewAvatarInitials(handle);
+const [from, to] = getReviewAvatarPalette(handle);
+---
+
+<span
+	class="review-avatar"
+	style={`--avatar-size: ${size}px; --avatar-from: ${from}; --avatar-to: ${to}`}
+	aria-hidden="true"
+>
+	<span class="review-avatar__initials">{initials}</span>
+</span>
+
+<style>
+	.review-avatar {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		flex: 0 0 auto;
+		width: var(--avatar-size);
+		height: var(--avatar-size);
+		border-radius: 999px;
+		border: 2px solid rgba(255, 70, 85, 0.38);
+		background: linear-gradient(145deg, var(--avatar-from) 0%, var(--avatar-to) 100%);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.14),
+			0 0 0 1px rgba(10, 14, 18, 0.45);
+	}
+
+	.review-avatar__initials {
+		color: #f4f0ea;
+		font-family: var(--font-sans);
+		font-size: calc(var(--avatar-size) * 0.34);
+		font-weight: 800;
+		line-height: 1;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		user-select: none;
+	}
+</style>

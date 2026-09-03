@@ -1,0 +1,202 @@
+---
+import { getUi } from '../data/i18n';
+import { getLocalizedPath } from '../data/i18n/routing';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import { productFeatureCategories } from '../data/site';
+import RelatedPages from './RelatedPages.astro';
+
+interface Props {
+	locale?: LocaleCode;
+	showFullLink?: boolean;
+	showRelatedPages?: boolean;
+}
+
+const locale = Astro.props.locale ?? defaultLocale;
+const showFullLink = Astro.props.showFullLink ?? true;
+const showRelatedPages = Astro.props.showRelatedPages ?? true;
+const ui = getUi(locale);
+const featuresHref = getLocalizedPath('features', locale);
+---
+
+<section class="pricing-features" aria-labelledby="pricing-features-title">
+	<header class="pricing-features__head">
+		<h2 id="pricing-features-title" class="riot-heading">Features</h2>
+		<p class="pricing-features__subtitle">
+			Everything included for Unrated, Competitive, and Spike Rush on Windows PC.
+		</p>
+		<div class="pricing-features__meta">
+			<span>Windows 10/11</span>
+			<span>Intel / AMD</span>
+			<span>{ui.product.gameBadge}</span>
+		</div>
+	</header>
+
+	<div class="pricing-features__grid">
+		{
+			productFeatureCategories.map((category) => (
+				<article class="pricing-features__card">
+					<h3 class="pricing-features__card-title">{category.title}</h3>
+					<ul
+						class:list={[
+							'pricing-features__list',
+							category.columns === 2 && 'pricing-features__list--two-col',
+						]}
+					>
+						{category.items.map((item) => (
+							<li class="pricing-features__item">{item}</li>
+						))}
+					</ul>
+				</article>
+			))
+		}
+	</div>
+
+	{
+		showFullLink && (
+			<a href={featuresHref} class="button-standard button-standard--black pricing-features__full-link">
+				<span>See all features</span>
+			</a>
+		)
+	}
+
+	{
+		showRelatedPages && <RelatedPages locale={locale} />
+	}
+</section>
+
+<style>
+	.pricing-features {
+		display: grid;
+		gap: clamp(2rem, 4vw, 2.75rem);
+		width: 100%;
+		margin: 0;
+		padding-top: clamp(1.5rem, 3vw, 2rem);
+		border-top: 1px solid rgba(236, 232, 225, 0.08);
+	}
+
+	.pricing-features__head {
+		display: grid;
+		gap: 1rem;
+	}
+
+	.pricing-features__subtitle {
+		margin: 0;
+		max-width: 42rem;
+		color: rgba(236, 232, 225, 0.68);
+		font-size: 1rem;
+		line-height: 1.65;
+	}
+
+	.pricing-features__meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem 0.75rem;
+	}
+
+	.pricing-features__meta span {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.5rem 0.85rem;
+		border-radius: 6.5px;
+		background: var(--color-card);
+		color: rgba(236, 232, 225, 0.82);
+		font-size: 0.75rem;
+		font-weight: 800;
+		line-height: 1.25;
+		letter-spacing: -0.03em;
+		text-transform: uppercase;
+	}
+
+	.pricing-features__grid {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1.25rem;
+		align-items: stretch;
+		overflow: visible;
+	}
+
+	.pricing-features__card {
+		padding: 1.5rem 1.6rem;
+		border-radius: 8px;
+		background: var(--color-card);
+		box-shadow: 0 4px 4px rgba(15, 25, 35, 0.12);
+		overflow: visible;
+		transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+	}
+
+	@media (hover: hover) and (pointer: fine) {
+		.pricing-features__card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 0 28px 0 rgba(255, 70, 85, 0.12);
+		}
+	}
+
+	.pricing-features__card-title {
+		margin: 0 0 1rem;
+		padding-bottom: 0.85rem;
+		border-bottom: 1px solid rgba(236, 232, 225, 0.1);
+		font-family: var(--font-sans);
+		font-size: 0.938rem;
+		font-weight: 800;
+		line-height: 1.2;
+		letter-spacing: -0.03em;
+		text-transform: uppercase;
+		color: #ece8e1;
+	}
+
+	.pricing-features__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: 0;
+	}
+
+	.pricing-features__list--two-col {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.pricing-features__item {
+		padding: 0.65rem 0;
+		border-bottom: 1px solid rgba(236, 232, 225, 0.08);
+		color: rgba(236, 232, 225, 0.88);
+		font-size: 0.9rem;
+		font-weight: 500;
+		line-height: 1.45;
+		letter-spacing: -0.03em;
+	}
+
+	.pricing-features__list li:last-child,
+	.pricing-features__list--two-col li:nth-last-child(-n + 2) {
+		border-bottom: 0;
+	}
+
+	.pricing-features__full-link {
+		justify-self: start;
+		min-width: auto;
+	}
+
+	@media (max-width: 1100px) {
+		.pricing-features__grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+
+	@media (max-width: 900px) {
+		.pricing-features__grid {
+			grid-template-columns: 1fr;
+		}
+
+		.pricing-features__list--two-col {
+			grid-template-columns: 1fr;
+		}
+
+		.pricing-features__list--two-col li:nth-last-child(-n + 2) {
+			border-bottom: 1px solid rgba(236, 232, 225, 0.08);
+		}
+
+		.pricing-features__list--two-col li:last-child {
+			border-bottom: 0;
+		}
+	}
+</style>

@@ -1,0 +1,69 @@
+---
+import { getUi } from '../data/i18n';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import { siteConfig } from '../data/site';
+import { valorantImages } from '../data/valorant';
+
+interface Props {
+	accent?: string;
+	subtitle?: string;
+	subtitleShort?: string;
+	locale?: LocaleCode;
+	imageAlt?: string;
+}
+
+const locale = Astro.props.locale ?? defaultLocale;
+const ui = getUi(locale);
+const accent = Astro.props.accent ?? ui.hero.accent;
+const { imageAlt = ui.images.hero } = Astro.props;
+---
+
+<section class="hero-new" aria-label={imageAlt}>
+	<h1 class="sr-only">{siteConfig.name} — {accent}</h1>
+	<div class="hero-new__background">
+		<video
+			class="hero_new__video"
+			autoplay
+			muted
+			loop
+			playsinline
+			preload="auto"
+			aria-hidden="true"
+		>
+			<source src={valorantImages.heroVideo} type="video/mp4" />
+		</video>
+		<img
+			src={valorantImages.heroPoster}
+			alt=""
+			width="1920"
+			height="1080"
+			class="hero-new__media hero-new__media--fallback"
+			fetchpriority="high"
+			decoding="async"
+		/>
+		<div class="hero-new__shade" aria-hidden="true"></div>
+	</div>
+</section>
+
+<style>
+	.hero-new__media--fallback {
+		display: none;
+	}
+
+	.hero-new__background video,
+	.hero-new__background img,
+	.hero-new__media,
+	.hero_new__video {
+		transition: transform 0.3s ease-out;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.hero_new__video {
+			display: none;
+		}
+
+		.hero-new__media--fallback {
+			display: block;
+		}
+	}
+</style>

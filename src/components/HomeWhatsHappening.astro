@@ -1,0 +1,84 @@
+---
+import { getPostsByCategory } from '../data/blog/helpers';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+
+interface Props {
+	locale?: LocaleCode;
+}
+
+const locale = Astro.props.locale ?? defaultLocale;
+const guides = getPostsByCategory(locale, 'Valorant Game Guides');
+const featured = guides[0];
+const articles = guides.slice(1, 5);
+---
+
+{
+	guides.length > 0 ? (
+		<section class="whats-happening widget--spacing-padding-large" aria-labelledby="whats-happening-title">
+			<div class="whats-happening__container content-center content-gutter--large content-center--large">
+				<div class="whats-happening__title">
+					<h2 id="whats-happening-title">What's happening?</h2>
+					<a href="/guides/" class="button-standard button-standard--black button-standard--small whats-happening__cta">
+						<span>See more</span>
+					</a>
+				</div>
+
+				<div class="whats-happening__wrapper">
+					{
+						featured && (
+							<a href={featured.canonicalPath} class="whats-happening__hero-wrapper">
+								<div class="whats-happening__hero">
+									<div class="responsive-media" style="padding-bottom: 56.25%">
+										<img
+											src={featured.imageSrc}
+											alt={featured.translation.imageAlt}
+											width="960"
+											height="540"
+											loading="eager"
+											decoding="async"
+										/>
+									</div>
+								</div>
+								<div class="whats-happening__hero-content">
+									<h3>{featured.translation.title}</h3>
+									<div class="whats-happening__category-wrapper">
+										<div class="whats-happening__category">{featured.category}</div>
+									</div>
+								</div>
+							</a>
+						)
+					}
+
+					<ul class="whats-happening__articles">
+						{
+							articles.map((post) => (
+								<li class="whats-happening__article">
+									<a href={post.canonicalPath} class="whats-happening__article-card">
+										<div class="whats-happening__article-title-wrapper">
+											<h3 class="whats-happening__article-title">{post.translation.title}</h3>
+											<div class="whats-happening__category-wrapper">
+												<div class="whats-happening__category">{post.category}</div>
+											</div>
+										</div>
+										<div
+											class="whats-happening__article-image"
+											style={`background-image: url(${post.imageSrc})`}
+											role="img"
+											aria-label={post.translation.imageAlt}
+										/>
+									</a>
+								</li>
+							))
+						}
+					</ul>
+				</div>
+
+				<div class="whats-happening__cta--mobile-wrapper">
+					<a href="/guides/" class="button-standard button-standard--black button-standard--small whats-happening__cta whats-happening__cta--mobile">
+						<span>See more</span>
+					</a>
+				</div>
+			</div>
+		</section>
+	) : null
+}

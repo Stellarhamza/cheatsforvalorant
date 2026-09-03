@@ -1,0 +1,376 @@
+---
+import { productInfo, siteConfig, customerReviewStats } from '../data/site';
+import { valorantScreenshots } from '../data/valorant';
+
+const monthly = productInfo.plans.find((p) => p.id === 'monthly');
+const lifetime = productInfo.plans.find((p) => p.id === 'lifetime');
+const aimbotImg = valorantScreenshots.aimbotCombat;
+const espImg = valorantScreenshots.espOverlay;
+const menuImg = valorantScreenshots.settingsPanel;
+---
+
+<section class="home-seo" aria-labelledby="home-seo-title">
+	<div class="content-center content-gutter--large home-seo__inner">
+		<header class="home-seo__intro">
+			<h2 id="home-seo-title" class="riot-heading">Undetected Valorant cheats for Windows PC</h2>
+			<p>
+				{siteConfig.name} is a maintained Windows cheat for
+				<a href="https://playvalorant.com/" target="_blank" rel="noopener noreferrer">Valorant</a>
+				with <a href="/valorant-esp/">ESP wallhack</a>, <a href="/valorant-aimbot/">aimbot</a>,
+				<a href="/valorant-radar/">radar</a>, and triggerbot in one license. Built for Unrated,
+				Competitive, and Spike Rush — with rebuilds after
+				<a href="https://www.riotgames.com/" target="_blank" rel="noopener noreferrer">Riot</a>
+				Vanguard patches. Check <a href="/updates/">Updates</a> before you queue.
+			</p>
+		</header>
+
+		<article class="home-seo__feature" id="aimbot">
+			<div class="home-seo__feature-copy">
+				<h3>Aimbot &amp; silent aim</h3>
+				<p>
+					Our <a href="/valorant-aimbot/">Valorant aimbot</a> helps you land shots near and far. Tune
+					smoothing so aim stays natural, pick bone targets, set FOV, and switch targets mid-fight.
+					Recoil and spread controls make rifles and pistols easier to hold.
+				</p>
+				<p>
+					Silent aim keeps your crosshair looking normal while shots still connect — useful when you
+					want a softer visual footprint. Use visibility checks, moderate smoothing, and sensible
+					hotkeys so your play stays believable. Full settings are covered on the
+					<a href="/valorant-aimbot/">aimbot page</a> and in <a href="/setup/">setup</a>.
+				</p>
+			</div>
+			<figure class="home-seo__feature-media">
+				<img
+					src={aimbotImg.src}
+					alt={aimbotImg.alt}
+					width="960"
+					height="640"
+					loading="lazy"
+					decoding="async"
+				/>
+			</figure>
+		</article>
+
+		<article class="home-seo__feature home-seo__feature--reverse" id="esp">
+			<div class="home-seo__feature-copy">
+				<h3>ESP / wallhack options</h3>
+				<p>
+					<a href="/valorant-esp/">ESP</a> and <a href="/valorant-wallhack/">wallhack</a> show enemies
+					through walls and smokes — health, agent names, weapons, and distance. Spot lurkers, read
+					pushes, and avoid traps like Cypher wires or Killjoy setups before you swing.
+				</p>
+				<p>
+					Customize what you see: enemies only, or utility and spike too. Pair ESP with
+					<a href="/valorant-radar/">radar</a> for map awareness on attack and defense. See the
+					<a href="/features/">full feature list</a> for every overlay toggle.
+				</p>
+			</div>
+			<figure class="home-seo__feature-media">
+				<img
+					src={espImg.src}
+					alt={espImg.alt}
+					width="960"
+					height="640"
+					loading="lazy"
+					decoding="async"
+				/>
+			</figure>
+		</article>
+
+		<section class="home-seo__offer" aria-labelledby="home-seo-offer">
+			<h3 id="home-seo-offer">What we offer</h3>
+			<p class="home-seo__lead">
+				High-quality undetected Valorant cheats with clear setup help and support when you need it —
+				not a dump of broken paste menus.
+			</p>
+
+			<div class="home-seo__pillars">
+				<div>
+					<h4>Quality and security</h4>
+					<p>
+						We prioritize account safety and patch-day rebuilds over shipping unfinished loaders.
+						After Valorant or Vanguard updates, we post status on
+						<a href="/updates/">Updates</a> and push fixes as fast as we can. No tool is
+						permanently undetected — we stay honest about maintenance.
+					</p>
+				</div>
+				<div>
+					<h4>Wide range of features</h4>
+					<p>
+						More than aimbot and ESP: recoil control, spread helpers,
+						<a href="/valorant-radar/">radar</a>, triggerbot, hotkeys, and FOV options. Everything
+						works on attack and defense so you can win rounds more consistently. Compare modules on
+						<a href="/features/">Features</a>.
+					</p>
+				</div>
+				<div>
+					<h4>Fast support</h4>
+					<p>
+						Stuck on setup or settings? Contact
+						<a href="/support/">support</a> with your order ID and Windows version. We help you get
+						running — real answers, not empty auto-replies. Also see our
+						<a href="/faq/">FAQ</a> and <a href="/reviews/">buyer reviews</a>
+						({customerReviewStats.averageRating}/5 from {customerReviewStats.totalCount} reviews).
+					</p>
+				</div>
+				<div>
+					<h4>Easy-to-use interface</h4>
+					<p>
+						Toggle features on or off, use sliders for strength, and bind hotkeys for mid-round
+						changes. Save configs for different playstyles. The overlay stays out of the way. If you
+						can play Valorant, you can use this menu — setup usually takes a few minutes with the
+						<a href="/setup/">setup guide</a>.
+					</p>
+				</div>
+			</div>
+
+			<figure class="home-seo__banner">
+				<img
+					src={menuImg.src}
+					alt={menuImg.alt}
+					width="1280"
+					height="720"
+					loading="lazy"
+					decoding="async"
+				/>
+			</figure>
+		</section>
+
+		<section class="home-seo__guide" aria-labelledby="home-seo-guide">
+			<h3 id="home-seo-guide">Setup and usage guide</h3>
+
+			<div class="home-seo__guide-grid">
+				<div>
+					<h4>Installing</h4>
+					<ol>
+						<li>Buy a license on <a href="/pricing/">Pricing</a> (digital delivery after payment).</li>
+						<li>Download the loader from your order email and run as administrator.</li>
+						<li>Enter your key and wait for inject to finish.</li>
+						<li>If something fails, message <a href="/support/">support</a> with your order ID.</li>
+					</ol>
+				</div>
+				<div>
+					<h4>Getting started in-game</h4>
+					<ol>
+						<li>Launch Valorant normally and join any mode.</li>
+						<li>Open the menu with your hotkey (see <a href="/setup/">setup</a> for defaults).</li>
+						<li>Enable <a href="/valorant-esp/">ESP</a> first so you see enemy positions.</li>
+						<li>Add <a href="/valorant-aimbot/">aimbot</a> if you need gunfight help — then tune.</li>
+					</ol>
+				</div>
+				<div>
+					<h4>Safer settings</h4>
+					<ul>
+						<li>Aimbot smoothing high enough to look human (start around mid–high).</li>
+						<li>Turn on visibility checks so you do not shoot through walls.</li>
+						<li>Keep ESP clean — positions and critical info, not every overlay on max.</li>
+						<li>Save a subtle config for ranked and a stronger one for casual.</li>
+					</ul>
+				</div>
+				<div>
+					<h4>Staying low-profile</h4>
+					<ul>
+						<li>Do not play impossibly perfect every round.</li>
+						<li>Vary performance and avoid extreme headshot rates.</li>
+						<li>Never discuss cheats in-game or on public accounts.</li>
+						<li>Always check <a href="/updates/">patch status</a> before ranked.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="home-seo__close" aria-labelledby="home-seo-close">
+			<h3 id="home-seo-close">Why players choose {siteConfig.name}</h3>
+			<p>
+				Valorant has a high skill ceiling. New players get punished for months; veterans dominate
+				angles and utility. Our undetected Valorant cheats package is for players who want ESP
+				awareness and aim assist without grinding aim trainers all day. Time matters — monthly is
+				<strong>${monthly?.price ?? 35}</strong>, lifetime is
+				<strong>${lifetime?.price ?? 150}</strong>, with free maintenance updates when we rebuild
+				after patches. See <a href="/pricing/">pricing</a>, read
+				<a href="/reviews/">reviews</a>, or start with the
+				<a href="/valorant-cheats/">full Valorant cheats guide</a>.
+			</p>
+			<p>
+				Bottom line: clear features, honest status after Vanguard patches, and support when you need
+				it. Turn frustrating sessions into better rounds — download, configure, and climb with tools
+				that are actively maintained for Windows PC.
+			</p>
+			<p class="home-seo__cta-row">
+				<a class="button-standard button-standard--fill" href={siteConfig.checkoutUrl} rel="noopener noreferrer">
+					Buy Valorant cheats
+				</a>
+				<a class="button-standard button-standard--black" href="/pricing/">Compare plans</a>
+			</p>
+		</section>
+	</div>
+</section>
+
+<style>
+	.home-seo {
+		padding-block: clamp(3rem, 6vw, 5rem);
+		background: var(--color-midnight);
+		color: #ece8e1;
+		border-top: 1px solid rgba(236, 232, 225, 0.08);
+	}
+
+	.home-seo__inner {
+		display: grid;
+		gap: clamp(2.5rem, 5vw, 3.75rem);
+		max-width: 920px;
+	}
+
+	.home-seo__intro {
+		display: grid;
+		gap: 1rem;
+		max-width: 44rem;
+	}
+
+	.home-seo__intro p,
+	.home-seo__feature-copy p,
+	.home-seo__offer p,
+	.home-seo__pillars p,
+	.home-seo__guide p,
+	.home-seo__guide li,
+	.home-seo__close p {
+		margin: 0;
+		color: rgba(236, 232, 225, 0.72);
+		font-size: 1rem;
+		line-height: 1.7;
+	}
+
+	.home-seo a:not(.button-standard) {
+		color: var(--color-orchid);
+		text-decoration: underline;
+		text-underline-offset: 0.15em;
+	}
+
+	.home-seo a:not(.button-standard):hover {
+		color: #ff8a94;
+	}
+
+	.home-seo__feature {
+		display: grid;
+		gap: 1.5rem;
+		align-items: center;
+	}
+
+	.home-seo__feature-copy {
+		display: grid;
+		gap: 0.85rem;
+	}
+
+	.home-seo__feature-copy h3,
+	.home-seo__offer h3,
+	.home-seo__guide h3,
+	.home-seo__close h3 {
+		margin: 0;
+		font-family: var(--font-sans);
+		font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+		font-weight: 800;
+		line-height: 1.2;
+		letter-spacing: -0.03em;
+		color: #ece8e1;
+	}
+
+	.home-seo__feature-media {
+		margin: 0;
+		overflow: hidden;
+		border-radius: 0.5rem;
+		border: 1px solid rgba(255, 70, 85, 0.16);
+		background: var(--color-surface);
+	}
+
+	.home-seo__feature-media img,
+	.home-seo__banner img {
+		display: block;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 16 / 10;
+		object-fit: cover;
+	}
+
+	.home-seo__lead {
+		margin: 0.85rem 0 0 !important;
+		max-width: 40rem;
+	}
+
+	.home-seo__pillars {
+		display: grid;
+		gap: 1.5rem;
+		margin-top: 1.75rem;
+	}
+
+	.home-seo__pillars h4,
+	.home-seo__guide h4 {
+		margin: 0 0 0.45rem;
+		font-size: 0.95rem;
+		font-weight: 800;
+		letter-spacing: -0.02em;
+		color: #ece8e1;
+	}
+
+	.home-seo__banner {
+		margin: 1.75rem 0 0;
+		overflow: hidden;
+		border-radius: 0.5rem;
+		border: 1px solid rgba(255, 70, 85, 0.16);
+	}
+
+	.home-seo__guide-grid {
+		display: grid;
+		gap: 1.5rem;
+		margin-top: 1.5rem;
+	}
+
+	.home-seo__guide ol,
+	.home-seo__guide ul {
+		margin: 0;
+		padding-left: 1.2rem;
+		display: grid;
+		gap: 0.4rem;
+	}
+
+	.home-seo__close {
+		display: grid;
+		gap: 1rem;
+		padding-top: 0.5rem;
+		border-top: 1px solid rgba(236, 232, 225, 0.1);
+	}
+
+	.home-seo__cta-row {
+		display: flex !important;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		margin-top: 0.5rem !important;
+	}
+
+	@media (min-width: 860px) {
+		.home-seo__inner {
+			max-width: 1100px;
+		}
+
+		.home-seo__feature {
+			grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+			gap: 2.25rem;
+		}
+
+		.home-seo__feature--reverse .home-seo__feature-copy {
+			order: 2;
+		}
+
+		.home-seo__feature--reverse .home-seo__feature-media {
+			order: 1;
+		}
+
+		.home-seo__pillars {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 1.75rem 2rem;
+		}
+
+		.home-seo__guide-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 1.75rem 2rem;
+		}
+	}
+</style>
