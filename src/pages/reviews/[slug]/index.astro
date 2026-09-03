@@ -5,7 +5,7 @@ import SiteFooter from '../../../components/SiteFooter.astro';
 import ReviewAvatar from '../../../components/ReviewAvatar.astro';
 import StarRating from '../../../components/StarRating.astro';
 import { customerReviewStats, customerReviews, productInfo, siteConfig } from '../../../data/site';
-import { getReviewPath, reviewsBasePath } from '../../../data/reviews';
+import { getReviewImageAlt, getReviewImageSrc, getReviewPath, reviewsBasePath } from '../../../data/reviews';
 import RelatedPages from '../../../components/RelatedPages.astro';
 import type { CustomerReview } from '../../../data/site';
 
@@ -20,6 +20,9 @@ const { review } = Astro.props as { review: CustomerReview };
 
 const canonicalPath = getReviewPath(review.slug);
 const canonicalURL = new URL(canonicalPath, siteConfig.url).href;
+const reviewImageSrc = getReviewImageSrc(review.slug);
+const reviewImageAlt = getReviewImageAlt(review.handle);
+const reviewImageURL = new URL(reviewImageSrc, siteConfig.url).href;
 
 const dateLabel = new Intl.DateTimeFormat('en', {
 	day: 'numeric',
@@ -40,6 +43,13 @@ const extraGraph: Record<string, unknown>[] = [
 		url: canonicalURL,
 		author: { '@type': 'Person', name: review.handle },
 		datePublished: review.date,
+		image: {
+			'@type': 'ImageObject',
+			url: reviewImageURL,
+			width: 1920,
+			height: 1080,
+			caption: reviewImageAlt,
+		},
 		reviewRating: {
 			'@type': 'Rating',
 			ratingValue: String(review.rating),
@@ -52,6 +62,7 @@ const extraGraph: Record<string, unknown>[] = [
 			'@id': `${siteConfig.url}/#product`,
 			name: productInfo.name,
 			description: productInfo.summary,
+			image: reviewImageURL,
 			brand: { '@type': 'Brand', name: productInfo.brand },
 			url: `${siteConfig.url}/`,
 			aggregateRating: {
@@ -71,8 +82,8 @@ const extraGraph: Record<string, unknown>[] = [
 	title={review.seoTitle}
 	description={review.seoDescription}
 	canonicalPath={canonicalPath}
-	ogImage={siteConfig.defaultOgImage}
-	ogImageAlt={`Valorant Cheats review by @${review.handle}`}
+	ogImage={reviewImageSrc}
+	ogImageAlt={reviewImageAlt}
 	type="article"
 	locale="en"
 	breadcrumbs={[
@@ -94,6 +105,16 @@ const extraGraph: Record<string, unknown>[] = [
 			</nav>
 
 			<article class="review-detail">
+				<img
+					class="review-detail__hero"
+					src={reviewImageSrc}
+					alt={reviewImageAlt}
+					width="1200"
+					height="675"
+					loading="eager"
+					decoding="async"
+					fetchpriority="high"
+				/>
 				<header class="review-detail__head">
 					<ReviewAvatar handle={review.handle} size={52} />
 					<div class="review-detail__meta">
@@ -192,6 +213,15 @@ const extraGraph: Record<string, unknown>[] = [
 		border-radius: var(--radius-card, 1.1rem);
 		border: 1px solid rgba(255, 70, 85, 0.18);
 		background: var(--color-surface);
+	}
+
+	.review-detail__hero {
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
+		border-radius: 0.75rem;
+		border: 1px solid rgba(255, 70, 85, 0.12);
+		background: #0a1c1d;
 	}
 
 	.review-detail__head {

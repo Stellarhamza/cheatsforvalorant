@@ -25,13 +25,12 @@ const marqueeSlides = [...slides, ...slides];
 function galleryLinkLabel(href: string, src: string): string {
 	const file = src.match(/\/([^/]+?)(?:-\d+w)?\.(webp|jpg|jpeg|png)$/)?.[1] ?? '';
 	const labels: Record<string, string> = {
-		'valorant-cheats-main-menu': 'Main menu shot',
-		'valorant-esp-wallhack-overlay': 'ESP overlay shot',
-		'valorant-esp-enemy-boxes': 'ESP boxes shot',
-		'valorant-aimbot-combat': 'Aimbot combat shot',
-		'valorant-cheats-settings-panel': 'Settings panel shot',
-		'valorant-radar-hack-minimap': 'Radar minimap shot',
-		'valorant-cheats-combat-esp': 'Combat ESP shot',
+		'valorant-cheat-esp-stairs': 'ESP stairs wallhack shot',
+		'valorant-cheat-esp-corridor': 'ESP corridor wallhack shot',
+		'valorant-cheat-esp-gekko': 'Bone ESP boxes shot',
+		'valorant-cheat-aimbot-reyna': 'Aimbot combat shot',
+		'valorant-cheat-aimbot-knife': 'Aimbot knife ESP shot',
+		'valorant-cheat-scope-yoru': 'Scoped ESP shot',
 	};
 	if (labels[file]) return labels[file];
 	const slug = href.replace(/^\/|\/$/g, '').split('/').pop() ?? 'page';

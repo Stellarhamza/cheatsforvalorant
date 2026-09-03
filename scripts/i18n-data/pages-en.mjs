@@ -479,7 +479,7 @@ export const enPages = {
 			section(
 				'Before you buy in 2026',
 				'Read the <a href="/valorant-cheats/">Valorant Cheats</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.',
-				'Also compare the <a href="/valorant-cheats/">best Valorant cheats</a> checklist, <a href="/blog/valorant-cheats-2026-whats-new/">2026 blog guide</a>, and <a href="/faq/">FAQ</a>.',
+				'Also compare the <a href="/valorant-cheats/">best Valorant cheats</a> checklist, <a href="/blog/cheats-2026/">2026 blog guide</a>, and <a href="/faq/">FAQ</a>.',
 				'Support is available at support@cheatsforvalorant.com via the <a href="/support/">Support page</a>.',
 			),
 		],
@@ -507,7 +507,7 @@ export const enPages = {
 				'Valorant Cheats vs Valorant cheats — same stack, clear pages',
 				'Searchers use Valorant Cheats and Valorant cheats interchangeably. This pillar focuses on hacks language; the <a href="/valorant-cheats/">Valorant cheats 2026</a> and <a href="/valorant-cheats/">best Valorant cheats</a> pages cover buyer comparisons in cheats wording.',
 				'Deep-dive modules: <a href="/valorant-esp/">Valorant ESP</a>, <a href="/valorant-aimbot/">Valorant Aimbot</a>, <a href="/valorant-wallhack/">wallhack</a>, <a href="/valorant-radar/">radar hack</a>, and <a href="/valorant-aimbot/">soft aim</a>.',
-				'Blog guides expand each keyword: <a href="/blog/valorant-cheats-complete-guide-2026/">hacks complete guide</a>, <a href="/blog/valorant-cheats-buyers-guide/">cheats buyers guide</a>, and <a href="/blog/undetected-valorant-cheats-eac/">undetected anti-cheat notes</a>.',
+				'Blog guides expand each keyword: <a href="/blog/cheats-guide/">hacks complete guide</a>, <a href="/blog/buy-cheats/">cheats buyers guide</a>, and <a href="/blog/undetected-cheats/">undetected anti-cheat notes</a>.',
 			),
 			section(
 				'Valorant Cheats vs single-feature tools',

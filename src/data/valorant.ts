@@ -1,10 +1,8 @@
-import { siteConfig } from './site';
-
 const img = (name: string) => `/images/${name}`;
 
 /** Homepage hero poster — from Riot Games HTML. */
-export const valorantHeroImage = '/images/valorant-cheats-hero.jpg';
-export const valorantHeroPoster = '/images/hero-poster.png';
+export const valorantHeroImage = '/images/valorant-cheat-esp-corridor.jpg';
+export const valorantHeroPoster = '/images/hero-poster.jpg';
 export const valorantHeroVideo = '/videos/hero-cinematic.mp4';
 export const valorantBrandLogo = '/images/valorant-logo-mark.png';
 
@@ -14,62 +12,62 @@ export type ValorantScreenshot = {
 	title: string;
 };
 
-/** Valorant visuals — sourced from Riot / Valorant press assets. */
+/** In-game Valorant cheat screenshots (ESP, aimbot, wallhack overlays). */
 export const valorantScreenshots = {
 	mainMenu: {
-		src: img('valorant-cheats-main-menu.jpg'),
-		alt: 'Valorant cheats menu preview on Windows PC',
-		title: 'Valorant Cheats main menu',
+		src: img('valorant-cheat-esp-stairs.jpg'),
+		alt: 'Valorant ESP wallhack showing enemy skeletons and HP through stairs',
+		title: 'Valorant ESP through stairs',
 	},
 	espOverlay: {
-		src: img('valorant-esp-wallhack-overlay.jpg'),
-		alt: 'Valorant agent lineup with ESP wallhack overlay concept',
-		title: 'Valorant ESP wallhack overlay',
+		src: img('valorant-cheat-esp-corridor.jpg'),
+		alt: 'Valorant ESP wallhack with agent names, distance, and health bars through walls',
+		title: 'Valorant ESP corridor wallhack',
 	},
 	espBoxes: {
-		src: img('valorant-esp-enemy-boxes.jpg'),
-		alt: 'Valorant agent ESP bounding boxes in Competitive',
-		title: 'Valorant ESP enemy boxes',
+		src: img('valorant-cheat-esp-gekko.jpg'),
+		alt: 'Valorant bone ESP and bounding boxes revealing enemies behind geometry',
+		title: 'Valorant bone ESP boxes',
 	},
 	aimbotMenu: {
-		src: img('valorant-aimbot-targeting-menu.jpg'),
-		alt: 'Valorant Champions Tour arena with aimbot targeting overlay',
+		src: img('valorant-cheat-aimbot-reyna.jpg'),
+		alt: 'Valorant aimbot lock with skeleton ESP and health bar on Reyna',
 		title: 'Valorant aimbot targeting',
 	},
 	radarMinimap: {
-		src: img('valorant-radar-hack-minimap.png'),
-		alt: 'Valorant Champions Tour branding for radar hack module',
-		title: 'Valorant radar hack',
+		src: img('valorant-cheat-esp-stairs.jpg'),
+		alt: 'Valorant ESP radar-style awareness with agent distance markers',
+		title: 'Valorant ESP awareness',
 	},
 	combatEsp: {
-		src: img('valorant-cheats-combat-esp.jpg'),
-		alt: 'Valorant Competitive match with ESP overlays active',
+		src: img('valorant-cheat-aimbot-knife.jpg'),
+		alt: 'Valorant aimbot FOV and ESP overlay during knife fight',
 		title: 'Valorant combat ESP',
 	},
 	competitiveEsp: {
-		src: img('valorant-competitive-esp.jpg'),
-		alt: 'Valorant Champions Tour stage with competitive ESP preview',
+		src: img('valorant-cheat-esp-stairs.jpg'),
+		alt: 'Valorant Competitive ESP showing enemy HP and positions through walls',
 		title: 'Valorant Competitive ESP',
 	},
 	aimbotCombat: {
-		src: img('valorant-aimbot-combat.jpg'),
-		alt: 'Valorant esports combat scene with aimbot assist preview',
+		src: img('valorant-cheat-aimbot-reyna.jpg'),
+		alt: 'Valorant aimbot head-lock flare with bounding box ESP in combat',
 		title: 'Valorant aimbot combat',
 	},
 	mapRadar: {
-		src: img('valorant-map-radar.jpg'),
-		alt: 'Valorant agent roster with map radar overlay concept',
-		title: 'Valorant map radar',
+		src: img('valorant-cheat-esp-corridor.jpg'),
+		alt: 'Valorant multi-enemy ESP labels with distance and weapon info',
+		title: 'Valorant multi-target ESP',
 	},
 	abilityEsp: {
-		src: img('valorant-ability-esp.jpg'),
-		alt: 'Valorant agent ability and utility ESP markers',
-		title: 'Valorant ability ESP',
+		src: img('valorant-cheat-scope-yoru.jpg'),
+		alt: 'Valorant sniper-scope view with ESP box and skeleton on enemy',
+		title: 'Valorant scoped ESP',
 	},
 	settingsPanel: {
-		src: img('valorant-cheats-settings-panel.jpg'),
-		alt: 'Valorant cheats settings panel with hotkeys and module toggles',
-		title: 'Valorant cheats settings panel',
+		src: img('valorant-cheat-scope-yoru.jpg'),
+		alt: 'Valorant cheat visuals with aimbot reticle and wallhack skeleton ESP',
+		title: 'Valorant cheat overlay',
 	},
 } as const satisfies Record<string, ValorantScreenshot>;
 

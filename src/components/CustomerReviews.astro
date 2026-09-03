@@ -13,7 +13,6 @@ interface Props {
 const locale = Astro.props.locale ?? defaultLocale;
 const ui = getUi(locale);
 const reviewsUi = ui.reviews;
-const trustUi = ui.trust;
 const featuredReviews = customerReviews.slice(0, 4);
 
 const reviewDateFormatter = new Intl.DateTimeFormat(locale, {
@@ -32,27 +31,18 @@ const verifiedLabel = reviewsUi.verifiedLabel ?? 'Verified customer';
 ---
 
 <section class="reviews" aria-labelledby="reviews-title">
-	<header class="reviews__header">
+	<header class="section-head reviews__head">
 		<div class="reviews__intro">
 			<h2 id="reviews-title" class="riot-heading">{reviewsUi.title}</h2>
-			<div class="reviews__summary">
-				<StarRating rating={customerReviewStats.averageRating} size="md" showValue />
-				<p class="reviews__summary-copy">
+			<p class="section-head__copy reviews__summary">
+				<span class="reviews__score">{customerReviewStats.averageRating.toFixed(1)}</span>
+				<StarRating rating={customerReviewStats.averageRating} size="sm" />
+				<span class="reviews__summary-copy">
 					{customerReviewStats.totalCount} verified {reviewsUi.countLabel}
-				</p>
-			</div>
+				</span>
+			</p>
 		</div>
-		<a class="reviews__see-all button-standard button-standard--black button-standard--small" href={reviewsBasePath}>
-			{seeAllLabel}
-			<svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-				<path
-					d="M5 12h14m-6-6l6 6-6 6"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"></path>
-			</svg>
-		</a>
+		<a class="reviews__see-all" href={reviewsBasePath}>{seeAllLabel}</a>
 	</header>
 
 	<div class="reviews__grid">
@@ -61,21 +51,10 @@ const verifiedLabel = reviewsUi.verifiedLabel ?? 'Verified customer';
 				<article class="reviews__card">
 					<div class="reviews__card-top">
 						<div class="reviews__who">
-							<ReviewAvatar handle={review.handle} size={46} />
+							<ReviewAvatar handle={review.handle} size={40} />
 							<div class="reviews__meta">
 								<p class="reviews__handle">@{review.handle}</p>
-								<p class="reviews__verified">
-									<svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-										<path
-											d="M20 7 10 17l-5-5"
-											stroke="currentColor"
-											stroke-width="2.2"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-										/>
-									</svg>
-									{verifiedLabel}
-								</p>
+								<p class="reviews__verified">{verifiedLabel}</p>
 							</div>
 						</div>
 						<div class="reviews__rating-block">
@@ -87,45 +66,10 @@ const verifiedLabel = reviewsUi.verifiedLabel ?? 'Verified customer';
 					</div>
 					<h3 class="reviews__title">{review.title}</h3>
 					<p class="reviews__text">{review.short}</p>
-					<p class="reviews__read">
-						<a href={getReviewPath(review.slug)}>
-							Read full review
-							<svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-								<path
-									d="M5 12h14m-6-6l6 6-6 6"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-							</svg>
-						</a>
-					</p>
+					<a class="reviews__read" href={getReviewPath(review.slug)}>Read full review</a>
 				</article>
 			))
 		}
-	</div>
-
-	<div class="reviews__foot" aria-label="Purchase highlights">
-		<span class="reviews__chip">
-			<svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-				<path d="M13 2 4 14h7l-1 8 10-14H13l1-6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
-			</svg>
-			{trustUi.delivery}
-		</span>
-		<span class="reviews__chip">
-			<svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-				<rect x="3" y="5" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.6" />
-				<path d="M8 21h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
-			</svg>
-			{trustUi.platform}
-		</span>
-		<span class="reviews__chip">
-			<svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-				<path d="M12 3 4 7v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V7l-8-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
-			</svg>
-			{trustUi.antiCheatShort}
-		</span>
 	</div>
 </section>
 
@@ -134,68 +78,81 @@ const verifiedLabel = reviewsUi.verifiedLabel ?? 'Verified customer';
 		padding-block: 0;
 	}
 
-	.reviews__header {
+	.reviews__head {
 		display: flex;
 		flex-wrap: wrap;
-		align-items: flex-start;
+		align-items: flex-end;
 		justify-content: space-between;
-		gap: 1.25rem 2rem;
-		margin-bottom: clamp(2rem, 4vw, 3rem);
+		gap: 1rem 2rem;
+		margin-bottom: clamp(1.75rem, 3.5vw, 2.5rem);
 	}
 
 	.reviews__intro {
 		display: grid;
-		gap: 0.75rem;
-		max-width: 44rem;
+		gap: 0.65rem;
+		max-width: 40rem;
 	}
 
 	.reviews__summary {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		gap: 0.75rem 1rem;
+		gap: 0.55rem 0.75rem;
+		margin: 0;
+	}
+
+	.reviews__score {
+		color: var(--color-ink);
+		font-size: 1.05rem;
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: -0.02em;
 	}
 
 	.reviews__summary-copy {
-		margin: 0;
-		color: rgba(236, 232, 225, 0.68);
+		color: rgba(236, 232, 225, 0.62);
 		font-size: 0.9rem;
-		font-weight: 600;
-		line-height: 1.45;
+		font-weight: 500;
+		line-height: 1.4;
 	}
 
 	.reviews__see-all {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.45rem;
+		color: var(--color-orchid);
+		font-size: 0.9rem;
+		font-weight: 700;
+		text-decoration: none;
 		white-space: nowrap;
+	}
+
+	.reviews__see-all:hover {
+		color: var(--color-ink);
 	}
 
 	.reviews__grid {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 1rem;
+		gap: 0;
+		border-top: 1px solid rgba(236, 232, 225, 0.08);
 	}
 
 	.reviews__card {
 		display: flex;
 		flex-direction: column;
-		gap: 0.85rem;
-		padding: 1.25rem 1.3rem;
-		border-radius: 0.85rem;
-		border: 1px solid rgba(255, 70, 85, 0.14);
-		background: var(--color-surface);
+		gap: 0.7rem;
+		padding: 1.35rem 0;
+		border: 0;
+		border-bottom: 1px solid rgba(236, 232, 225, 0.08);
+		background: transparent;
 		color: inherit;
-		transition:
-			border-color 0.2s ease,
-			transform 0.2s ease,
-			background 0.2s ease;
 	}
 
-	.reviews__card:hover {
-		border-color: rgba(255, 70, 85, 0.38);
-		background: var(--color-surface-raised);
-		transform: translateY(-2px);
+	.reviews__card:nth-child(odd) {
+		padding-right: 1.25rem;
+	}
+
+	.reviews__card:nth-child(even) {
+		padding-left: 1.25rem;
+		border-left: 1px solid rgba(236, 232, 225, 0.08);
 	}
 
 	.reviews__card-top {
@@ -208,55 +165,50 @@ const verifiedLabel = reviewsUi.verifiedLabel ?? 'Verified customer';
 	.reviews__who {
 		display: flex;
 		align-items: center;
-		gap: 0.75rem;
+		gap: 0.7rem;
 		min-width: 0;
 	}
 
 	.reviews__meta {
 		display: grid;
-		gap: 0.25rem;
+		gap: 0.15rem;
 		min-width: 0;
 	}
 
 	.reviews__handle {
 		margin: 0;
-		font-size: 0.92rem;
+		font-size: 0.9rem;
 		font-weight: 700;
 		color: var(--color-ink);
 		overflow-wrap: anywhere;
 	}
 
 	.reviews__verified {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.3rem;
 		margin: 0;
-		color: var(--color-bright);
-		font-size: 0.68rem;
-		font-weight: 700;
-		line-height: 1;
-		letter-spacing: 0.04em;
-		text-transform: uppercase;
+		color: rgba(236, 232, 225, 0.5);
+		font-size: 0.72rem;
+		font-weight: 500;
+		line-height: 1.3;
 	}
 
 	.reviews__rating-block {
 		display: grid;
 		justify-items: end;
-		gap: 0.35rem;
+		gap: 0.3rem;
 		flex-shrink: 0;
 	}
 
 	.reviews__date {
 		margin: 0;
 		font-size: 0.72rem;
-		color: var(--color-faint);
+		color: rgba(236, 232, 225, 0.45);
 		white-space: nowrap;
 	}
 
 	.reviews__title {
 		margin: 0;
 		font-family: var(--font-sans);
-		font-size: 0.98rem;
+		font-size: 0.95rem;
 		font-weight: 700;
 		line-height: 1.35;
 		letter-spacing: -0.02em;
@@ -265,54 +217,25 @@ const verifiedLabel = reviewsUi.verifiedLabel ?? 'Verified customer';
 
 	.reviews__text {
 		margin: 0;
-		color: rgba(236, 232, 225, 0.78);
+		color: rgba(236, 232, 225, 0.72);
 		font-size: 0.88rem;
-		line-height: 1.65;
+		line-height: 1.6;
 		flex-grow: 1;
 	}
 
 	.reviews__read {
-		margin: 0;
-	}
-
-	.reviews__read a {
 		display: inline-flex;
 		align-items: center;
-		gap: 0.35rem;
+		width: fit-content;
+		margin-top: 0.15rem;
 		color: var(--color-orchid);
 		font-size: 0.84rem;
-		font-weight: 700;
+		font-weight: 650;
 		text-decoration: none;
 	}
 
-	.reviews__read a:hover {
-		color: var(--color-bright);
-	}
-
-	.reviews__foot {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.65rem;
-		margin-top: 1.25rem;
-	}
-
-	.reviews__chip {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.45rem;
-		padding: 0.5rem 0.85rem;
-		border-radius: 999px;
-		border: 1px solid rgba(255, 70, 85, 0.22);
-		background: rgba(255, 70, 85, 0.08);
-		color: rgba(236, 232, 225, 0.82);
-		font-size: 0.78rem;
-		font-weight: 600;
-		line-height: 1.35;
-	}
-
-	.reviews__chip svg {
-		flex-shrink: 0;
-		color: var(--color-bright);
+	.reviews__read:hover {
+		color: var(--color-ink);
 	}
 
 	@media (max-width: 680px) {
@@ -320,19 +243,21 @@ const verifiedLabel = reviewsUi.verifiedLabel ?? 'Verified customer';
 			grid-template-columns: 1fr;
 		}
 
-		.reviews__see-all {
-			width: 100%;
-			justify-content: center;
-			min-height: var(--touch-min);
+		.reviews__card:nth-child(odd),
+		.reviews__card:nth-child(even) {
+			padding-left: 0;
+			padding-right: 0;
+			border-left: 0;
 		}
 
-		.reviews__header {
+		.reviews__head {
 			flex-direction: column;
+			align-items: flex-start;
 		}
 
 		.reviews__card-top {
 			flex-direction: column;
-			gap: 0.75rem;
+			gap: 0.65rem;
 		}
 
 		.reviews__rating-block {

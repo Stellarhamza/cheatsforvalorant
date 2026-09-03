@@ -47,7 +47,7 @@ const TOTAL_HTML_PAGES = BUILT_ENGLISH_PAGES + LOCALE_UI_PAGES + EXTERNAL_GUIDE_
 const HREFLANG_PER_URL = 23; // 22 locales + x-default
 const SITEMAP_INDEX_ENTRIES = 23; // English + 21 locales + images
 const I18N_SITEMAP_URLS = I18N_LOCALES * PAGES_PER_LOCALE;
-const IMAGE_SITEMAP_ENTRIES = 11; // all valorantImages.sitemap screenshots
+const IMAGE_SITEMAP_MIN_ENTRIES = 11; // at least the valorantImages.sitemap catalog
 
 const ENGLISH_PATHS = [
 	'/',
@@ -205,10 +205,10 @@ async function main() {
 		bump();
 	} else ok(`sitemap-i18n.xml has ${I18N_SITEMAP_URLS} localized URLs`);
 
-	if (imageLocs.length !== IMAGE_SITEMAP_ENTRIES) {
-		fail(`sitemap-images.xml: expected ${IMAGE_SITEMAP_ENTRIES} image host URLs, got ${imageLocs.length}`);
+	if (imageLocs.length < IMAGE_SITEMAP_MIN_ENTRIES) {
+		fail(`sitemap-images.xml: expected at least ${IMAGE_SITEMAP_MIN_ENTRIES} image host URLs, got ${imageLocs.length}`);
 		bump();
-	} else ok(`sitemap-images.xml has ${IMAGE_SITEMAP_ENTRIES} image entries`);
+	} else ok(`sitemap-images.xml has ${imageLocs.length} image entries`);
 
 	for (const p of ENGLISH_PATHS) {
 		const full = `${SITE}${p === '/' ? '/' : p}`;
@@ -233,6 +233,13 @@ async function main() {
 
 	await validateSitemapImages(sitemapEn, 'sitemap.xml', bump);
 	await validateSitemapImages(sitemapImages, 'sitemap-images.xml', bump);
+	await validateSitemapImages(sitemapI18n, 'sitemap-i18n.xml', bump);
+
+	for (const locale of I18N_LOCALE_CODES) {
+		const file = path.join(DIST, `sitemap-${locale}.xml`);
+		const xml = await readFile(file, 'utf8');
+		await validateSitemapImages(xml, `sitemap-${locale}.xml`, bump);
+	}
 
 	const homeHreflang = extractHreflangCount(sitemapEn, `${SITE}/`);
 	const homeLangs = extractHreflangs(sitemapEn, `${SITE}/`);

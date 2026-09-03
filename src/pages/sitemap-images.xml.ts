@@ -1,40 +1,67 @@
 import type { APIRoute } from 'astro';
 import { absolutePageUrl, imageSitemapEntries, pageSitemapEntries } from '../data/page-sitemap';
-
-function escapeXml(value: string): string {
-	return value
-		.replaceAll('&', '&amp;')
-		.replaceAll('<', '&lt;')
-		.replaceAll('>', '&gt;')
-		.replaceAll('"', '&quot;')
-		.replaceAll("'", '&apos;');
-}
+import { getBlogSitemapEntries } from '../data/blog/helpers';
+import { getReviewSitemapEntries } from '../data/reviews';
+import { getGuidesSitemapEntries } from '../data/guides/helpers';
+import { escapeXml, sitemapResponseHeaders } from '../data/sitemap-xml';
 
 export const prerender = true;
 
+type HostedImage = {
+	hostPath: string;
+	lastmod: string;
+	url: string;
+	title: string;
+	caption: string;
+};
+
 /**
- * Dedicated image sitemap: each keyword asset is listed under its best host URL
- * so Google Image Search can fetch and associate titles/captions cleanly.
+ * Dedicated image sitemap: every unique keyword / page / blog / review asset
+ * is listed under its best host URL for Google Image Search + SERP thumbnails.
  */
 export const GET: APIRoute = () => {
 	const homepage = absolutePageUrl('/');
-	const lastmod = pageSitemapEntries[0]?.lastmod ?? new Date().toISOString().slice(0, 10);
+	const fallbackLastmod = pageSitemapEntries[0]?.lastmod ?? new Date().toISOString().slice(0, 10);
 
-	const hostByImage = new Map<string, string>();
-	for (const page of pageSitemapEntries) {
+	const englishEntries = [
+		...pageSitemapEntries,
+		...getBlogSitemapEntries().filter((entry) => !entry.path.match(/^\/[a-z]{2}\//)),
+		...getReviewSitemapEntries(),
+		...getGuidesSitemapEntries(),
+	];
+
+	const byImageUrl = new Map<string, HostedImage>();
+
+	for (const page of englishEntries) {
 		for (const image of page.images) {
-			if (!hostByImage.has(image.url)) {
-				hostByImage.set(image.url, absolutePageUrl(page.path));
-			}
+			if (byImageUrl.has(image.url)) continue;
+			byImageUrl.set(image.url, {
+				hostPath: page.path,
+				lastmod: page.lastmod,
+				url: image.url,
+				title: image.title,
+				caption: image.caption,
+			});
 		}
 	}
 
-	const urls = imageSitemapEntries
+	for (const image of imageSitemapEntries) {
+		if (byImageUrl.has(image.url)) continue;
+		byImageUrl.set(image.url, {
+			hostPath: '/',
+			lastmod: fallbackLastmod,
+			url: image.url,
+			title: image.title,
+			caption: image.caption,
+		});
+	}
+
+	const urls = [...byImageUrl.values()]
 		.map((image) => {
-			const host = hostByImage.get(image.url) ?? homepage;
+			const host = absolutePageUrl(image.hostPath) || homepage;
 			return `  <url>
     <loc>${escapeXml(host)}</loc>
-    <lastmod>${escapeXml(lastmod)}</lastmod>
+    <lastmod>${escapeXml(image.lastmod)}</lastmod>
     <image:image>
       <image:loc>${escapeXml(image.url)}</image:loc>
       <image:title>${escapeXml(image.title)}</image:title>
@@ -51,10 +78,5 @@ ${urls}
 </urlset>
 `;
 
-	return new Response(xml, {
-		headers: {
-			'Content-Type': 'application/xml; charset=utf-8',
-			'Cache-Control': 'public, max-age=3600',
-		},
-	});
+	return new Response(xml, { headers: sitemapResponseHeaders });
 };

@@ -1,6 +1,5 @@
 import { getLocalizedPath } from './i18n/routing';
 import type { LocaleCode } from './i18n/locales';
-import { valorantScreenshots } from './valorant';
 
 export type ModuleIcon = 'esp' | 'aimbot' | 'wallhack' | 'radar' | 'package' | 'setup' | 'pricing';
 
@@ -14,18 +13,19 @@ export type CheatShowcaseItem = {
 	featured?: boolean;
 };
 
-/** Homepage module grid — cheat features with readable cards. */
+/**
+ * Homepage module grid — one unique screenshot per card.
+ * Paths are explicit so shared keys in valorantScreenshots cannot collapse the grid.
+ */
 export function getCheatShowcase(locale: LocaleCode): CheatShowcaseItem[] {
-	const s = valorantScreenshots;
-
 	return [
 		{
 			href: getLocalizedPath('valorant-esp', locale),
 			label: 'ESP',
 			desc: 'Enemy outlines, health, and utility through smokes and walls.',
 			icon: 'esp',
-			image: s.espOverlay.src,
-			alt: s.espOverlay.alt,
+			image: '/images/valorant-cheat-esp-corridor.jpg',
+			alt: 'Valorant ESP wallhack with agent names, distance, and health bars through walls',
 			featured: true,
 		},
 		{
@@ -33,8 +33,8 @@ export function getCheatShowcase(locale: LocaleCode): CheatShowcaseItem[] {
 			label: 'Aimbot',
 			desc: 'Smooth aim assist with FOV, smoothing, and weapon profiles.',
 			icon: 'aimbot',
-			image: s.aimbotCombat.src,
-			alt: s.aimbotCombat.alt,
+			image: '/images/valorant-cheat-aimbot-reyna.jpg',
+			alt: 'Valorant aimbot head-lock with bounding box ESP in combat',
 			featured: true,
 		},
 		{
@@ -42,8 +42,8 @@ export function getCheatShowcase(locale: LocaleCode): CheatShowcaseItem[] {
 			label: 'Wallhack',
 			desc: 'Track enemy positions through map geometry in real time.',
 			icon: 'wallhack',
-			image: s.espBoxes.src,
-			alt: s.espBoxes.alt,
+			image: '/images/valorant-cheat-esp-gekko.jpg',
+			alt: 'Valorant bone ESP and bounding boxes revealing enemies behind geometry',
 			featured: true,
 		},
 		{
@@ -51,8 +51,8 @@ export function getCheatShowcase(locale: LocaleCode): CheatShowcaseItem[] {
 			label: 'Radar',
 			desc: 'Off-screen radar for flanks, rotates, and spike plants.',
 			icon: 'radar',
-			image: s.radarMinimap.src,
-			alt: s.radarMinimap.alt,
+			image: '/images/valorant-cheat-esp-stairs.jpg',
+			alt: 'Valorant ESP distance markers showing enemies through stairs and walls',
 			featured: true,
 		},
 		{
@@ -60,24 +60,16 @@ export function getCheatShowcase(locale: LocaleCode): CheatShowcaseItem[] {
 			label: 'Full package',
 			desc: 'ESP, aimbot, wallhack, and radar in one license.',
 			icon: 'package',
-			image: s.combatEsp.src,
-			alt: s.combatEsp.alt,
+			image: '/images/valorant-cheat-aimbot-knife.jpg',
+			alt: 'Valorant cheat package overlay with aimbot FOV and ESP during a fight',
 		},
 		{
 			href: getLocalizedPath('setup', locale),
 			label: 'Setup',
 			desc: 'Install, configure, and tune modules on Windows PC.',
 			icon: 'setup',
-			image: s.settingsPanel.src,
-			alt: s.settingsPanel.alt,
-		},
-		{
-			href: getLocalizedPath('pricing', locale),
-			label: 'Pricing',
-			desc: '$35 monthly or $150 lifetime — instant delivery.',
-			icon: 'pricing',
-			image: s.mainMenu.src,
-			alt: s.mainMenu.alt,
+			image: '/images/valorant-cheat-scope-yoru.jpg',
+			alt: 'Valorant scoped ESP view used for setup and aim tuning',
 		},
 	];
 }

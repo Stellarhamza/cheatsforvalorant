@@ -11,7 +11,7 @@ export function absoluteReviewUrl(slug?: string): string {
 	return new URL(slug ? getReviewPath(slug) : reviewsBasePath, siteConfig.url).href;
 }
 
-/** Unique Valorant screenshots for each review sitemap entry. */
+/** Unique Valorant screenshots for each review sitemap + OG entry. */
 const reviewImagePaths = [
 	valorantImages.espWallhack,
 	valorantImages.aimbotCombat,
@@ -34,10 +34,21 @@ const reviewIndexOgImage = {
 function reviewImageForIndex(index: number) {
 	const path = reviewImagePaths[index % reviewImagePaths.length];
 	return {
+		path,
 		url: new URL(path, siteConfig.url).href,
 		title: 'Valorant Cheats review screenshot',
 		caption: 'Valorant Cheats ESP, aimbot, and radar preview from buyer reviews',
 	};
+}
+
+/** Relative public path for a review's snippet / OG image. */
+export function getReviewImageSrc(slug: string): string {
+	const index = customerReviews.findIndex((review) => review.slug === slug);
+	return reviewImageForIndex(index < 0 ? 0 : index).path;
+}
+
+export function getReviewImageAlt(handle: string): string {
+	return `Valorant Cheats preview for @${handle} review — ESP, aimbot, and radar`;
 }
 
 /** English review routes for sitemap.xml — /reviews/ index + one URL per review. */

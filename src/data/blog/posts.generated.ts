@@ -11,7 +11,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: true,
 		translations: {
 		en: {
-		slug: "valorant-cheats-complete-guide-2026",
+		slug: "cheats-guide",
 		title: "Valorant Cheats 2026: Complete Undetected Guide",
 		metaDescription: "Complete Valorant Cheats guide for PC and controllers — ESP boxes, soft aim, radar, and anti-cheat maintenance in 2026. Compare the full package and buy.",
 		h1: "Valorant Cheats 2026: The Complete Undetected Guide",
@@ -38,14 +38,14 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Undetected Valorant Cheats and anti-cheat patches",
 				paragraphs: [
 					"Undetected Valorant Cheats require rebuilds after Riot Games anti-cheat and major Valorant updates. No vendor can promise permanent undetected status — check <a href=\"/updates/\">Updates</a> before you queue.",
-					"On patch mornings confirm <a href=\"https://playvalorant.com/en-us/news/\" target=\"_blank\" rel=\"noopener noreferrer\">Valorant PC update notes</a>, then read our <a href=\"/valorant-cheats/\">anti-cheat bypass guide</a> and <a href=\"/blog/undetected-valorant-cheats-eac/\">undetected anti-cheat notes</a>.",
+					"On patch mornings confirm <a href=\"https://playvalorant.com/en-us/news/\" target=\"_blank\" rel=\"noopener noreferrer\">Valorant PC update notes</a>, then read our <a href=\"/valorant-cheats/\">anti-cheat bypass guide</a> and <a href=\"/blog/undetected-cheats/\">undetected anti-cheat notes</a>.",
 					"Try This Today: Open the hacks pillar, skim Features, compare Pricing ($35 monthly / $150 lifetime), and bookmark Updates for the next Valorant patch.",
 				],
 			},
 			{
 				h2: "Next steps — pricing, setup, and cheats pages",
 				paragraphs: [
-					"Ready to buy? Start at the <a href=\"/valorant-cheats/\">Valorant Cheats pillar page</a>, then <a href=\"/pricing/\">Pricing</a> and <a href=\"/setup/\">Setup</a>. Prefer cheats wording? Read <a href=\"/valorant-cheats/\">Valorant cheats 2026</a> and <a href=\"/blog/valorant-cheats-buyers-guide/\">cheats buyers guide</a>.",
+					"Ready to buy? Start at the <a href=\"/valorant-cheats/\">Valorant Cheats pillar page</a>, then <a href=\"/pricing/\">Pricing</a> and <a href=\"/setup/\">Setup</a>. Prefer cheats wording? Read <a href=\"/valorant-cheats/\">Valorant cheats 2026</a> and <a href=\"/blog/buy-cheats/\">cheats buyers guide</a>.",
 					"Support: include your order ID on the <a href=\"/support/\">Support</a> page after checkout.",
 				],
 			}
@@ -54,7 +54,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "valorant-cheats-buyers-guide",
+		id: "buy-cheats",
 		imageKey: "cheatsPackage",
 		published: "2026-07-30",
 		updated: "2026-08-01",
@@ -62,7 +62,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: true,
 		translations: {
 		en: {
-		slug: "valorant-cheats-buyers-guide",
+		slug: "buy-cheats",
 		title: "Valorant Cheats Buyers Guide: What to Check",
 		metaDescription: "Valorant cheats buyers guide for PC and controllers — ESP boxes, soft aim, radar, pricing, and anti-cheat status. Compare before checkout.",
 		h1: "Valorant Cheats Buyers Guide: What Matters in 2026",
@@ -88,7 +88,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Feature pages worth opening",
 				paragraphs: [
 					"Open <a href=\"/valorant-esp/\">ESP</a>, <a href=\"/valorant-aimbot/\">Aimbot</a>, <a href=\"/features/\">Features</a>, and <a href=\"/pricing/\">Pricing</a> before you buy. Delivery and activation steps live on <a href=\"/setup/\">Setup</a>.",
-					"Related reading: <a href=\"/blog/valorant-cheats-complete-guide-2026/\">hacks complete guide</a> and <a href=\"/blog/valorant-cheats-2026-whats-new/\">cheats 2026 what's new</a>.",
+					"Related reading: <a href=\"/blog/cheats-guide/\">hacks complete guide</a> and <a href=\"/blog/cheats-2026/\">cheats 2026 what's new</a>.",
 					"Try This Today: Write your must-have list (ESP categories, Aimbot smoothness, lifetime vs monthly), then compare against Features once.",
 				],
 			}
@@ -97,7 +97,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "valorant-cheats-2026-whats-new",
+		id: "cheats-2026",
 		imageKey: "hero",
 		published: "2026-07-28",
 		updated: "2026-08-01",
@@ -105,7 +105,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "valorant-cheats-2026-whats-new",
+		slug: "cheats-2026",
 		title: "Valorant Cheats 2026: What Changed This Year",
 		metaDescription: "Valorant cheats 2026 overview — ESP boxes, soft aim, and radar for PC and controllers with anti-cheat maintenance. Pair with the hacks pillar before buying.",
 		h1: "Valorant Cheats 2026: What Buyers Need Now",
@@ -124,7 +124,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Keyword map: cheats 2026 ↔ hacks",
 				paragraphs: [
 					"Use the <a href=\"/valorant-cheats/\">Valorant cheats 2026 guide</a> for cheats-year intent and the <a href=\"/valorant-cheats/\">Valorant Cheats pillar page</a> for the primary hacks intent. Both point to the same ESP + Aimbot + radar stack.",
-					"Also see <a href=\"/blog/valorant-cheats-complete-guide-2026/\">hacks guide</a> and <a href=\"/valorant-cheats/\">undetected status</a>.",
+					"Also see <a href=\"/blog/cheats-guide/\">hacks guide</a> and <a href=\"/valorant-cheats/\">undetected status</a>.",
 				],
 			},
 			{
@@ -139,7 +139,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "valorant-aimbot-settings-guide",
+		id: "aimbot-cheats",
 		imageKey: "aimbotCombat",
 		published: "2026-07-26",
 		updated: "2026-08-01",
@@ -147,7 +147,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "valorant-aimbot-settings-guide",
+		slug: "aimbot-cheats",
 		title: "Valorant Aimbot Settings: Smooth FOV Guide",
 		metaDescription: "Valorant aimbot settings for PC and controllers — soft aim, FOV, bone priority, and per-weapon profiles. Tune assist, then review the hacks pages.",
 		h1: "Valorant Aimbot Settings: Smoothness, FOV & Soft Aim",
@@ -181,7 +181,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "valorant-esp-wallhack-explained",
+		id: "esp-cheats",
 		imageKey: "espWallhack",
 		published: "2026-07-24",
 		updated: "2026-08-01",
@@ -189,7 +189,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "valorant-esp-wallhack-explained",
+		slug: "esp-cheats",
 		title: "Valorant ESP & Wallhack Explained Clearly",
 		metaDescription: "Valorant ESP and wallhack explained — enemy boxes, health bars, and distance readouts for PC and controllers. Learn overlays on the hacks pages.",
 		h1: "Valorant ESP and Wallhack Explained",
@@ -223,7 +223,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "undetected-valorant-cheats-eac",
+		id: "undetected-cheats",
 		imageKey: "rebootFight",
 		published: "2026-07-22",
 		updated: "2026-08-01",
@@ -231,7 +231,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: true,
 		translations: {
 		en: {
-		slug: "undetected-valorant-cheats-eac",
+		slug: "undetected-cheats",
 		title: "Undetected Valorant Cheats & anti-cheat Reality",
 		metaDescription: "Undetected Valorant Cheats and anti-cheat reality — ESP boxes, soft aim, and radar rebuilds for PC and controllers. Check Updates before queueing post-patch.",
 		h1: "Undetected Valorant Cheats and Riot Games anti-cheat Reality",
@@ -273,7 +273,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: true,
 		translations: {
 		en: {
-		slug: "valorant-cheats-vs-cheatvault-comparison",
+		slug: "cheatvault-vs",
 		title: "Valorant Cheats vs CheatVault: Honest 2026 Comparison",
 		metaDescription: "Valorant Cheats vs CheatVault compared — pricing, ESP boxes, soft aim, radar, anti-cheat detection history, and which package fits Competitive players in 2026.",
 		h1: "Valorant Cheats vs CheatVault: Honest Comparison",
@@ -310,7 +310,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				paragraphs: [
 					"Both brands had public downtime after major anti-cheat updates in 2026 — anyone claiming zero detection events is lying. The difference is communication and rebuild speed.",
 					"CheatVault's Discord would go quiet for 48–72 hours after big patches. No ETA, just \"working on it.\" I know two players in my stack who got flagged during a CheatVault lag window between patch and rebuild — could've been coincidence, but it shook my confidence.",
-					"Valorant Cheats posts on the <a href=\"/updates/\">Updates page</a> within hours on patch mornings. Last major anti-cheat update I tracked: status note same day, rebuild live roughly 30 hours later. Still annoying, but predictable. See also our <a href=\"/blog/undetected-valorant-cheats-eac/\">anti-cheat reality guide</a> for the workflow I use before queueing.",
+					"Valorant Cheats posts on the <a href=\"/updates/\">Updates page</a> within hours on patch mornings. Last major anti-cheat update I tracked: status note same day, rebuild live roughly 30 hours later. Still annoying, but predictable. See also our <a href=\"/blog/undetected-cheats/\">anti-cheat reality guide</a> for the workflow I use before queueing.",
 				],
 			},
 			{
@@ -342,7 +342,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "voidcheats-vs-valorant-cheats-two-week-test",
+		slug: "voidcheats-vs",
 		title: "I Tried VoidCheats for 2 Weeks Before Switching",
 		metaDescription: "VoidCheats vs Valorant Cheats — a two-week test of ESP, soft aim, controller support, anti-cheat downtime, and pricing before switching packages in 2026.",
 		h1: "I Tried VoidCheats for 2 Weeks Before Switching to Valorant Cheats",
@@ -387,7 +387,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				paragraphs: [
 					"VoidCheats cost me $39 for the two-week trial window (weekly sub + a few extra days). Valorant Cheats monthly is $35; lifetime $150. If you hop tools every month, weekly pricing adds up fast.",
 					"Feature-per-dollar favors Valorant Cheats for my use: combined ESP + radar + soft aim + rebuild notes in one license. VoidCheats's brand is strong on social proof — I am not arguing that — but I pay for uptime and toggles more than banners.",
-					"Compare plans yourself on <a href=\"/pricing/\">Pricing</a> and read the <a href=\"/blog/valorant-cheats-vs-cheatvault-comparison/\">CheatVault comparison</a> if you are still shopping three-wide.",
+					"Compare plans yourself on <a href=\"/pricing/\">Pricing</a> and read the <a href=\"/blog/cheatvault-vs/\">CheatVault comparison</a> if you are still shopping three-wide.",
 				],
 			},
 			{
@@ -411,7 +411,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "valorant-cheats-vs-ghostware-features-pricing",
+		slug: "ghostware-vs",
 		title: "Valorant Cheats vs GhostWare: Features & Pricing",
 		metaDescription: "Valorant Cheats vs GhostWare — feature tables, soft aim, ESP boxes, radar, controller support, anti-cheat history, and honest pros/cons for 2026 buyers.",
 		h1: "Valorant Cheats vs GhostWare: Features, Pricing, and Detection Notes",
@@ -456,7 +456,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				paragraphs: [
 					"<strong>Valorant Cheats pros:</strong> full ESP + radar + soft aim stack, per-weapon profiles, public Updates page, controller docs. <strong>Cons:</strong> higher price, menu takes ~20 minutes to learn, radar size could use more presets.",
 					"<strong>GhostWare pros:</strong> lower entry price, clean minimal ESP, quick to launch, smaller feature surface. <strong>Cons:</strong> no radar, limited ability ESP, patch status mostly in Discord, no DMA option, lighter aim tools.",
-					"Neither replaces game sense. Pair either with fundamentals — see our <a href=\"/blog/valorant-cheats-complete-guide-2026/\">Spike Rush aggression guide</a> and <a href=\"/blog/valorant-cheats-complete-guide-2026/\">complete hacks guide</a>.",
+					"Neither replaces game sense. Pair either with fundamentals — see our <a href=\"/blog/cheats-guide/\">Spike Rush aggression guide</a> and <a href=\"/blog/cheats-guide/\">complete hacks guide</a>.",
 				],
 			},
 			{
@@ -480,7 +480,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: true,
 		translations: {
 		en: {
-		slug: "valorant-steel-path-beginners-guide",
+		slug: "ranked-cheats",
 		title: "Valorant Competitive Guide for Beginners",
 		metaDescription: "Valorant Competitive for beginners — ranks, economy, peeks, and utility. Practical tips plus how ESP and radar help map awareness.",
 		h1: "Valorant Competitive: A Practical Beginner Guide",
@@ -500,7 +500,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Good habits for early ranks",
 				paragraphs: [
 					"Default slowly, clear common angles, and save utility for site hits. Deathmatch helps aim; custom games help lineups.",
-					"If you are learning map reads, start on Ascent or Bind — see our <a href=\"/blog/valorant-open-world-farming-guide/\">map awareness guide</a> for rotate timing.",
+					"If you are learning map reads, start on Ascent or Bind — see our <a href=\"/blog/radar-cheats/\">map awareness guide</a> for rotate timing.",
 				],
 			},
 			{
@@ -530,7 +530,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: true,
 		translations: {
 		en: {
-		slug: "valorant-open-world-farming-guide",
+		slug: "radar-cheats",
 		title: "Valorant Map Awareness Guide (Ascent, Bind, Haven)",
 		metaDescription: "Valorant map awareness on Ascent, Bind, and Haven — rotates, lurks, and site timings. Pair with ESP and radar for better info.",
 		h1: "Valorant Map Awareness: Ascent, Bind, and Haven",
@@ -579,7 +579,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "valorant-factions-grineer-corpus-sentient-guide",
+		slug: "wallhack-guide",
 		title: "Valorant Agents Explained: Roles and Matchups",
 		metaDescription: "Valorant agent roles explained — Duelists, Controllers, Initiators, and Sentinels. How ESP and aimbot help different playstyles.",
 		h1: "Valorant Agents: Roles, Matchups, and Playstyles",
@@ -598,7 +598,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Matchups that matter",
 				paragraphs: [
 					"Cypher and Killjoy punish uninformed peeks. Jett and Raze punish slow defaults. Sova and Fade punish teams that never clear utility.",
-					"Our <a href=\"/blog/valorant-steel-path-beginners-guide/\">Competitive guide</a> pairs well with agent learning for ranked.",
+					"Our <a href=\"/blog/ranked-cheats/\">Competitive guide</a> pairs well with agent learning for ranked.",
 				],
 			},
 			{
@@ -628,7 +628,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "valorant-match-types-explained",
+		slug: "match-cheats",
 		title: "Valorant Mission Types Explained",
 		metaDescription: "Valorant mission types explained — Spike Rush, Arbitration, Sanctuary, defense, survival, and more. Links to official Wiki and game guide resources.",
 		h1: "Valorant Mission Types: Spike Rush, Arbitration, and More",
@@ -654,7 +654,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Arbitration, Sanctuary, and long-run modes",
 				paragraphs: [
 					"Arbitration and Sanctuary Onslaught reward players who can sustain long fights. Read <a href=\"https://valorant.fandom.com/wiki/Arbitration\" target=\"_blank\" rel=\"noopener noreferrer\">Arbitration</a> and <a href=\"https://valorant.fandom.com/wiki/Sanctuary_Onslaught\" target=\"_blank\" rel=\"noopener noreferrer\">Sanctuary Onslaught</a> on the Wiki before you invest grind time.",
-					"For squad callouts and spawn timing, our <a href=\"/blog/valorant-steel-path-beginners-guide/\">Competitive guide</a> overlaps with several long-run strategies.",
+					"For squad callouts and spawn timing, our <a href=\"/blog/ranked-cheats/\">Competitive guide</a> overlaps with several long-run strategies.",
 				],
 			},
 			{
@@ -669,7 +669,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "valorant-patch-notes-guide",
+		id: "safe-cheats",
 		imageKey: "headerArt",
 		published: "2026-04-30",
 		updated: "2026-08-01",
@@ -677,7 +677,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "valorant-patch-notes-guide",
+		slug: "safe-cheats",
 		title: "How to Read Valorant Patch Notes",
 		metaDescription: "How to read Valorant patch notes from Riot Games — official sources, what to scan first, and how updates affect your loadout and tools.",
 		h1: "How to Read Valorant Patch Notes Like a Player",
@@ -703,7 +703,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Translate notes into loadout decisions",
 				paragraphs: [
 					"Ask: Did my main weapon class change? Did a mod or arcane get touched? Did a farm route’s drop pool move? If all three are no, you can queue sooner.",
-					"Our <a href=\"/blog/undetected-valorant-cheats-eac/\">anti-cheat maintenance notes</a> explain how patches can affect external tools separately from in-game balance.",
+					"Our <a href=\"/blog/undetected-cheats/\">anti-cheat maintenance notes</a> explain how patches can affect external tools separately from in-game balance.",
 				],
 			},
 			{
@@ -726,7 +726,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: true,
 		translations: {
 		en: {
-		slug: "valorant-new-player-progression-guide",
+		slug: "starter-cheats",
 		title: "Valorant New Player Progression Guide",
 		metaDescription: "Valorant new player guide for Star Chart progression, quests, mods, and early goals — with links to the official game guide and Valorant Wiki.",
 		h1: "Valorant New Player Progression: Where to Go First",
@@ -745,7 +745,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Star Chart and junction milestones",
 				paragraphs: [
 					"Clear the Star Chart methodically. Junctions gate planets and key quest lines. The <a href=\"https://valorant.fandom.com/wiki/Star_Chart\" target=\"_blank\" rel=\"noopener noreferrer\">Star Chart Wiki page</a> shows what each node rewards.",
-					"Do not rush Competitive on day one — finish the chart, build survival tools, and learn faction weaknesses first. Our <a href=\"/blog/valorant-steel-path-beginners-guide/\">Competitive guide</a> is for when you are ready.",
+					"Do not rush Competitive on day one — finish the chart, build survival tools, and learn faction weaknesses first. Our <a href=\"/blog/ranked-cheats/\">Competitive guide</a> is for when you are ready.",
 				],
 			},
 			{
@@ -758,7 +758,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "When you are ready for more",
 				paragraphs: [
-					"Explore rotates after Mars/Jupiter comfort. Read our <a href=\"/blog/valorant-open-world-farming-guide/\">rotates guide</a> and <a href=\"/blog/valorant-match-types-explained/\">mission types explainer</a> when those nodes unlock.",
+					"Explore rotates after Mars/Jupiter comfort. Read our <a href=\"/blog/radar-cheats/\">rotates guide</a> and <a href=\"/blog/match-cheats/\">mission types explainer</a> when those nodes unlock.",
 					"Try This Today: Complete one quest, one new Star Chart node, and one mod upgrade session — three small wins beat grinding random missions.",
 				],
 			}

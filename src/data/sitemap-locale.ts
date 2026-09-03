@@ -9,6 +9,7 @@ import {
 import { siteConfig } from './site';
 import { pageSitemapMeta } from './sitemap-meta';
 import { escapeXml } from './sitemap-xml';
+import { valorantImages } from './valorant';
 
 export type LocaleSitemapEntry = {
 	path: string;
@@ -44,7 +45,8 @@ export function buildLocaleSitemapEntries(locale: LocaleCode): LocaleSitemapEntr
 
 	return pageIds.map((pageId) => {
 		const meta = pageSitemapMeta[pageId];
-		const page = pageId === 'home' ? null : getPageContent(locale, pageId);
+		const page = getPageContent(locale, pageId);
+		const imageSrc = pageId === 'home' ? valorantImages.hero : page.heroImage;
 
 		return {
 			path: getLocalizedPath(pageId, locale),
@@ -52,14 +54,11 @@ export function buildLocaleSitemapEntries(locale: LocaleCode): LocaleSitemapEntr
 			lastmod: meta.lastmod,
 			priority: meta.i18nPriority,
 			changefreq: meta.changefreq,
-			image:
-				pageId === 'home'
-					? undefined
-					: {
-							url: new URL(page!.heroImage, siteConfig.url).href,
-							title: page!.title,
-							caption: page!.imageAlt,
-						},
+			image: {
+				url: new URL(imageSrc, siteConfig.url).href,
+				title: page.title,
+				caption: page.imageAlt,
+			},
 		};
 	});
 }

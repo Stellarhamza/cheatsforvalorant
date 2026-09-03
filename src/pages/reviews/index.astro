@@ -5,7 +5,7 @@ import SiteFooter from '../../components/SiteFooter.astro';
 import ReviewAvatar from '../../components/ReviewAvatar.astro';
 import StarRating from '../../components/StarRating.astro';
 import { customerReviewStats, customerReviews, productInfo, siteConfig } from '../../data/site';
-import { getReviewPath, reviewsBasePath } from '../../data/reviews';
+import { getReviewImageSrc, getReviewPath, reviewsBasePath } from '../../data/reviews';
 import RelatedPages from '../../components/RelatedPages.astro';
 
 const title = 'Valorant Cheats Reviews | ESP, Aimbot & Radar';
@@ -26,6 +26,7 @@ function formatDate(isoDate: string): string {
 const sortedReviews = [...customerReviews].sort((a, b) => (a.date < b.date ? 1 : -1));
 
 const canonicalURL = new URL(reviewsBasePath, siteConfig.url).href;
+const reviewsHeroImage = new URL(siteConfig.defaultOgImage, siteConfig.url).href;
 
 const extraGraph: Record<string, unknown>[] = [
 	{
@@ -33,7 +34,10 @@ const extraGraph: Record<string, unknown>[] = [
 		'@id': `${siteConfig.url}/#product`,
 		name: productInfo.name,
 		description: productInfo.summary,
-		image: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
+		image: [
+			reviewsHeroImage,
+			...sortedReviews.slice(0, 5).map((review) => new URL(getReviewImageSrc(review.slug), siteConfig.url).href),
+		],
 		brand: { '@type': 'Brand', name: productInfo.brand },
 		url: `${siteConfig.url}/`,
 		aggregateRating: {
@@ -49,6 +53,7 @@ const extraGraph: Record<string, unknown>[] = [
 			url: new URL(getReviewPath(review.slug), siteConfig.url).href,
 			author: { '@type': 'Person', name: review.handle },
 			datePublished: review.date,
+			image: new URL(getReviewImageSrc(review.slug), siteConfig.url).href,
 			reviewRating: {
 				'@type': 'Rating',
 				ratingValue: String(review.rating),
@@ -65,6 +70,7 @@ const extraGraph: Record<string, unknown>[] = [
 			'@type': 'ListItem',
 			position: index + 1,
 			url: new URL(getReviewPath(review.slug), siteConfig.url).href,
+			image: new URL(getReviewImageSrc(review.slug), siteConfig.url).href,
 		})),
 	},
 ];

@@ -48,6 +48,11 @@ const extraGraph = [
 		url: canonicalURL,
 		inLanguage: 'en',
 		isPartOf: { '@id': `${siteConfig.url}/#website` },
+		primaryImageOfPage: {
+			'@type': 'ImageObject',
+			url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
+		},
+		image: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
 	},
 ];
 ---
@@ -56,6 +61,8 @@ const extraGraph = [
 	title={title}
 	description={description}
 	canonicalPath={guidesBasePath}
+	ogImage={siteConfig.defaultOgImage}
+	ogImageAlt="Valorant guides hub — Competitive, agents, and cheat intel"
 	locale={locale}
 	breadcrumbs={[{ label: 'Home', href: homeHref }, { label: 'Guides' }]}
 	extraGraph={extraGraph}

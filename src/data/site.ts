@@ -10,7 +10,7 @@ export const siteConfig = {
 	logoRasterHeight: 192,
 	logoAlt: 'CheatsForValorant — undetected Valorant cheats for PC',
 	checkoutUrl: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fvalorant',
-	defaultOgImage: '/images/valorant-cheats-hero.jpg',
+	defaultOgImage: '/images/valorant-cheat-esp-corridor.jpg',
 } as const;
 
 export const productInfo = {
@@ -390,7 +390,7 @@ export const homeFaqs = [
 		category: 'Updates & support',
 		question: 'Where do I check status after a Valorant patch?',
 		answer:
-			'Start with our <a href="/updates/">Updates page</a>, then cross-check <a href="https://playvalorant.com/en-us/news/" target="_blank" rel="noopener noreferrer">official PC update notes</a>. For how patches affect gameplay, read our <a href="/blog/valorant-patch-notes-guide/">patch notes guide</a>.',
+			'Start with our <a href="/updates/">Updates page</a>, then cross-check <a href="https://playvalorant.com/en-us/news/" target="_blank" rel="noopener noreferrer">official PC update notes</a>. For how patches affect gameplay, read our <a href="/blog/safe-cheats/">patch notes guide</a>.',
 	},
 	{
 		category: 'Updates & support',
@@ -408,7 +408,7 @@ export const homeFaqs = [
 		category: 'Product details',
 		question: 'How do you handle Riot Vanguard?',
 		answer:
-			'Vanguard runs at a deep system level. We rebuild after detections and patch days and publish maintenance notes on <a href="/updates/">Updates</a>. Always verify the build is live before you queue. See our <a href="/blog/undetected-valorant-cheats-eac/">anti-cheat explainer</a> for context.',
+			'Vanguard runs at a deep system level. We rebuild after detections and patch days and publish maintenance notes on <a href="/updates/">Updates</a>. Always verify the build is live before you queue. See our <a href="/blog/undetected-cheats/">anti-cheat explainer</a> for context.',
 	},
 	{
 		category: 'Product details',
@@ -442,7 +442,7 @@ export const seoFaqs = [
 		category: 'Product details',
 		question: 'How does anti-cheat affect Valorant Cheats?',
 		answer:
-			'Anti-cheat monitors Valorant on Windows PC. After major patches we publish maintenance notes on <a href="/updates/">Updates</a>. Read the <a href="/valorant-cheats/">maintenance guide</a> and our <a href="/blog/undetected-valorant-cheats-eac/">anti-cheat explainer</a> for what to expect on patch day.',
+			'Anti-cheat monitors Valorant on Windows PC. After major patches we publish maintenance notes on <a href="/updates/">Updates</a>. Read the <a href="/valorant-cheats/">maintenance guide</a> and our <a href="/blog/undetected-cheats/">anti-cheat explainer</a> for what to expect on patch day.',
 	},
 	{
 		category: 'Product details',

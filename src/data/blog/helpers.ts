@@ -9,6 +9,10 @@ import {
 import type { BlogImageKey, BlogPostDefinition, BlogTranslation, ResolvedBlogPost } from './types';
 import { blogPosts as rawBlogPosts } from './posts.generated';
 
+/** Preserved stock image — only for “Valorant Competitive Guide for Beginners”. */
+const COMPETITIVE_BEGINNERS_IMAGE = '/images/valorant-competitive-guide-beginners.jpg';
+const COMPETITIVE_BEGINNERS_POST_ID = 'valorant-steel-path-guide';
+
 const imageMap: Record<BlogImageKey, string> = {
 	hero: valorantImages.hero,
 	espWallhack: valorantImages.espWallhack,
@@ -21,6 +25,11 @@ const imageMap: Record<BlogImageKey, string> = {
 	battleRoyaleCombat: valorantImages.battleRoyaleCombat,
 	battleRoyaleIslandMap: valorantImages.battleRoyaleIsland,
 };
+
+function resolvePostImageSrc(post: BlogPostDefinition): string {
+	if (post.id === COMPETITIVE_BEGINNERS_POST_ID) return COMPETITIVE_BEGINNERS_IMAGE;
+	return getBlogImageSrc(post.imageKey);
+}
 
 function expandTranslations(
 	translations: Partial<Record<LocaleCode, BlogTranslation>> & { en: BlogTranslation },
@@ -62,7 +71,7 @@ export function resolvePost(post: BlogPostDefinition, locale: LocaleCode): Resol
 		...post,
 		locale,
 		translation,
-		imageSrc: getBlogImageSrc(post.imageKey),
+		imageSrc: resolvePostImageSrc(post),
 		canonicalPath: getBlogPostPath(locale, translation.slug),
 	};
 }
@@ -176,7 +185,7 @@ export function getBlogSitemapEntries() {
 
 	for (const post of blogPosts) {
 		const t = post.translations[locale];
-		const imageSrc = getBlogImageSrc(post.imageKey);
+		const imageSrc = resolvePostImageSrc(post);
 		entries.push({
 			path: getBlogPostPath(locale, t.slug),
 			lastmod: post.updated,
