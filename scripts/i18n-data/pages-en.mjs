@@ -3,7 +3,7 @@ import { HERO_IMAGES, clampTitle, clampDesc, section, stripZadeyoFromMeta, EXT }
 /** Richest English page content — source of truth for structure. */
 export const enPages = {
 	home: {
-		title: 'CheatsForValorant | Undetected Valorant Cheats — ESP & Aimbot',
+		title: 'CheatsForValorant | Valorant Cheats — ESP & Aimbot',
 		description:
 			'Buy undetected Valorant cheats for PC — ESP wallhack, aimbot, triggerbot & radar. $35/mo or $150 lifetime. Instant delivery & Vanguard updates.',
 		h1: 'Undetected Valorant Cheats for PC',
@@ -34,7 +34,7 @@ export const enPages = {
 	'valorant-esp': {
 		title: 'Valorant ESP 2026 | Wallhack & Enemy Boxes for PC',
 		description:
-			'Valorant ESP wallhack — enemy boxes, health bars, loot markers & distance readouts. Bundled with aimbot & radar in one license.',
+			'Valorant cheats ESP wallhack — enemy boxes, health, utility markers & distance. Bundled with aimbot & radar in one license.',
 		h1: 'Valorant ESP — Wallhack & Enemy Boxes',
 		intro:
 			'Visibility tools for Valorant. See enemy agents, utility, and the spike through walls and smokes — with toggleable ESP wallhack overlays for Competitive, Unrated, and Spike Rush.',
@@ -45,27 +45,27 @@ export const enPages = {
 		ctaSecondaryHref: '/valorant-wallhack/',
 		sections: [
 			section(
-				'What Valorant ESP solves in Competitive missions',
-				'Valorant missions punish incomplete information. Valorant Cheats ESP wallhack helps you spot enemy units early, spot heavy units before they push your position, and mark lockers and caches worth the detour.',
-				'On Competitive missions, co-op missions, and Competitive missions, that visibility gap is often the difference between a clean flanking and a wiped squad. ESP ships bundled with radar overlays and Aimbot in one license.',
-				`Valorant live updates and tileset changes are published by ${EXT.epic}. When tileset areas or loot rules shift, ESP categories stay useful because they track enemies and containers — not a single static landmark.`,
+				'What Valorant ESP solves in Competitive',
+				'Valorant rounds punish incomplete information. Valorant Cheats ESP wallhack helps you spot enemy agents early, spot duelists before they push your position, and mark the spike and abilities worth the detour.',
+				'On Competitive, Unrated, and Spike Rush, that visibility gap is often the difference between a clean flanking and a wiped squad. ESP ships bundled with radar overlays and Aimbot in one license.',
+				`Valorant live updates and map changes are published by ${EXT.epic}. When maps or loot rules shift, ESP categories stay useful because they track enemies and containers — not a single static landmark.`,
 			),
 			section(
-				'Enemy, heavy unit, and ability ESP wallhack categories',
-				'Toggle enemy unit outlines, heavy unit threat cues, pickup awareness markers, and loot or chest pins so only mission-critical ESP wallhack overlays stay active during rotations.',
-				'Distance readouts and snapline options help you control engagement range. Team and enemy colour coding supports co-op missions and co-op squads alike.',
+				'Enemy, duelist, and ability ESP wallhack categories',
+				'Toggle enemy agent outlines, duelist threat cues, pickup awareness markers, and spike markers so only round-critical ESP wallhack overlays stay active during rotations.',
+				'Distance readouts and snapline options help you control engagement range. Team and enemy colour coding supports Spike Rush and co-op squads alike.',
 				'Compare category detail on the <a href="/valorant-wallhack/">wallhack page</a> and pair visibility with the <a href="/valorant-radar/">radar hack</a> for flanks outside your FOV.',
 				[
-					'enemy unit ESP outlines with distance',
-					'pickups and lockers markers for faster rotations',
-					'heavy unit and pickup threat cues',
+					'enemy agent ESP outlines with distance',
+					'spike and utility markers for faster rotations',
+					'duelist and pickup threat cues',
 					'Toggleable categories to reduce overlay noise',
 				],
 			),
 			section(
 				'Undetected ESP with anti-cheat maintenance',
 				'Valorant Cheats ESP wallhack is maintained for Valorant with rebuilds after Riot Games anti-cheat patches. Check the <a href="/updates/">Updates page</a> before you queue — no cheat guarantees permanent undetected status.',
-				`Read ${EXT.eac} for how anti-cheat updates ship, then cross-check our <a href="/valorant-cheats/">anti-cheat maintenance maintenance guide</a> after major patches.`,
+				`Read ${EXT.eac} for how anti-cheat updates ship, then cross-check our <a href="/valorant-cheats/">anti-cheat maintenance guide</a> after major patches.`,
 				'Checkout includes instant digital delivery for Windows 10 and 11. After purchase, follow the <a href="/setup/">Setup guide</a> and tune overlays before your first mission session.',
 			),
 			section(
@@ -79,7 +79,7 @@ export const enPages = {
 	'valorant-aimbot': {
 		title: 'Valorant Aimbot 2026 | Soft Aim for PC & Controller',
 		description:
-			'Valorant aimbot with FOV, smoothing & weak-point targeting. Per-weapon profiles for rifles, shotguns & snipers. Windows PC.',
+			'Valorant cheats aimbot with FOV, smoothing & head priority. Per-weapon profiles for rifles, pistols & snipers on Windows PC.',
 		h1: 'Valorant Aimbot — Soft Aim for PC & Controller',
 		intro:
 			'Configurable Aimbot tools for Valorant firefights. Smoothness, FOV, bone priority, and per-weapon profiles — bundled with ESP wallhack and radar in one undetected license.',
@@ -91,7 +91,7 @@ export const enPages = {
 		sections: [
 			section(
 				'Aimbot tuned for Valorant combat pace',
-				'Valorant mixes long-range rifle fights with close-quarters shotgun pushes. Valorant Cheats Aimbot includes smoothness, FOV, and sensitivity controls tuned for that pace — with hotkey toggles mid-mission.',
+				'Valorant mixes long-range rifle fights with close-quarters shotgun pushes. Valorant Cheats Aimbot includes smoothness, FOV, and sensitivity controls tuned for that pace — with hotkey toggles mid-round.',
 				'Bone priority and target selection options cover closest enemy, lowest health, or highest-threat targets during squad fights and defense waves and Spike Rush modifiers.',
 				`Weapon balance and season rules change via ${EXT.rust}. Revisit Aimbot FOV and smoothness after major combat patches so assist still matches the live TTK windows.`,
 			),
@@ -103,7 +103,7 @@ export const enPages = {
 				[
 					'Smoothness, FOV, and sensitivity sliders',
 					'Bone priority and threat-based targeting',
-					'Hotkeys to toggle Aimbot mid-mission',
+					'Hotkeys to toggle Aimbot mid-round',
 					'Per-weapon profile slots for rifle/ shotgun / sniper',
 				],
 			),
@@ -136,15 +136,15 @@ export const enPages = {
 		sections: [
 			section(
 				'ESP wallhack and visibility features',
-				'enemy unit ESP wallhack, heavy unit and pickup threat cues, pickups and lockers markers, distance readouts, snaplines, and toggleable ESP categories for mission-critical overlays only.',
-				'Team and enemy colour coding supports co-op missions and Competitive. Deep-dive the <a href="/valorant-esp/">ESP page</a> and <a href="/valorant-wallhack/">wallhack guide</a> for category-level detail.',
-				`Map and loot systems evolve with ${EXT.epic} season updates — toggleable ESP categories keep overlays useful when tileset areas rotate.`,
+				'enemy agent ESP wallhack, duelist and pickup threat cues, spike and utility markers, distance readouts, snaplines, and toggleable ESP categories for round-critical overlays only.',
+				'Team and enemy colour coding supports Spike Rush and Competitive. Deep-dive the <a href="/valorant-esp/">ESP page</a> and <a href="/valorant-wallhack/">wallhack guide</a> for category-level detail.',
+				`Map and loot systems evolve with ${EXT.epic} season updates — toggleable ESP categories keep overlays useful when maps rotate.`,
 			),
 			section(
 				'Radar hack and Aimbot controls',
-				'2D radar overlay with directional threat cues, configurable range for rotations and final circles, plus Aimbot smoothness, FOV, bone priority, hotkeys, and per-weapon profiles.',
+				'2D radar overlay with directional threat cues, configurable range for rotations and post-plants, plus Aimbot smoothness, FOV, bone priority, hotkeys, and per-weapon profiles.',
 				'All tools share in-client toggles so you can adjust ESP, radar, and Aimbot during live Valorant sessions. See <a href="/valorant-radar/">radar</a> and <a href="/valorant-aimbot/">Aimbot</a> for settings walkthroughs.',
-				'Prefer a menu-first workflow? The <a href="/features/">mod menu page</a> explains mid-mission toggles without alt-tabbing.',
+				'Prefer a menu-first workflow? The <a href="/features/">mod menu page</a> explains mid-round toggles without alt-tabbing.',
 			),
 			section(
 				'Licensing, delivery, and anti-cheat maintenance',
@@ -161,7 +161,7 @@ export const enPages = {
 		h1: 'Valorant Cheats Pricing — Monthly & Lifetime',
 		intro:
 			'Choose monthly or lifetime access to undetected Valorant Cheats — ESP wallhack, radar hack, and Aimbot for Valorant on Windows PC. Instant digital delivery after payment.',
-		imageAlt: 'Valorant wallhack ESP showing enemy units and enemys through objective corners',
+		imageAlt: 'Valorant wallhack ESP showing enemy agents through objective corners',
 		galleryTitle: 'Valorant Cheats package visuals',
 		ctaPrimary: 'Buy Valorant Cheats',
 		ctaSecondary: 'Read setup guide',
@@ -175,7 +175,7 @@ export const enPages = {
 			),
 			section(
 				'What every plan includes',
-				'enemy ESP wallhack, health pickup markers, 2D radar overlays, Aimbot controls, in-client toggles, and maintenance rebuilds after Riot Games anti-cheat or major Valorant patches.',
+				'enemy ESP wallhack, health bars, 2D radar overlays, Aimbot controls, in-client toggles, and maintenance rebuilds after Riot Games anti-cheat or major Valorant patches.',
 				`update calendars and client updates come from ${EXT.rust}. Active licenses receive rebuild access when we publish maintenance on <a href="/updates/">Updates</a>.`,
 				'Digital delivery starts after payment confirmation. Keep your order reference for <a href="/support/">Support</a> requests and follow <a href="/setup/">Setup</a> for first launch.',
 			),
@@ -194,7 +194,7 @@ export const enPages = {
 		h1: 'Valorant Cheats Setup — PC & Controller Guide',
 		intro:
 			'Install and configure Valorant Cheats for Valorant on Windows 10 or 11. Activate your license, load ESP wallhack and Aimbot profiles, and verify anti-cheat maintenance status before queueing.',
-		imageAlt: 'Valorant aimbot hitbox lock on enemy unit during Competitive mission fight',
+		imageAlt: 'Valorant aimbot hitbox lock on enemy agent during Competitive mission fight',
 		galleryTitle: 'Valorant Cheats setup visuals',
 		ctaPrimary: 'Buy Valorant Cheats',
 		ctaSecondary: 'Contact support',
@@ -208,8 +208,8 @@ export const enPages = {
 			),
 			section(
 				'Activate ESP wallhack and Aimbot profiles',
-				'Follow the delivery instructions in your license email. Load default ESP wallhack categories for enemies, pickups, and lockers — then tune radar range and Aimbot smoothness to your playstyle.',
-				'Use in-client hotkeys to toggle ESP, radar, and Aimbot mid-mission. Details for each module live on <a href="/valorant-esp/">ESP</a>, <a href="/valorant-aimbot/">Aimbot</a>, and <a href="/features/">mod menu</a>.',
+				'Follow the delivery instructions in your license email. Load default ESP wallhack categories for agents, utility, and the spike — then tune radar range and Aimbot smoothness to your playstyle.',
+				'Use in-client hotkeys to toggle ESP, radar, and Aimbot mid-round. Details for each module live on <a href="/valorant-esp/">ESP</a>, <a href="/valorant-aimbot/">Aimbot</a>, and <a href="/features/">mod menu</a>.',
 				'Prefer a soft tracking feel? Start with the <a href="/valorant-aimbot/">soft aim</a> recommendations before raising aggressiveness.',
 			),
 			section(
@@ -227,7 +227,7 @@ export const enPages = {
 		h1: 'Valorant Cheats Updates — Maintenance Log',
 		intro:
 			'Track anti-cheat maintenance and Valorant patch rebuilds for the undetected ESP wallhack, radar hack, and Aimbot package. Check here before queueing after major updates.',
-		imageAlt: 'Valorant wallhack ESP skeleton on enemy heavy unit hero in Competitive missions',
+		imageAlt: 'Valorant wallhack ESP skeleton on enemy duelist hero in Competitive',
 		galleryTitle: 'Valorant patch and maintenance visuals',
 		ctaPrimary: 'Buy Valorant Cheats',
 		ctaSecondary: 'Undetected status guide',
@@ -237,7 +237,7 @@ export const enPages = {
 				'Why the Updates page matters',
 				'Valorant and Riot Games anti-cheat receive frequent patches. Valorant Cheats publishes maintenance notes when ESP wallhack, radar, or Aimbot behavior needs a rebuild.',
 				`Use ${EXT.status} for Valorant launcher health and this page for Valorant Cheats build status — both matter on big update days.`,
-				'Checking this log before you queue reduces surprises after game days or seasonal launches on Competitive missions and co-op missions.',
+				'Checking this log before you queue reduces surprises after game days or seasonal launches on Competitive and Spike Rush.',
 			),
 			section(
 				'What maintenance entries cover',
@@ -260,7 +260,7 @@ export const enPages = {
 		h1: 'Valorant Cheats FAQ — Common Questions',
 		intro:
 			'Answers about undetected Valorant Cheats — ESP wallhack, radar hack, Aimbot, anti-cheat maintenance, checkout, and Valorant compatibility on Windows PC.',
-		imageAlt: 'Valorant radar hack 2D minimap overlay showing spawn routes and enemy units and enemys',
+		imageAlt: 'Valorant radar hack 2D minimap overlay showing spawn routes and enemy agents',
 		galleryTitle: 'Valorant Cheats FAQ visuals',
 		ctaPrimary: 'Buy Valorant Cheats',
 		ctaSecondary: 'Contact support',
@@ -269,7 +269,7 @@ export const enPages = {
 			section(
 				'What is Valorant Cheats?',
 				'Valorant Cheats is an undetected cheat package for Valorant on Windows PC. It includes ESP wallhack, 2D radar-style awareness, and Aimbot controls with anti-cheat maintenance updates.',
-				'Packages cover Competitive missions and co-op missions. Explore <a href="/features/">Features</a> for the full control list and <a href="/valorant-esp/">ESP</a> / <a href="/valorant-aimbot/">Aimbot</a> for module detail.',
+				'Packages cover Competitive and Spike Rush. Explore <a href="/features/">Features</a> for the full control list and <a href="/valorant-esp/">ESP</a> / <a href="/valorant-aimbot/">Aimbot</a> for module detail.',
 				`Valorant is developed and published by ${EXT.epic}. Cheats are third-party tools and may violate Riot Games' Terms of Service — use is at your own risk.`,
 			),
 			section(
@@ -322,11 +322,11 @@ export const enPages = {
 	undetected: {
 		title: 'Undetected Valorant Cheats 2026 | Anti-cheat safe',
 		description:
-			'Undetected Valorant Cheats with anti-cheat maintenance for ESP boxes, soft aim, and cloud DMA on PC and controllers. Check status before you queue.',
+			'Undetected Valorant Cheats with anti-cheat maintenance for ESP boxes, soft aim, and radar on PC and controllers. Check status before you queue.',
 		h1: 'Undetected Valorant Cheats — Anti-cheat maintenance',
 		intro:
 			'How Valorant Cheats stays maintained for Valorant after Riot Games anti-cheat patches — ESP wallhack, radar hack, and Aimbot rebuilds for Windows PC.',
-		imageAlt: 'Valorant wallhack ESP skeleton boxes on enemy units and enemys through map geometry',
+		imageAlt: 'Valorant wallhack ESP skeleton boxes on enemy agents through map geometry',
 		galleryTitle: 'Undetected Valorant Cheats visuals',
 		ctaPrimary: 'Buy Valorant Cheats',
 		ctaSecondary: 'anti-cheat maintenance guide',
@@ -355,11 +355,11 @@ export const enPages = {
 	wallhack: {
 		title: 'Valorant Wallhack 2026 | ESP Boxes Through Terrain',
 		description:
-			'Valorant wallhack ESP highlights enemy, enemy & enemy through cover. Toggle categories for Competitive & map rotations.',
+			'Valorant wallhack ESP highlights enemy agents through cover. Toggle categories for Competitive & Unrated.',
 		h1: 'Valorant Wallhack — ESP Boxes & Visibility',
 		intro:
-			'Valorant wallhack ESP for Valorant — see enemies, pickups, and lockers through toggleable wallhack overlays built for map rotations missions and Competitive missions.',
-		imageAlt: 'Valorant wallhack ESP skeleton boxes on enemy unit hero in Competitive',
+			'Valorant wallhack ESP for Valorant — see agents, utility, and the spike through toggleable wallhack overlays built for Unrated, Competitive, and Spike Rush.',
+		imageAlt: 'Valorant wallhack ESP skeleton boxes on enemy agent hero in Competitive',
 		galleryTitle: 'Valorant wallhack ESP gallery',
 		ctaPrimary: 'Buy Valorant Cheats',
 		ctaSecondary: 'Valorant ESP page',
@@ -367,14 +367,14 @@ export const enPages = {
 		sections: [
 			section(
 				'Wallhack ESP vs raw aim tools',
-				'A Valorant wallhack focuses on information — enemy outlines, loot pins, heavy unit threat cues — rather than automatic aiming. Valorant Cheats bundles wallhack ESP with radar and optional Aimbot in one license.',
+				'A Valorant wallhack focuses on information — enemy outlines, spike markers, duelist threat cues — rather than automatic aiming. Valorant Cheats bundles wallhack ESP with radar and optional Aimbot in one license.',
 				'Toggle categories so only the wallhack overlays you need stay active during rotations and defense waves.',
 				'For the broader ESP keyword page see <a href="/valorant-esp/">Valorant ESP</a>; for combat assist see <a href="/valorant-aimbot/">Aimbot</a>.',
 			),
 			section(
 				'Map coverage for wallhack ESP',
-				'Wallhack overlays support Competitive missions, co-op missions, and Competitive missions with distance readouts and snaplines for engagement control.',
-				`tileset updates and tileset area changes are announced via ${EXT.rust}. Wallhack remains useful because it tracks entities, not fixed landmarks alone.`,
+				'Wallhack overlays support Competitive, Unrated, and Spike Rush with distance readouts and snaplines for engagement control.',
+				`map updates and map changes are announced via ${EXT.rust}. Wallhack remains useful because it tracks entities, not fixed landmarks alone.`,
 				'Pair wallhack awareness with <a href="/valorant-radar/">radar hack</a> cues for flanks during building and rooftop fights.',
 			),
 			section(
@@ -400,14 +400,14 @@ export const enPages = {
 		sections: [
 			section(
 				'Why radar hack matters in Valorant',
-				'Multi-floor tilesets stack vertical fights — catwalks, doorways, and side spawns. A 2D radar overlay shows nearby enemy threats outside direct line of sight so you can reposition before a flank wave.',
-				'Valorant Cheats radar complements <a href="/valorant-esp/">ESP wallhack</a> markers during squad pushes and final-circle scrims.',
+				'Multi-floor maps stack vertical fights — catwalks, doorways, and side spawns. A 2D radar overlay shows nearby enemy threats outside direct line of sight so you can reposition before a flank wave.',
+				'Valorant Cheats radar complements <a href="/valorant-esp/">ESP wallhack</a> markers during squad pushes and post-plant scrims.',
 				`Mode rules and seasonal changes come from ${EXT.epic}. Radar range remains configurable when map scale or mobility meta shifts.`,
 			),
 			section(
 				'Configurable radar range',
-				'Adjust radar range for early rotations versus tight defense waves. Directional cues highlight flanks during tileset clears and heavy unit pushes across Competitive missions and co-op missions.',
-				'Toggle radar alongside ESP and Aimbot with in-client hotkeys during live missions — see the <a href="/features/">mod menu</a> page.',
+				'Adjust radar range for early rotations versus tight defense waves. Directional cues highlight flanks during map clears and duelist pushes across Competitive and Spike Rush.',
+				'Toggle radar alongside ESP and Aimbot with in-client hotkeys during live rounds — see the <a href="/features/">mod menu</a> page.',
 				'Combat follow-up lives on <a href="/valorant-aimbot/">Aimbot</a> when you convert radar info into a fight.',
 			),
 			section(
@@ -425,7 +425,7 @@ export const enPages = {
 		h1: 'Valorant Anti-Cheat — Maintenance Guide',
 		intro:
 			'Understand Riot Games anti-cheat maintenance for Valorant Cheats — how ESP wallhack, radar hack, and Aimbot rebuild after Valorant security updates.',
-		imageAlt: 'Valorant undetected hacks status with ESP overlay on enemy units and enemys',
+		imageAlt: 'Valorant undetected hacks status with ESP overlay on enemy agents',
 		galleryTitle: 'anti-cheat maintenance visuals',
 		ctaPrimary: 'Buy Valorant Cheats',
 		ctaSecondary: 'Check updates',
@@ -452,10 +452,10 @@ export const enPages = {
 		],
 	},
 	'cheats-2026': {
-		title: 'Valorant Cheats 2026 | Hacks with ESP & Cloud DMA',
+		title: 'Valorant Cheats 2026 | Hacks with ESP & Radar',
 		description:
-			'Best Valorant cheats 2026: ESP boxes, soft aim, and cloud DMA for PC and controllers. Undetected Valorant Cheats with anti-cheat maintenance — compare and buy.',
-		h1: 'Valorant Cheats 2026 — ESP, Soft Aim & Cloud DMA',
+			'Best Valorant cheats 2026: ESP boxes, soft aim, and radar for PC and controllers. Undetected Valorant Cheats with anti-cheat maintenance — compare and buy.',
+		h1: 'Valorant Cheats 2026 — ESP, Soft Aim & Radar',
 		intro:
 			'The 2026 Valorant Cheats package for Valorant — undetected ESP wallhack, radar hack, and Aimbot with anti-cheat maintenance, instant delivery, and Windows PC support.',
 		imageAlt: 'Valorant cheats main menu with ESP wallhack and soft aim toggles on PC',
@@ -468,11 +468,11 @@ export const enPages = {
 				'Why Valorant Cheats leads in 2026',
 				'2026 seasons bring new maps, weapons, and Riot Games anti-cheat updates. Valorant Cheats bundles ESP wallhack, radar hack, and Aimbot with active maintenance — not a stale prior-year build.',
 				`Track official official patch messaging on ${EXT.rust}, then use our <a href="/updates/">Updates log</a> for product rebuild timing.`,
-				'Monthly ($35) and lifetime ($150) plans cover Competitive missions and co-op missions loops — see <a href="/pricing/">Pricing</a>.',
+				'Monthly ($35) and lifetime ($150) plans cover Competitive and Spike Rush loops — see <a href="/pricing/">Pricing</a>.',
 			),
 			section(
 				'Full feature stack for 2026 buyers',
-				'enemy ESP wallhack, health pickup markers, 2D radar overlays, Aimbot profiles, in-client toggles, and post-patch rebuilds — one license instead of stacking separate tools.',
+				'enemy ESP wallhack, health bars, 2D radar overlays, Aimbot profiles, in-client toggles, and post-patch rebuilds — one license instead of stacking separate tools.',
 				'Deep links: <a href="/valorant-cheats/">Valorant Cheats pillar</a>, <a href="/valorant-esp/">ESP</a>, <a href="/valorant-aimbot/">Aimbot</a>, <a href="/valorant-wallhack/">wallhack</a>, <a href="/valorant-radar/">radar</a>, <a href="/valorant-cheats/">undetected</a>.',
 				'Instant digital delivery after checkout confirmation worldwide.',
 			),
@@ -490,7 +490,7 @@ export const enPages = {
 			'Undetected Valorant cheats with ESP, aimbot & wallhack for PC. Maintenance after patches, pricing & setup — no permanent undetected promises.',
 		h1: 'Valorant Cheats & Hacks — ESP, Aimbot & Wallhack',
 		intro:
-			'Valorant cheats and hacks for Competitive, Spike Rush, and map rotations combine ESP wallhack visibility, 2D radar threat cues, and aimbot controls in one Windows PC license — maintained after Riot Games anti-cheat patches. This is the pillar guide for Valorant Cheats in 2026.',
+			'Valorant cheats and hacks for Competitive, Spike Rush, and rotates combine ESP wallhack visibility, 2D radar threat cues, and aimbot controls in one Windows PC license — maintained after Riot Games anti-cheat patches. This is the pillar guide for Valorant Cheats in 2026.',
 		imageAlt: 'Valorant cheats Competitive objective fight with ESP boxes and aimbot active',
 		galleryTitle: 'Valorant Cheats gallery — ESP, Aimbot, wallhack',
 		ctaPrimary: 'Buy Valorant Cheats',
@@ -499,8 +499,8 @@ export const enPages = {
 		sections: [
 			section(
 				'What Valorant Cheats include in 2026',
-				'Players searching for Valorant Cheats usually want visibility and combat tools without stacking separate downloads. Valorant Cheats bundles enemy ESP wallhack, health pickup markers, 2D radar overlays, and configurable Aimbot in one maintained package — the same toolkit often called Valorant cheats.',
-				'Coverage spans Competitive missions and co-op missions with in-client toggles for live missions. Monthly ($35) and lifetime ($150) licenses unlock the full stack.',
+				'Players searching for Valorant Cheats usually want visibility and combat tools without stacking separate downloads. Valorant Cheats bundles enemy ESP wallhack, health bars, 2D radar overlays, and configurable Aimbot in one maintained package — the same toolkit often called Valorant cheats.',
+				'Coverage spans Competitive and Spike Rush with in-client toggles for live rounds. Monthly ($35) and lifetime ($150) licenses unlock the full stack.',
 				`Official game updates come from ${EXT.epic}; our hacks package tracks those releases via the <a href="/updates/">Updates page</a>. Cross-check platform health on ${EXT.status} before patch-day queues.`,
 			),
 			section(
@@ -511,7 +511,7 @@ export const enPages = {
 			),
 			section(
 				'Valorant Cheats vs single-feature tools',
-				'Standalone hacks often cover only wallhack or only aim assist. Valorant Cheats maps the full mission loop: read enemy units, track lockers and resource caches, spot flanks on radar, and tune Aimbot per weapon class.',
+				'Standalone hacks often cover only wallhack or only aim assist. Valorant Cheats maps the full mission loop: read enemy agents, track the spike and abilities, spot flanks on radar, and tune Aimbot per weapon class.',
 				'Compare the <a href="/valorant-esp/">ESP</a>, <a href="/valorant-aimbot/">Aimbot</a>, and <a href="/features/">Features</a> pages — or review <a href="/pricing/">Pricing</a> for monthly and lifetime licenses.',
 				'Related landings: <a href="/pricing/">cheat download</a>, <a href="/features/">mod menu</a>, <a href="/valorant-aimbot/">aimbot hack</a>, <a href="/valorant-esp/">ESP hack</a>.',
 			),
@@ -526,11 +526,11 @@ export const enPages = {
 	'cheat-download': {
 		title: 'Valorant Hack Download 2026 | Instant Access',
 		description:
-			'Valorant cheat download with instant license delivery — ESP boxes, soft aim, and cloud DMA for PC and controllers. Buy, activate, and play.',
+			'Valorant cheat download with instant license delivery — ESP boxes, soft aim, and radar for PC and controllers. Buy, activate, and play.',
 		h1: 'Valorant Hack Download — Instant License Delivery',
 		intro:
 			'How Valorant cheat download works for Valorant — digital license delivery after payment confirmation, with ESP wallhack, radar hack, and Aimbot access on Windows PC.',
-		imageAlt: 'Valorant wallhack ESP showing enemy units and enemys through objective corners',
+		imageAlt: 'Valorant wallhack ESP showing enemy agents through objective corners',
 		galleryTitle: 'Valorant cheat download visuals',
 		ctaPrimary: 'Buy Valorant Cheats',
 		ctaSecondary: 'Setup guide',
@@ -544,7 +544,7 @@ export const enPages = {
 			),
 			section(
 				'What your download unlocks',
-				'Every Valorant cheat download includes enemy ESP wallhack, pickups and lockers markers, 2D radar overlays, Aimbot profiles, and in-client toggles for map rotations missions and Competitive missions.',
+				'Every Valorant cheat download includes enemy ESP wallhack, spike and utility markers, 2D radar overlays, Aimbot profiles, and in-client toggles for Unrated, Competitive, and Spike Rush.',
 				'Monthly ($35) and lifetime ($150) plans share the same feature stack — compare options on the <a href="/pricing/">Pricing page</a>.',
 				'Feature detail: <a href="/features/">Features</a>. Module pages: <a href="/valorant-esp/">ESP</a>, <a href="/valorant-aimbot/">Aimbot</a>.',
 			),
@@ -559,10 +559,10 @@ export const enPages = {
 	'mod-menu': {
 		title: 'Valorant Mod Menu 2026 | ESP & Soft Aim Toggles',
 		description:
-			'Valorant mod menu for in-match toggles — ESP boxes, soft aim, radar, and cloud DMA on PC and controllers. Undetected Valorant Cheats package.',
+			'Valorant mod menu for in-match toggles — ESP boxes, soft aim, radar, and radar on PC and controllers. Undetected Valorant Cheats package.',
 		h1: 'Valorant Mod Menu — In-Client Control Panel',
 		intro:
-			'Valorant mod menu controls for Valorant — toggle ESP wallhack categories, radar range, and Aimbot profiles mid-mission without leaving your Valorant session on Windows PC.',
+			'Valorant mod menu controls for Valorant — toggle ESP wallhack categories, radar range, and Aimbot profiles mid-round without leaving your Valorant session on Windows PC.',
 		imageAlt: 'Valorant cheats mod menu with soft aim profiles and ESP toggles',
 		galleryTitle: 'Valorant mod menu gallery',
 		ctaPrimary: 'Buy Valorant Cheats',
@@ -571,13 +571,13 @@ export const enPages = {
 		sections: [
 			section(
 				'What a Valorant mod menu controls',
-				'A Valorant mod menu is the in-client panel where you enable ESP wallhack overlays, adjust radar range, and switch Aimbot profiles during live missions. Valorant Cheats keeps those toggles accessible with hotkeys.',
-				'Toggle enemy outlines, health pickup markers, heavy unit cues, and per-weapon Aimbot settings without alt-tabbing out of Valorant.',
+				'A Valorant mod menu is the in-client panel where you enable ESP wallhack overlays, adjust radar range, and switch Aimbot profiles during live rounds. Valorant Cheats keeps those toggles accessible with hotkeys.',
+				'Toggle enemy outlines, health bars, duelist cues, and per-weapon Aimbot settings without alt-tabbing out of Valorant.',
 				'Control deep-dives: <a href="/valorant-esp/">ESP</a>, <a href="/valorant-aimbot/">Aimbot</a>, <a href="/valorant-radar/">radar</a>.',
 			),
 			section(
-				'Mod menu categories for map rotations missions and Competitive missions',
-				'Separate ESP wallhack categories for players, pickups, lockers, and caches let you reduce overlay noise during rotations and defense waves.',
+				'Mod menu categories for Unrated, Competitive, and Spike Rush',
+				'Separate ESP wallhack categories for players, agents, utility, and the spike let you reduce overlay noise during rotations and defense waves.',
 				'Radar hack range and Aimbot smoothness adjust from the same mod menu — useful when Valorant balance patches change fight distances and mobility.',
 				'Soft tracking players should start with <a href="/valorant-aimbot/">soft aim</a> profiles before aggressive FOV.',
 			),
@@ -596,7 +596,7 @@ export const enPages = {
 		h1: 'Valorant Soft Aim — Smooth Aimbot Controls',
 		intro:
 			'Valorant aimbot settings for Valorant — configurable Aimbot smoothness, FOV, bone priority, and hotkey toggles bundled with ESP wallhack and radar in one undetected license.',
-		imageAlt: 'Valorant aimbot ESP boxes and FOV circle on enemy units and enemys in map rotations missions',
+		imageAlt: 'Valorant aimbot ESP boxes and FOV circle on enemy agents in Unrated and Competitive',
 		galleryTitle: 'Valorant aimbot gallery',
 		ctaPrimary: 'Buy Valorant Cheats',
 		ctaSecondary: 'Aimbot controls',
@@ -610,7 +610,7 @@ export const enPages = {
 			),
 			section(
 				'Soft aim profiles per weapon class',
-				'Save separate soft aim profiles for rifles, shotguns, and snipers. Switch between long-range rifle beams and close-quarters room clears with hotkeys mid-mission.',
+				'Save separate soft aim profiles for rifles, shotguns, and snipers. Switch between long-range rifle beams and close-quarters room clears with hotkeys mid-round.',
 				`Weapon TTKs shift with ${EXT.rust} balance patches — retune smoothness after major combat updates.`,
 				'Soft aim ships alongside <a href="/valorant-esp/">ESP wallhack</a> and <a href="/valorant-radar/">2D radar</a> overlays.',
 			),
@@ -625,11 +625,11 @@ export const enPages = {
 	'best-cheats': {
 		title: 'Best Valorant Cheats 2026 | Buyer Guide',
 		description:
-			'Best Valorant Cheats for 2026: ESP boxes, soft aim, cloud DMA, and anti-cheat maintenance on PC and controllers. Use this checklist before checkout.',
+			'Best Valorant Cheats for 2026: ESP boxes, soft aim, radar, and anti-cheat maintenance on PC and controllers. Use this checklist before checkout.',
 		h1: 'Best Valorant Cheats — 2026 Buyer Guide',
 		intro:
 			'Compare the best Valorant cheats for Valorant in 2026 — undetected ESP wallhack, radar hack, and Aimbot in one maintained package with Riot Games anti-cheat rebuilds and instant delivery.',
-		imageAlt: 'Valorant wallhack ESP showing enemy units and enemys through objective corners',
+		imageAlt: 'Valorant wallhack ESP showing enemy agents through objective corners',
 		galleryTitle: 'Best Valorant cheats gallery',
 		ctaPrimary: 'Buy Valorant Cheats',
 		ctaSecondary: 'Compare pricing',
@@ -638,12 +638,12 @@ export const enPages = {
 			section(
 				'What makes the best Valorant cheats in 2026',
 				'The best Valorant cheats combine active anti-cheat maintenance, a full ESP wallhack and radar stack, configurable Aimbot, and clear update communication — not a stale build from a prior season.',
-				'Valorant Cheats covers Competitive missions and co-op missions with in-client toggles and post-patch rebuilds.',
+				'Valorant Cheats covers Competitive and Spike Rush with in-client toggles and post-patch rebuilds.',
 				`Verify the live game is healthy via ${EXT.status}, then confirm our <a href="/updates/">Updates</a> note before you judge any package “best.”`,
 			),
 			section(
 				'Best Valorant cheats feature checklist',
-				'Look for enemy ESP wallhack, health pickup markers, 2D radar overlays, Aimbot profiles, hotkey toggles, and documented maintenance after Valorant patches.',
+				'Look for enemy ESP wallhack, health bars, 2D radar overlays, Aimbot profiles, hotkey toggles, and documented maintenance after Valorant patches.',
 				'Review <a href="/features/">Features</a>, <a href="/valorant-cheats/">undetected status</a>, and <a href="/valorant-cheats/">Valorant cheats 2026</a> before checkout — monthly ($35) and lifetime ($150) plans available.',
 				'Module pages worth opening: <a href="/valorant-esp/">ESP</a>, <a href="/valorant-aimbot/">Aimbot</a>, <a href="/valorant-cheats/">hacks</a>.',
 			),
@@ -671,12 +671,12 @@ export const enPages = {
 			section(
 				'Valorant aimbot hack vs visibility tools',
 				'A Valorant aimbot hack focuses on assisted targeting during firefights — while ESP wallhack and radar handle map awareness. Valorant Cheats bundles aimbot hack modules with visibility overlays in one license.',
-				'Smoothness, FOV, and sensitivity controls tune assist for Valorant combat pace across map rotations missions and Competitive missions.',
+				'Smoothness, FOV, and sensitivity controls tune assist for Valorant combat pace across Unrated, Competitive, and Spike Rush.',
 				'Prefer softer tracking language? See <a href="/valorant-aimbot/">soft aim</a>. Full settings: <a href="/valorant-aimbot/">Aimbot page</a>.',
 			),
 			section(
 				'Aimbot hack controls and hotkeys',
-				'Bone priority options cover head, chest, or dynamic targets. Hotkeys enable or disable aimbot hack mid-mission without opening menus during rotations or final circles.',
+				'Bone priority options cover head, chest, or dynamic targets. Hotkeys enable or disable aimbot hack mid-round without opening menus during rotations or post-plants.',
 				'Per-weapon profile slots separate long-range rifle tuning from close-quarters shotgun settings.',
 				`Balance patches from ${EXT.rust} can change ideal FOV — retune after major weapon updates.`,
 			),
@@ -691,10 +691,10 @@ export const enPages = {
 	'esp-hack': {
 		title: 'Valorant ESP Hack 2026 | enemy boxes & Loot',
 		description:
-			'Valorant ESP hack with enemy boxes and health pickup markers for PC and controllers. Undetected Valorant cheats with cloud DMA — see overlays and buy.',
+			'Valorant ESP hack with enemy boxes and health bars for PC and controllers. Undetected Valorant cheats with radar — see overlays and buy.',
 		h1: 'Valorant ESP Hack — enemy boxes Guide',
 		intro:
-			'Valorant ESP hack overlays for Valorant — enemy outlines, heavy unit threat cues, pickups and lockers markers with distance readouts across Competitive missions and co-op missions.',
+			'Valorant ESP hack overlays for Valorant — enemy outlines, duelist threat cues, spike and utility markers with distance readouts across Competitive and Spike Rush.',
 		imageAlt: 'Valorant ESP hack with hero skeleton, bounding box, and ult tracking labels',
 		galleryTitle: 'Valorant ESP hack gallery',
 		ctaPrimary: 'Buy Valorant Cheats',
@@ -703,15 +703,15 @@ export const enPages = {
 		sections: [
 			section(
 				'What a Valorant ESP hack shows',
-				'A Valorant ESP hack renders enemy unit outlines, heavy unit positions, and loot pins through walls and terrain — closing the information gap before you commit to a fight.',
+				'A Valorant ESP hack renders enemy agent outlines, duelist positions, and spike markers through walls and terrain — closing the information gap before you commit to a fight.',
 				'Distance readouts and snapline options help control engagement range during squad pushes and flanking scenarios.',
 				'Canonical visibility guide: <a href="/valorant-esp/">Valorant ESP</a>. Wallhack wording: <a href="/valorant-wallhack/">wallhack</a>.',
 			),
 			section(
-				'ESP hack categories for Competitive missions',
-				'Toggle Enemy ESP hack, health pickup markers, chest pins, and heavy unit cues independently so only mission-critical overlays stay active during rotations.',
-				'Team and enemy colour coding supports co-op missions and Competitive.',
-				`tileset area and loot changes publish through ${EXT.epic} — keep categories toggled to what the current map rewards.`,
+				'ESP hack categories for Competitive',
+				'Toggle Enemy ESP hack, health bars, chest pins, and duelist cues independently so only round-critical overlays stay active during rotations.',
+				'Team and enemy colour coding supports Spike Rush and Competitive.',
+				`map and loot changes publish through ${EXT.epic} — keep categories toggled to what the current map rewards.`,
 			),
 			section(
 				'Undetected ESP hack with anti-cheat maintenance',
@@ -724,11 +724,11 @@ export const enPages = {
 	'unlock-all': {
 		title: 'Valorant Unlock All 2026 | What It Really Means',
 		description:
-			'Valorant unlock all explained vs real Valorant Cheats — ESP boxes, soft aim, and cloud DMA for PC and controllers. Know what you are buying.',
+			'Valorant unlock all explained vs real Valorant Cheats — ESP boxes, soft aim, and radar for PC and controllers. Know what you are buying.',
 		h1: 'Valorant Unlock All — What Players Search For',
 		intro:
 			'Valorant unlock all is a common search term for Valorant — this page clarifies what unlock-all tools claim versus the ESP wallhack, radar hack, and Aimbot tools Valorant Cheats actually provides on Windows PC.',
-		imageAlt: 'Valorant ESP boxes and distances on enemy units and enemys in Competitive mission',
+		imageAlt: 'Valorant ESP boxes and distances on enemy agents in Competitive mission',
 		galleryTitle: 'Valorant unlock all guide visuals',
 		ctaPrimary: 'Buy Valorant Cheats',
 		ctaSecondary: 'See features',
@@ -737,13 +737,13 @@ export const enPages = {
 			section(
 				'What Valorant unlock all usually means',
 				'Valorant unlock all searches often refer to instant access to weapons, camos, skins, or Prime Access tiers. Those claims differ from visibility and combat-assist tools like ESP wallhack and Aimbot.',
-				'Valorant Cheats focuses on in-match awareness — Enemy ESP, health pickup markers, radar overlays, and configurable Aimbot — not account-wide cosmetic unlocks.',
+				'Valorant Cheats focuses on in-match awareness — Enemy ESP, health bars, radar overlays, and configurable Aimbot — not account-wide cosmetic unlocks.',
 				`Cosmetics and Prime Access items are sold through ${EXT.rust}. Be wary of unlock-all downloads that promise free skins — they are often scams.`,
 			),
 			section(
 				'Visibility tools vs unlock-all claims',
-				'ESP wallhack helps you spot enemy units, lockers, and resource caches during live missions. Radar hack adds flank awareness; Aimbot covers combat assist with smoothness and hotkey controls.',
-				'For loadout planning during a match, pickups and lockers markers speed BR rotations — see the <a href="/valorant-esp/">ESP</a> and <a href="/features/">Features</a> pages for the full tool list.',
+				'ESP wallhack helps you spot enemy agents, utility, and the spike during live rounds. Radar hack adds flank awareness; Aimbot covers combat assist with smoothness and hotkey controls.',
+				'For loadout planning during a match, spike and utility markers speed site rotates — see the <a href="/valorant-esp/">ESP</a> and <a href="/features/">Features</a> pages for the full tool list.',
 				'Related: <a href="/valorant-cheats/">Valorant Cheats</a> and <a href="/valorant-cheats/">best Valorant cheats</a>.',
 			),
 			section(
@@ -787,7 +787,7 @@ export const enPages = {
 	refund: {
 		title: 'Refund Policy | Valorant Cheats',
 		description:
-			'Refund policy for Valorant Cheats. Digital delivery terms and eligibility for Valorant Cheats packages with ESP, soft aim, and cloud DMA.',
+			'Refund policy for Valorant Cheats. Digital delivery terms and eligibility for Valorant Cheats packages with ESP, soft aim, and radar.',
 		h1: 'Valorant Cheats Refund Policy',
 		intro:
 			'Refund terms for Valorant Cheats licenses — ESP wallhack, radar hack, and Aimbot packages purchased through checkout for Valorant.',

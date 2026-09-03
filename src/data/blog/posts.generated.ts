@@ -13,7 +13,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		en: {
 		slug: "valorant-cheats-complete-guide-2026",
 		title: "Valorant Cheats 2026: Complete Undetected Guide",
-		metaDescription: "Complete Valorant Cheats guide for PC and controllers — ESP boxes, soft aim, cloud DMA, and anti-cheat maintenance in 2026. Compare the full package and buy.",
+		metaDescription: "Complete Valorant Cheats guide for PC and controllers — ESP boxes, soft aim, radar, and anti-cheat maintenance in 2026. Compare the full package and buy.",
 		h1: "Valorant Cheats 2026: The Complete Undetected Guide",
 		intro: "Searching for Valorant Cheats in 2026? This guide covers ESP wallhack, Aimbot, radar, undetected maintenance, and how Valorant cheats searchers map to the same Windows PC package.",
 		keywords: ["Valorant Cheats","undetected Valorant Cheats","Valorant cheats","esp","aimbot","eac"],
@@ -22,7 +22,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "What Valorant Cheats actually include",
 				paragraphs: [
-					"Valorant Cheats usually mean visibility plus combat assist: enemy ESP wallhack, health pickup markers, 2D radar threat cues, and configurable Aimbot. Buyers who type Valorant cheats are looking for the same stack — different wording, same mission loop.",
+					"Valorant Cheats usually mean visibility plus combat assist: enemy ESP wallhack, health bars, 2D radar threat cues, and configurable Aimbot. Buyers who type Valorant cheats are looking for the same stack — different wording, same mission loop.",
 					"Official seasons and client updates publish through <a href=\"https://www.riotgames.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Riot Games</a> and <a href=\"https://playvalorant.com/\" target=\"_blank\" rel=\"noopener noreferrer\">official Valorant patch notes</a>. Anti-cheat context lives on Riot Games anti-cheat. Our <a href=\"/valorant-cheats/\">Valorant Cheats pillar</a> is the commercial landing; this post is the long-form explainer.",
 					"Pro Tip — One license, full loop: Prefer a maintained package over stacking single-feature downloads that break on every patch.",
 				],
@@ -64,7 +64,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		en: {
 		slug: "valorant-cheats-buyers-guide",
 		title: "Valorant Cheats Buyers Guide: What to Check",
-		metaDescription: "Valorant cheats buyers guide for PC and controllers — ESP boxes, soft aim, cloud DMA, pricing, and anti-cheat status. Compare before checkout.",
+		metaDescription: "Valorant cheats buyers guide for PC and controllers — ESP boxes, soft aim, radar, pricing, and anti-cheat status. Compare before checkout.",
 		h1: "Valorant Cheats Buyers Guide: What Matters in 2026",
 		intro: "Shopping for Valorant cheats? Use this checklist for ESP wallhack, Aimbot, radar, anti-cheat maintenance, and license length — then cross-check the Valorant Cheats pillar before checkout.",
 		keywords: ["Valorant cheats","best Valorant cheats","Valorant Cheats","buyers guide","undetected"],
@@ -107,7 +107,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		en: {
 		slug: "valorant-cheats-2026-whats-new",
 		title: "Valorant Cheats 2026: What Changed This Year",
-		metaDescription: "Valorant cheats 2026 overview — ESP boxes, soft aim, and cloud DMA for PC and controllers with anti-cheat maintenance. Pair with the hacks pillar before buying.",
+		metaDescription: "Valorant cheats 2026 overview — ESP boxes, soft aim, and radar for PC and controllers with anti-cheat maintenance. Pair with the hacks pillar before buying.",
 		h1: "Valorant Cheats 2026: What Buyers Need Now",
 		intro: "Valorant cheats 2026 searches spike every season. Here is what still matters: maintained ESP wallhack, Aimbot profiles, radar awareness, and rebuilds after Riot Games anti-cheat patches.",
 		keywords: ["Valorant cheats 2026","Valorant Cheats","eac","esp","aimbot"],
@@ -116,7 +116,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Why 2026 buyers still need maintenance",
 				paragraphs: [
-					"tileset updates, weapons, and anti-cheat updates still break stale tools. A 2026-ready package publishes rebuild notes — not a frozen prior-year build.",
+					"map updates, weapons, and anti-cheat updates still break stale tools. A 2026-ready package publishes rebuild notes — not a frozen prior-year build.",
 					"Track official messaging on <a href=\"https://playvalorant.com/\" target=\"_blank\" rel=\"noopener noreferrer\">official Valorant patch notes</a>, then confirm product status on <a href=\"/updates/\">Updates</a> and <a href=\"/valorant-cheats/\">the cheats 2026 landing</a>.",
 				],
 			},
@@ -158,7 +158,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Start conservative, then tune",
 				paragraphs: [
-					"Begin with moderate FOV and higher smoothness. Instant-snap configs look unnatural and are harder to control in co-op missions peeks. Hotkeys let you disable Aimbot mid-mission.",
+					"Begin with moderate FOV and higher smoothness. Instant-snap configs look unnatural and are harder to control in Spike Rush peeks. Hotkeys let you disable Aimbot mid-round.",
 					"Full control list: <a href=\"/valorant-aimbot/\">Valorant Aimbot</a>, <a href=\"/valorant-aimbot/\">aimbot hack</a>, and <a href=\"/valorant-aimbot/\">soft aim</a>.",
 				],
 			},
@@ -191,7 +191,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		en: {
 		slug: "valorant-esp-wallhack-explained",
 		title: "Valorant ESP & Wallhack Explained Clearly",
-		metaDescription: "Valorant ESP and wallhack explained — enemy boxes, health pickup markers, and distance readouts for PC and controllers. Learn overlays on the hacks pages.",
+		metaDescription: "Valorant ESP and wallhack explained — enemy boxes, health bars, and distance readouts for PC and controllers. Learn overlays on the hacks pages.",
 		h1: "Valorant ESP and Wallhack Explained",
 		intro: "Valorant ESP (wallhack) shows enemies, loot, and threats through terrain. Here is how overlays work, what to toggle, and how ESP fits into Valorant Cheats and Valorant cheats packages.",
 		keywords: ["valorant esp","valorant wallhack","esp hack","Valorant Cheats","resource esp"],
@@ -200,7 +200,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "ESP categories that matter in missions",
 				paragraphs: [
-					"Toggle enemy outlines, loot/chest pins, heavy unit cues, and distance readouts. Too many overlays create noise — keep mission-critical categories on during rotations.",
+					"Toggle enemy outlines, loot/chest pins, duelist cues, and distance readouts. Too many overlays create noise — keep round-critical categories on during rotations.",
 					"Landings: <a href=\"/valorant-esp/\">Valorant ESP</a>, <a href=\"/valorant-wallhack/\">wallhack</a>, <a href=\"/valorant-esp/\">ESP hack</a>.",
 				],
 			},
@@ -208,7 +208,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Wallhack vs radar vs Aimbot",
 				paragraphs: [
 					"Wallhack/ESP is line-of-sight information through walls. Radar covers off-screen flanks. Aimbot is combat assist. The <a href=\"/valorant-cheats/\">hacks pillar</a> bundles all three.",
-					"Map and loot systems evolve with <a href=\"https://www.riotgames.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Riot Games</a> seasons — toggleable categories stay useful when tileset areas rotate.",
+					"Map and loot systems evolve with <a href=\"https://www.riotgames.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Riot Games</a> seasons — toggleable categories stay useful when maps rotate.",
 				],
 			},
 			{
@@ -233,7 +233,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		en: {
 		slug: "undetected-valorant-cheats-eac",
 		title: "Undetected Valorant Cheats & anti-cheat Reality",
-		metaDescription: "Undetected Valorant Cheats and anti-cheat reality — ESP boxes, soft aim, and cloud DMA rebuilds for PC and controllers. Check Updates before queueing post-patch.",
+		metaDescription: "Undetected Valorant Cheats and anti-cheat reality — ESP boxes, soft aim, and radar rebuilds for PC and controllers. Check Updates before queueing post-patch.",
 		h1: "Undetected Valorant Cheats and Riot Games anti-cheat Reality",
 		intro: "Undetected Valorant Cheats mean active anti-cheat maintenance — not a forever guarantee. Learn the patch-day workflow, where to check status, and how hacks/cheats pages fit together.",
 		keywords: ["undetected Valorant Cheats","eac","Valorant Cheats","Valorant cheats","maintenance"],
@@ -275,7 +275,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		en: {
 		slug: "valorant-cheats-vs-cheatvault-comparison",
 		title: "Valorant Cheats vs CheatVault: Honest 2026 Comparison",
-		metaDescription: "Valorant Cheats vs CheatVault compared — pricing, ESP boxes, soft aim, cloud DMA, anti-cheat detection history, and which package fits Competitive players in 2026.",
+		metaDescription: "Valorant Cheats vs CheatVault compared — pricing, ESP boxes, soft aim, radar, anti-cheat detection history, and which package fits Competitive players in 2026.",
 		h1: "Valorant Cheats vs CheatVault: Honest Comparison",
 		intro: "I ran both CheatVault and Valorant Cheats through the same mission session last season. Here is the straight comparison — price, features, patch-day behavior, and where each one actually wins.",
 		keywords: ["Valorant Cheats vs cheatvault","cheatvault comparison","Valorant cheats","esp","eac","pricing"],
@@ -285,7 +285,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Why I compared these two in the first place",
 				paragraphs: [
 					"CheatVault shows up in almost every Valorant cheat thread alongside Valorant Cheats. Both promise ESP, aim assist, and undetected status. Both list monthly and lifetime tiers. On paper they look identical — which is exactly why buyers get burned picking the wrong one.",
-					"I kept CheatVault for about six weeks in major update Season 2, then switched to Valorant Cheats for the back half of the season. Same PC, same sens, mostly co-op missions and some Competitive squads. This is not a sponsored post — just what I noticed when I stopped reading feature bullets and started tracking patch days.",
+					"I kept CheatVault for about six weeks in major update Season 2, then switched to Valorant Cheats for the back half of the season. Same PC, same sens, mostly Spike Rush and some Competitive squads. This is not a sponsored post — just what I noticed when I stopped reading feature bullets and started tracking patch days.",
 					"Fair warning: neither tool makes you invincible. Riot Games anti-cheat still updates. Your account still carries ban risk. This comparison is about which package maintained better and which features I actually used in co-op — not which one guarantees wins.",
 				],
 			},
@@ -294,15 +294,15 @@ export const blogPosts: BlogPostDefinition[] = [
 				paragraphs: [
 					"Valorant Cheats lists $35/month and $150 lifetime on the <a href=\"/pricing/\">pricing page</a>. CheatVault was $42/month and $189 lifetime when I subscribed — prices shift, but CheatVault has consistently sat 15–20% higher in the tiers I saw.",
 					"CheatVault's lifetime looks cheaper than three years of monthly until you factor downtime. I lost nine days total waiting on CheatVault rebuilds after two anti-cheat patches. Valorant Cheats had two patch windows where I waited roughly 24–36 hours each. If you play daily, downtime has a real cost even if the sub fee is lower.",
-					"Both deliver digitally. Neither includes hardware. If you want cloud DMA on Valorant Cheats, you already own or plan to buy compatible hardware — same story for CheatVault's DMA tier, which is a separate upsell above their standard sub.",
+					"Both deliver digitally. Neither includes hardware. If you want radar on Valorant Cheats, you already own or plan to buy compatible hardware — same story for CheatVault's DMA tier, which is a separate upsell above their standard sub.",
 				],
 			},
 			{
-				h2: "Feature table — ESP, soft aim, radar, and cloud DMA",
+				h2: "Feature table — ESP, soft aim, radar, and radar",
 				paragraphs: [
-					"<table><thead><tr><th>Feature</th><th>Valorant Cheats</th><th>CheatVault</th></tr></thead><tbody><tr><td>Enemy ESP boxes</td><td>Yes, toggleable categories</td><td>Yes, fewer colour options</td></tr><tr><td>Loot / chest markers</td><td>Yes + distance readouts</td><td>Yes, no distance on loot</td></tr><tr><td>2D radar</td><td>Yes, configurable range</td><td>Yes, fixed size</td></tr><tr><td>Soft aim / Aimbot profiles</td><td>Per-weapon slots</td><td>Global + one profile</td></tr><tr><td>Controller support</td><td>Supported</td><td>Listed, awkward menu UX</td></tr><tr><td>Cloud DMA option</td><td>Included path in package</td><td>Premium tier add-on</td></tr><tr><td>In-client mod menu</td><td>Yes</td><td>Yes, heavier overlay</td></tr></tbody></table>",
-					"Valorant Cheats wins on toggles and profile flexibility. I run ESP boxes + health pickup markers in early game, then drop loot categories after first rifle. CheatVault's overlay felt busier — fine if you want everything on, noisy if you play Competitive and need clean screen space.",
-					"Soft aim mattered more than I expected in co-op missions. Valorant Cheats let me run a low-FOV Soma Prime profile and a separate shotgun profile for close-quarters fights. CheatVault's single-profile setup worked, but I was constantly retuning mid-session.",
+					"<table><thead><tr><th>Feature</th><th>Valorant Cheats</th><th>CheatVault</th></tr></thead><tbody><tr><td>Enemy ESP boxes</td><td>Yes, toggleable categories</td><td>Yes, fewer colour options</td></tr><tr><td>Spike / utility markers</td><td>Yes + distance readouts</td><td>Yes, no distance on utility</td></tr><tr><td>2D radar</td><td>Yes, configurable range</td><td>Yes, fixed size</td></tr><tr><td>Soft aim / Aimbot profiles</td><td>Per-weapon slots</td><td>Global + one profile</td></tr><tr><td>Controller support</td><td>Supported</td><td>Listed, awkward menu UX</td></tr><tr><td>Radar hack</td><td>Included in package</td><td>Premium tier add-on</td></tr><tr><td>In-client mod menu</td><td>Yes</td><td>Yes, heavier overlay</td></tr></tbody></table>",
+					"Valorant Cheats wins on toggles and profile flexibility. I run ESP boxes + health bars in early game, then drop loot categories after first rifle. CheatVault's overlay felt busier — fine if you want everything on, noisy if you play Competitive and need clean screen space.",
+					"Soft aim mattered more than I expected in Spike Rush. Valorant Cheats let me run a low-FOV Soma Prime profile and a separate shotgun profile for close-quarters fights. CheatVault's single-profile setup worked, but I was constantly retuning mid-session.",
 				],
 			},
 			{
@@ -324,7 +324,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Verdict — who should pick which",
 				paragraphs: [
-					"Pick Valorant Cheats if you play Competitive or co-op missions multiple times a week, want per-weapon soft aim profiles, care about cloud DMA without a second upsell, and want a public Updates log before you launch after patches.",
+					"Pick Valorant Cheats if you play Competitive or Spike Rush multiple times a week, want per-weapon soft aim profiles, care about radar without a second upsell, and want a public Updates log before you launch after patches.",
 					"Pick CheatVault if community size matters more than rebuild transparency, you want the premium capture extras, and you do not mind paying slightly more for a similar core stack.",
 					"Try This Today: Write down your must-haves (ESP categories, radar size, controller, DMA). Open <a href=\"/features/\">Features</a> and CheatVault's list side by side, then check both Updates channels before the next Valorant patch. For the full Valorant Cheats stack overview, start at <a href=\"/valorant-cheats/\">Valorant Cheats</a>.",
 				],
@@ -361,7 +361,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Soft aim, weapons, and controller testing",
 				paragraphs: [
-					"Week one weekend I enabled soft aim with a conservative FOV. Worked on rifle and shotgun in co-op missions. Sniping felt off — VoidCheats uses one bone-priority stack unless you manually swap configs between matches. Doable, not great for my play style.",
+					"Week one weekend I enabled soft aim with a conservative FOV. Worked on rifle and shotgun in Spike Rush. Sniping felt off — VoidCheats uses one bone-priority stack unless you manually swap configs between matches. Doable, not great for my play style.",
 					"I play controller two nights a week. VoidCheats lists controller support; menu navigation with a pad was clunky. Valorant Cheats later felt similar on pad menus honestly — neither is perfect — but VoidCheats had no suggested controller baseline in docs. I wasted time guessing.",
 					"Soma Prime tracking at 40–50m was the benchmark test. VoidCheats smooth aim was slightly snappier out of box. Snappier sounds good until you watch replay clips and notice the robotic corrections. I tuned smoothness up; kills stabilized but so did obviousness in Simulacrum testing with friends.",
 				],
@@ -377,8 +377,8 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Side-by-side after switching — what improved",
 				paragraphs: [
-					"Valorant Cheats ESP let me toggle pickups and lockers markers independently — huge for off-spawn routes without cluttering endgame. Radar range slider fixed my \"radar too small on 1080p\" complaint from VoidCheats's fixed widget.",
-					"Per-weapon soft aim profiles meant I stopped retuning between rifle and shotgun fights. Cloud DMA path was optional for my setup; I stayed on standard loader, but having DMA documented in one package beat VoidCheats's \"ask sales\" flow.",
+					"Valorant Cheats ESP let me toggle spike and utility markers independently — huge for off-spawn routes without cluttering endgame. Radar range slider fixed my \"radar too small on 1080p\" complaint from VoidCheats's fixed widget.",
+					"Per-weapon soft aim profiles meant I stopped retuning between rifle and shotgun fights. Radar path was optional for my setup; I stayed on standard loader, but having DMA documented in one package beat VoidCheats's \"ask sales\" flow.",
 					"Support reply time: VoidCheats ticket answered in ~5 hours once. Valorant Cheats support replied in ~2 hours when I asked about controller baseline settings. Small sample, but matched what I needed during setup week.",
 				],
 			},
@@ -413,7 +413,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		en: {
 		slug: "valorant-cheats-vs-ghostware-features-pricing",
 		title: "Valorant Cheats vs GhostWare: Features & Pricing",
-		metaDescription: "Valorant Cheats vs GhostWare — feature tables, soft aim, ESP boxes, cloud DMA, controller support, anti-cheat history, and honest pros/cons for 2026 buyers.",
+		metaDescription: "Valorant Cheats vs GhostWare — feature tables, soft aim, ESP boxes, radar, controller support, anti-cheat history, and honest pros/cons for 2026 buyers.",
 		h1: "Valorant Cheats vs GhostWare: Features, Pricing, and Detection Notes",
 		intro: "GhostWare markets hard on \"stealth\" branding. Valorant Cheats markets on the full full cheat stack. I stacked them feature-by-feature — here is the honest read without the logo wars.",
 		keywords: ["ghostware vs Valorant Cheats","ghostware valorant","cheat comparison","esp boxes","cloud dma"],
@@ -422,7 +422,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Two different philosophies — minimal vs full-stack",
 				paragraphs: [
-					"GhostWare sells a slimmer Valorant module: ESP-focused with light aim assist, fewer toggles, lower price entry. Valorant Cheats bundles ESP wallhack, radar, soft aim profiles, controller paths, and cloud DMA documentation in one undetected license.",
+					"GhostWare sells a slimmer Valorant module: ESP-focused with light aim assist, fewer toggles, lower price entry. Valorant Cheats bundles ESP wallhack, radar, soft aim profiles, and controller paths in one undetected license.",
 					"Neither approach is wrong. Minimal tools break less surface area in theory. Full-stack tools win when you want one menu for Competitive nights — visibility, flanks, and firefight assist without swapping executables.",
 					"I used GhostWare for ten days on an alt account while keeping Valorant Cheats on main. Same monitor, same sens, different mission types to spread risk. Take ban risk seriously on any tool.",
 				],
@@ -430,7 +430,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Feature and pricing comparison table",
 				paragraphs: [
-					"<table><thead><tr><th></th><th>Valorant Cheats</th><th>GhostWare</th></tr></thead><tbody><tr><td>Monthly price</td><td>$35</td><td>$28</td></tr><tr><td>Lifetime price</td><td>$150</td><td>$120</td></tr><tr><td>Enemy ESP boxes</td><td>Yes</td><td>Yes</td></tr><tr><td>Loot / chest ESP</td><td>Yes</td><td>Limited</td></tr><tr><td>2D radar</td><td>Yes</td><td>No</td></tr><tr><td>Soft aim profiles</td><td>Multiple weapon slots</td><td>Basic assist</td></tr><tr><td>Controller support</td><td>Yes</td><td>Partial</td></tr><tr><td>Cloud DMA path</td><td>Documented</td><td>Not offered</td></tr><tr><td>Public Updates log</td><td><a href=\"/updates/\">Yes — public updates log</a></td><td>Discord only</td></tr></tbody></table>",
+					"<table><thead><tr><th></th><th>Valorant Cheats</th><th>GhostWare</th></tr></thead><tbody><tr><td>Monthly price</td><td>$35</td><td>$28</td></tr><tr><td>Lifetime price</td><td>$150</td><td>$120</td></tr><tr><td>Enemy ESP boxes</td><td>Yes</td><td>Yes</td></tr><tr><td>Spike / utility ESP</td><td>Yes</td><td>Limited</td></tr><tr><td>2D radar</td><td>Yes</td><td>No</td></tr><tr><td>Soft aim profiles</td><td>Multiple weapon slots</td><td>Basic assist</td></tr><tr><td>Controller support</td><td>Yes</td><td>Partial</td></tr><tr><td>Public Updates log</td><td><a href=\"/updates/\">Yes — public updates log</a></td><td>Discord only</td></tr></tbody></table>",
 					"GhostWare is cheaper on sticker price. Valorant Cheats includes radar and richer ability ESP — features I use every session. If you only want enemy boxes in public missions, GhostWare's entry tier covers that.",
 					"Lifetime math: GhostWare $120 vs Valorant Cheats $150. The $30 gap closes if you value radar and rebuild transparency. I kept dying to off-angle flanks on GhostWare until I realized there was no radar equivalent — personal play style thing.",
 				],
@@ -444,7 +444,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				],
 			},
 			{
-				h2: "Gameplay feel — co-op missions and Competitive squads",
+				h2: "Gameplay feel — Spike Rush and Competitive squads",
 				paragraphs: [
 					"GhostWare ESP boxes were crisp — arguably cleaner outline rendering on low settings PCs. Valorant Cheats boxes offer more colour and distance data; busier but more informative in squad comms (\"220m west\" calls).",
 					"Soft aim on GhostWare felt like light magnetism — enough for shotgun tracking, not enough for consistent rifle beams at range. Valorant Cheats soft aim took tuning time but held Soma Prime fights better once profiles were set.",
@@ -454,16 +454,16 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Pros and cons summary",
 				paragraphs: [
-					"<strong>Valorant Cheats pros:</strong> full ESP + radar + soft aim stack, per-weapon profiles, cloud DMA path, public Updates page, controller docs. <strong>Cons:</strong> higher price, menu takes ~20 minutes to learn, radar size could use more presets.",
+					"<strong>Valorant Cheats pros:</strong> full ESP + radar + soft aim stack, per-weapon profiles, public Updates page, controller docs. <strong>Cons:</strong> higher price, menu takes ~20 minutes to learn, radar size could use more presets.",
 					"<strong>GhostWare pros:</strong> lower entry price, clean minimal ESP, quick to launch, smaller feature surface. <strong>Cons:</strong> no radar, limited ability ESP, patch status mostly in Discord, no DMA option, lighter aim tools.",
-					"Neither replaces game sense. Pair either with fundamentals — see our <a href=\"/blog/valorant-cheats-complete-guide-2026/\">co-op missions aggression guide</a> and <a href=\"/blog/valorant-cheats-complete-guide-2026/\">complete hacks guide</a>.",
+					"Neither replaces game sense. Pair either with fundamentals — see our <a href=\"/blog/valorant-cheats-complete-guide-2026/\">Spike Rush aggression guide</a> and <a href=\"/blog/valorant-cheats-complete-guide-2026/\">complete hacks guide</a>.",
 				],
 			},
 			{
 				h2: "Which one should you buy?",
 				paragraphs: [
 					"Choose GhostWare if budget is tight, you only need Enemy ESP in casual public missions, and you are comfortable tracking patch status in Discord.",
-					"Choose Valorant Cheats if you want radar for flanks, health pickup markers for faster spawns, configurable soft aim, optional cloud DMA, and a single Updates URL to check after every Valorant patch.",
+					"Choose Valorant Cheats if you want radar for flanks, health bars for faster spawns, configurable soft aim, optional radar, and a single Updates URL to check after every Valorant patch.",
 					"Try This Today: Decide whether radar and ability ESP are must-haves or nice-to-haves. If must-have, open <a href=\"/valorant-esp/\">ESP</a>, <a href=\"/valorant-radar/\">radar</a>, and <a href=\"/pricing/\">Pricing</a>. If skipping radar saves you money and matches your style, GhostWare stays in the conversation — just do not skip patch-day checks on either tool.",
 				],
 			}
@@ -640,7 +640,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Core mission modes on the Star Chart",
 				paragraphs: [
 					"Exterminate, survival, defense, interception, sabotage, and mobile defense form the backbone of the Star Chart. The <a href=\"https://valorant.fandom.com/wiki/Mission\" target=\"_blank\" rel=\"noopener noreferrer\">Mission Wiki hub</a> defines win conditions and common modifiers.",
-					"<a href=\"https://playvalorant.com/game-guide\" target=\"_blank\" rel=\"noopener noreferrer\">official Valorant game guide</a> walks new players through early progression before these modes split into faction-specific tilesets.",
+					"<a href=\"https://playvalorant.com/game-guide\" target=\"_blank\" rel=\"noopener noreferrer\">official Valorant game guide</a> walks new players through early progression before these modes split into faction-specific maps.",
 				],
 			},
 			{
@@ -758,7 +758,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "When you are ready for more",
 				paragraphs: [
-					"Explore map rotations after Mars/Jupiter comfort. Read our <a href=\"/blog/valorant-open-world-farming-guide/\">map rotations guide</a> and <a href=\"/blog/valorant-match-types-explained/\">mission types explainer</a> when those nodes unlock.",
+					"Explore rotates after Mars/Jupiter comfort. Read our <a href=\"/blog/valorant-open-world-farming-guide/\">rotates guide</a> and <a href=\"/blog/valorant-match-types-explained/\">mission types explainer</a> when those nodes unlock.",
 					"Try This Today: Complete one quest, one new Star Chart node, and one mod upgrade session — three small wins beat grinding random missions.",
 				],
 			}

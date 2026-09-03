@@ -60,7 +60,7 @@ export type PageContent = {
 \tctaSecondaryHref?: string;
 };
 export type LocaleUi = {
-\tnav: { home: string; aimbot: string; esp: string; features: string; pricing: string; setup: string; updates: string; faq: string; buyNow: string };
+\tnav: { home: string; aimbot: string; esp: string; features: string; cheats: string; pricing: string; setup: string; updates: string; faq: string; reviews: string; buyNow: string };
 \thero: { accent: string; accentShort: string; subtitle: string; subtitleShort: string; buyNow: string; seeFeatures: string };
 \ttrust: { status: string; statusNote: string; statusShort: string; delivery: string; platform: string; antiCheat: string; antiCheatShort: string };
 \tproduct: { title: string; addToCart: string; monthly: string; lifetime: string; available: string; gameBadge: string; platformBadge: string; statusBadge: string };

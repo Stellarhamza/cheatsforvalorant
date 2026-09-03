@@ -106,10 +106,10 @@ export const blogUi: Record<
 	en: {
 		blogTitle: 'Valorant Guides & Blog | Game Tips & Product Intel',
 		blogDescription:
-			'Valorant game guides on Competitive, map rotations, factions, missions, and patch notes — plus ESP, aimbot, and anti-cheat product guides with official Wiki links.',
+			'Valorant guides for Competitive, Unrated, Spike Rush, and agents — plus ESP, aimbot, wallhack, and Vanguard product intel.',
 		blogH1: 'Valorant Guides & Intel',
 		blogIntro:
-			'Game guides for Competitive, map rotations farming, factions, mission types, and patch notes — linked to the Valorant Wiki and Riot Games. Plus product guides for ESP, soft aim, radar, and anti-cheat maintenance.',
+			'Game guides for Competitive, Unrated, Spike Rush, agents, and patch notes — plus CheatsForValorant product guides for ESP, aimbot, radar, and Vanguard maintenance.',
 		readMore: 'Read guide',
 		published: 'Published',
 		updated: 'Updated',

@@ -28,7 +28,7 @@ const reviewImagePaths = [
 const reviewIndexOgImage = {
 	url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
 	title: 'Valorant Cheats customer reviews',
-	caption: 'Valorant Cheats buyer reviews for ESP, aimbot, radar, and cloud DMA',
+	caption: 'Valorant Cheats buyer reviews for ESP, aimbot, radar, and wallhack',
 };
 
 function reviewImageForIndex(index: number) {

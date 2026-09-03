@@ -354,7 +354,7 @@ export const homeFaqs = [
 		category: 'Getting started',
 		question: 'What is included in one license?',
 		answer:
-			'Enemy ESP boxes, health and pickup markers, 2D radar overlays, and configurable aim assist — including per-weapon profiles and optional cloud DMA. See the <a href="/features/">full feature list</a> and compare <a href="/pricing/">license plans</a>.',
+			'Enemy ESP boxes, health and ability markers, 2D radar overlays, triggerbot, and configurable aim assist with per-weapon profiles. See the <a href="/features/">full feature list</a> and compare <a href="/pricing/">license plans</a>.',
 	},
 	{
 		category: 'Getting started',
@@ -376,9 +376,9 @@ export const homeFaqs = [
 	},
 	{
 		category: 'Features & gameplay',
-		question: 'What is cloud DMA and do I need it?',
+		question: 'What is silent aim and do I need it?',
 		answer:
-			'Cloud DMA is an optional setup path for buyers who want hardware-assisted isolation instead of a standard loader. Most players start with the regular package. Read the <a href="/valorant-cheats/">main guide</a> and ask <a href="/support/">support</a> before choosing DMA.',
+			'Silent aim is a smoother aimbot mode that keeps your crosshair looking natural while shots still connect. Most players start with moderate FOV and smoothing. Read the <a href="/valorant-aimbot/">aimbot guide</a> and <a href="/setup/">setup</a> before raising aggressiveness.',
 	},
 	{
 		category: 'Updates & support',

@@ -18,7 +18,7 @@ export const uiStrings = {
 		reviews: { title: 'Customer reviews', subtitle: '1,000+ reviews from Valorant cheat buyers', outOf: 'out of 5', countLabel: 'reviews', verifiedLabel: 'Verified customer', seeAll: 'See all reviews' },
 		common: { buyNow: 'Buy Cheats', readGuide: 'Read guide', language: 'Language', officialLanguageNote: 'Choose your language — the whole site updates instantly.', relatedPages: 'Related pages' },
 		footer: { explore: 'Explore', help: 'Help & legal', tagline: 'CheatsForValorant — undetected Valorant ESP, aimbot, wallhack & radar for PC.' },
-		images: { hero: 'Valorant cheats hero banner with ESP wallhack and soft aim toggles on PC', espWallhack: 'Valorant ESP overlay highlighting enemy and enemy units through walls', aimbotCombat: 'Valorant aimbot targeting a enemy heavy unit during a Competitive mission', squadFight: 'Valorant squad co-op fight with ESP and aimbot active in a Spike Rush', playerEsp: 'Valorant wallhack ESP boxes on enemy, enemy, and enemy units in Competitive', headerArt: 'Valorant ESP wallhack overlay on enemy heavy unit hero', cheatsPackage: 'Valorant cheats cheat menu with soft aim FOV and bone priority', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Valorant Competitive fight with undetected ESP overlays', openWorldTileset: 'Valorant cheats menu with per-weapon aimbot profiles' },
+		images: { hero: 'Valorant cheats hero banner with ESP wallhack and soft aim toggles on PC', espWallhack: 'Valorant ESP overlay highlighting enemy agents through walls', aimbotCombat: 'Valorant aimbot targeting an enemy duelist during Competitive', squadFight: 'Valorant squad fight with ESP and aimbot active in Spike Rush', playerEsp: 'Valorant wallhack ESP boxes on enemy agents in Competitive', headerArt: 'Valorant ESP wallhack overlay on an enemy duelist', cheatsPackage: 'Valorant cheats menu with soft aim FOV and bone priority', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Valorant Competitive fight with undetected ESP overlays', openWorldTileset: 'Valorant cheats menu with per-weapon aimbot profiles' },
 	},
 	es: {
 		nav: { home: 'Inicio', aimbot: 'Aimbot', esp: 'ESP', features: 'Funciones', cheats: 'Trucos', pricing: 'Precios', setup: 'Instalación', updates: 'Actualizaciones', faq: 'FAQ', reviews: 'Reseñas', buyNow: 'Obtener acceso' },
@@ -26,7 +26,7 @@ export const uiStrings = {
 			accent: 'ESP y Aimbot indetectables para PC',
 			accentShort: 'ESP y Aimbot',
 			subtitle:
-				'ESP, aimbot y radar en un solo paquete para Valorant — Competitive, Spike Rush y mundo abierto. Entrega digital al instante, planes mensuales o de por vida, y actualizaciones tras cada parche de Riot Games.',
+				'ESP, aimbot y radar en un solo paquete para Valorant — Competitive, Spike Rush y Deathmatch. Entrega digital al instante, planes mensuales o de por vida, y actualizaciones tras cada parche de Riot Games.',
 			subtitleShort:
 				'ESP, aimbot y radar para Valorant en Windows. Acceso inmediato con actualizaciones incluidas.',
 			buyNow: 'Obtener acceso',
@@ -37,7 +37,7 @@ export const uiStrings = {
 		reviews: { title: 'Opiniones de clientes', subtitle: 'Más de 1.000 reseñas de compradores reales', outOf: 'de 5', countLabel: 'reseñas', seeAll: 'Ver todas las reseñas' },
 		common: { buyNow: 'Obtener acceso', readGuide: 'Leer guía', language: 'Idioma', officialLanguageNote: 'Elige tu idioma: todo el sitio cambia al instante.', relatedPages: 'Páginas relacionadas' },
 		footer: { explore: 'Explorar', help: 'Ayuda y legal', tagline: 'ESP, wallhack, radar y Aimbot indetectables para Valorant — checkout en Zadeyo.' },
-		images: { hero: 'Arte hero de trucos Valorant con ESP y Aimbot', espWallhack: 'ESP wallhack de trucos Valorant sobre operadores en Valorant', aimbotCombat: 'Combate Aimbot de trucos Valorant', squadFight: 'Vista previa de pelea de escuadrón Valorant cheats Aimbot', playerEsp: 'Overlay ESP wallhack de operador Valorant para Valorant', headerArt: 'Arte de cabecera Valorant para páginas Valorant Cheats', cheatsPackage: 'Paquete Valorant cheats con ESP wallhack y Aimbot', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Combate Competitive missions Valorant para trucos indetectables', openWorldTileset: 'Mapa Valorant para rutas ESP wallhack Valorant' },
+		images: { hero: 'Arte hero de trucos Valorant con ESP y Aimbot', espWallhack: 'ESP wallhack de trucos Valorant sobre operadores en Valorant', aimbotCombat: 'Combate Aimbot de trucos Valorant', squadFight: 'Vista previa de pelea de escuadrón Valorant cheats Aimbot', playerEsp: 'Overlay ESP wallhack de operador Valorant para Valorant', headerArt: 'Arte de cabecera Valorant para páginas Valorant Cheats', cheatsPackage: 'Paquete Valorant cheats con ESP wallhack y Aimbot', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Combate Competitive Valorant para trucos indetectables', openWorldTileset: 'Mapa Valorant para rutas ESP wallhack Valorant' },
 	},
 	fr: {
 		nav: { home: 'Accueil', aimbot: 'Aimbot', esp: 'ESP', features: 'Fonctions', cheats: 'Astuces', pricing: 'Tarifs', setup: 'Installation', updates: 'Mises à jour', faq: 'FAQ', reviews: 'Avis', buyNow: 'Obtenir l\'accès' },
@@ -45,7 +45,7 @@ export const uiStrings = {
 			accent: 'ESP et Aimbot indétectables pour PC',
 			accentShort: 'ESP et Aimbot',
 			subtitle:
-				'ESP, aimbot et radar dans un seul pack Valorant — Competitive, Spike Rush et monde ouvert. Livraison numérique instantanée, formules mensuelles ou à vie, et mises à jour après chaque patch Riot Games.',
+				'ESP, aimbot et radar dans un seul pack Valorant — Competitive, Spike Rush et Deathmatch. Livraison numérique instantanée, formules mensuelles ou à vie, et mises à jour après chaque patch Riot Games.',
 			subtitleShort:
 				'ESP, aimbot et radar pour Valorant sur Windows. Accès immédiat avec mises à jour incluses.',
 			buyNow: 'Obtenir l\'accès',
@@ -56,7 +56,7 @@ export const uiStrings = {
 		reviews: { title: 'Avis clients', subtitle: 'Plus de 1 000 avis de vrais clients', outOf: 'sur 5', countLabel: 'avis', seeAll: 'Voir tous les avis' },
 		common: { buyNow: 'Obtenir l\'accès', readGuide: 'Lire le guide', language: 'Langue', officialLanguageNote: 'Choisissez votre langue — tout le site change immédiatement.', relatedPages: 'Pages associées' },
 		footer: { explore: 'Explorer', help: 'Aide et légal', tagline: 'ESP, wallhack, radar et Aimbot indétectables pour Valorant — checkout via Zadeyo.' },
-		images: { hero: 'Art hero triches Valorant avec ESP et Aimbot', espWallhack: 'ESP wallhack Valorant cheats sur opérateurs Valorant', aimbotCombat: 'Combat Aimbot triches Valorant', squadFight: 'Aperçu combat escouade Valorant cheats Aimbot', playerEsp: 'Overlay ESP wallhack opérateur Valorant pour Valorant', headerArt: 'Art en-tête Valorant pour pages Valorant Cheats', cheatsPackage: 'Pack Valorant cheats ESP wallhack et Aimbot', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Combat Competitive missions Valorant pour triches indétectables', openWorldTileset: 'Carte Valorant pour routes ESP wallhack Valorant' },
+		images: { hero: 'Art hero triches Valorant avec ESP et Aimbot', espWallhack: 'ESP wallhack Valorant cheats sur opérateurs Valorant', aimbotCombat: 'Combat Aimbot triches Valorant', squadFight: 'Aperçu combat escouade Valorant cheats Aimbot', playerEsp: 'Overlay ESP wallhack opérateur Valorant pour Valorant', headerArt: 'Art en-tête Valorant pour pages Valorant Cheats', cheatsPackage: 'Pack Valorant cheats ESP wallhack et Aimbot', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Combat Competitive Valorant pour triches indétectables', openWorldTileset: 'Carte Valorant pour routes ESP wallhack Valorant' },
 	},
 	de: {
 		nav: { home: 'Start', aimbot: 'Aimbot', esp: 'ESP', features: 'Features', cheats: 'Cheats', pricing: 'Preise', setup: 'Setup', updates: 'Updates', faq: 'FAQ', reviews: 'Bewertungen', buyNow: 'Zugang erhalten' },
@@ -64,7 +64,7 @@ export const uiStrings = {
 			accent: 'Unentdecktes ESP & Aimbot für PC',
 			accentShort: 'ESP & Aimbot',
 			subtitle:
-				'ESP, Aimbot und Radar in einem Valorant-Paket — für Competitive, Spike Rush und Map Rotations. Sofortige digitale Lieferung, Monats- oder Lifetime-Lizenz, plus Updates nach Riot-Games-Patches.',
+				'ESP, Aimbot und Radar in einem Valorant-Paket — für Competitive, Spike Rush und Deathmatch. Sofortige digitale Lieferung, Monats- oder Lifetime-Lizenz, plus Updates nach Riot-Games-Patches.',
 			subtitleShort:
 				'ESP, Aimbot & Radar für Valorant auf Windows. Sofortiger Zugang mit Patch-Updates.',
 			buyNow: 'Zugang erhalten',
@@ -75,7 +75,7 @@ export const uiStrings = {
 		reviews: { title: 'Kundenbewertungen', subtitle: 'Über 1.000 Bewertungen von echten Käufern', outOf: 'von 5', countLabel: 'Bewertungen', seeAll: 'Alle Bewertungen' },
 		common: { buyNow: 'Zugang erhalten', readGuide: 'Guide lesen', language: 'Sprache', officialLanguageNote: 'Wähle deine Sprache — die gesamte Website wechselt sofort.', relatedPages: 'Verwandte Seiten' },
 		footer: { explore: 'Entdecken', help: 'Hilfe & Rechtliches', tagline: 'Undetected ESP, Wallhack, Radar und Aimbot für Valorant — Checkout über Zadeyo.' },
-		images: { hero: 'Valorant Cheats Hero mit ESP und Aimbot', espWallhack: 'Valorant Cheats ESP Wallhack Player-Overlay auf Valorant', aimbotCombat: 'Valorant Aimbot Gefecht Vorschau', squadFight: 'Valorant Cheats Squad Fight Vorschau für Aimbot', playerEsp: 'Valorant enemy ESP wallhack Overlay für Valorant', headerArt: 'Valorant Header-Art für Valorant Cheats Seiten', cheatsPackage: 'Valorant Cheats Paket mit ESP Wallhack und Aimbot', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Valorant Competitive missions Kampf für undetected Cheats', openWorldTileset: 'Valorant Karte für Valorant ESP Wallhack Routen' },
+		images: { hero: 'Valorant Cheats Hero mit ESP und Aimbot', espWallhack: 'Valorant Cheats ESP Wallhack Player-Overlay auf Valorant', aimbotCombat: 'Valorant Aimbot Gefecht Vorschau', squadFight: 'Valorant Cheats Squad Fight Vorschau für Aimbot', playerEsp: 'Valorant enemy ESP wallhack Overlay für Valorant', headerArt: 'Valorant Header-Art für Valorant Cheats Seiten', cheatsPackage: 'Valorant Cheats Paket mit ESP Wallhack und Aimbot', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Valorant Competitive Kampf für undetected Cheats', openWorldTileset: 'Valorant Karte für Valorant ESP Wallhack Routen' },
 	},
 	pt: {
 		nav: { home: 'Início', aimbot: 'Aimbot', esp: 'ESP', features: 'Recursos', pricing: 'Preços', setup: 'Instalação', updates: 'Atualizações', faq: 'FAQ', buyNow: 'Comprar' },
@@ -85,7 +85,7 @@ export const uiStrings = {
 		reviews: { title: 'O que os jogadores dizem', subtitle: 'Feedback recente de compradores Valorant Cheats', outOf: 'de 5', countLabel: 'avaliações' },
 		common: { buyNow: 'Comprar agora', readGuide: 'Ler guia', language: 'Idioma', officialLanguageNote: 'Inglês é o idioma oficial. Outros idiomas são traduzidos para SEO global.', relatedPages: 'Páginas relacionadas' },
 		footer: { explore: 'Explorar', help: 'Ajuda e legal', tagline: 'ESP, wallhack, radar e Aimbot indetectáveis para Valorant — checkout via Zadeyo.' },
-		images: { hero: 'Arte hero cheats Valorant com ESP e Aimbot', espWallhack: 'ESP wallhack Valorant cheats sobre operadores em Valorant', aimbotCombat: 'Combate Aimbot cheats Valorant', squadFight: 'Prévia de luta de esquadrão Valorant cheats Aimbot', playerEsp: 'Overlay ESP wallhack operador Valorant para Valorant', headerArt: 'Arte de cabeçalho Valorant para páginas Valorant Cheats', cheatsPackage: 'Pacote Valorant cheats com ESP wallhack e Aimbot', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Combate Competitive missions Valorant para cheats indetectáveis', openWorldTileset: 'Mapa Valorant para rotas ESP wallhack Valorant' },
+		images: { hero: 'Arte hero cheats Valorant com ESP e Aimbot', espWallhack: 'ESP wallhack Valorant cheats sobre operadores em Valorant', aimbotCombat: 'Combate Aimbot cheats Valorant', squadFight: 'Prévia de luta de esquadrão Valorant cheats Aimbot', playerEsp: 'Overlay ESP wallhack operador Valorant para Valorant', headerArt: 'Arte de cabeçalho Valorant para páginas Valorant Cheats', cheatsPackage: 'Pacote Valorant cheats com ESP wallhack e Aimbot', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Combate Competitive Valorant para cheats indetectáveis', openWorldTileset: 'Mapa Valorant para rotas ESP wallhack Valorant' },
 	},
 	it: {
 		nav: { home: 'Home', aimbot: 'Aimbot', esp: 'ESP', features: 'Funzioni', pricing: 'Prezzi', setup: 'Setup', updates: 'Aggiornamenti', faq: 'FAQ', buyNow: 'Acquista' },
@@ -95,7 +95,7 @@ export const uiStrings = {
 		reviews: { title: 'Cosa dicono i giocatori', subtitle: 'Feedback recente dagli acquirenti Valorant Cheats', outOf: 'su 5', countLabel: 'recensioni' },
 		common: { buyNow: 'Acquista ora', readGuide: 'Leggi guida', language: 'Lingua', officialLanguageNote: "L'inglese è la lingua ufficiale. Altre versioni sono tradotte per SEO globale.", relatedPages: 'Pagine correlate' },
 		footer: { explore: 'Esplora', help: 'Aiuto e legale', tagline: 'ESP, wallhack, radar e Aimbot indetectable per Valorant — checkout via Zadeyo.' },
-		images: { hero: 'Arte hero cheat Valorant con ESP e Aimbot', espWallhack: 'ESP wallhack Valorant cheats su playeri Valorant', aimbotCombat: 'Combattimento Aimbot cheat Valorant', squadFight: 'Anteprima scontro squadra Valorant cheats Aimbot', playerEsp: 'Overlay ESP wallhack playere Valorant per Valorant', headerArt: 'Arte header Valorant per pagine Valorant Cheats', cheatsPackage: 'Pacchetto Valorant cheats ESP wallhack e Aimbot', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Combattimento Competitive missions Valorant per cheat indetectable', openWorldTileset: 'Mappa Valorant per rotte ESP wallhack Valorant' },
+		images: { hero: 'Arte hero cheat Valorant con ESP e Aimbot', espWallhack: 'ESP wallhack Valorant cheats su playeri Valorant', aimbotCombat: 'Combattimento Aimbot cheat Valorant', squadFight: 'Anteprima scontro squadra Valorant cheats Aimbot', playerEsp: 'Overlay ESP wallhack playere Valorant per Valorant', headerArt: 'Arte header Valorant per pagine Valorant Cheats', cheatsPackage: 'Pacchetto Valorant cheats ESP wallhack e Aimbot', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Combattimento Competitive Valorant per cheat indetectable', openWorldTileset: 'Mappa Valorant per rotte ESP wallhack Valorant' },
 	},
 	nl: {
 		nav: { home: 'Home', aimbot: 'Aimbot', esp: 'ESP', features: 'Functies', pricing: 'Prijzen', setup: 'Setup', updates: 'Updates', faq: 'FAQ', buyNow: 'Kopen' },
@@ -105,7 +105,7 @@ export const uiStrings = {
 		reviews: { title: 'Wat spelers zeggen', subtitle: 'Recente feedback van Valorant Cheats kopers', outOf: 'van 5', countLabel: 'reviews' },
 		common: { buyNow: 'Nu kopen', readGuide: 'Lees gids', language: 'Taal', officialLanguageNote: 'Engels is de officiële taal. Andere talen zijn vertaald voor wereldwijde SEO.', relatedPages: 'Gerelateerde pagina\'s' },
 		footer: { explore: 'Verkennen', help: 'Help & juridisch', tagline: 'Undetected ESP, wallhack, radar en Aimbot voor Valorant — checkout via Zadeyo.' },
-		images: { hero: 'Valorant cheats hero met ESP en Aimbot', espWallhack: 'Valorant cheats ESP wallhack overlay op Valorant', aimbotCombat: 'Valorant Aimbot gevecht preview', squadFight: 'Valorant cheats squad fight preview voor Aimbot', playerEsp: 'Valorant enemy ESP wallhack overlay voor Valorant', headerArt: 'Valorant header art voor Valorant Cheats pagina\'s', cheatsPackage: 'Valorant cheats pakket met ESP wallhack en Aimbot', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Valorant Competitive missions gevecht voor undetected cheats', openWorldTileset: 'Valorant kaart voor Valorant ESP wallhack routes' },
+		images: { hero: 'Valorant cheats hero met ESP en Aimbot', espWallhack: 'Valorant cheats ESP wallhack overlay op Valorant', aimbotCombat: 'Valorant Aimbot gevecht preview', squadFight: 'Valorant cheats squad fight preview voor Aimbot', playerEsp: 'Valorant enemy ESP wallhack overlay voor Valorant', headerArt: 'Valorant header art voor Valorant Cheats pagina\'s', cheatsPackage: 'Valorant cheats pakket met ESP wallhack en Aimbot', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Valorant Competitive gevecht voor undetected cheats', openWorldTileset: 'Valorant kaart voor Valorant ESP wallhack routes' },
 	},
 	pl: {
 		nav: { home: 'Strona główna', aimbot: 'Aimbot', esp: 'ESP', features: 'Funkcje', pricing: 'Cennik', setup: 'Instalacja', updates: 'Aktualizacje', faq: 'FAQ', buyNow: 'Kup teraz' },
@@ -115,7 +115,7 @@ export const uiStrings = {
 		reviews: { title: 'Co mówią gracze', subtitle: 'Ostatnie opinie kupujących Valorant Cheats', outOf: 'na 5', countLabel: 'opinii' },
 		common: { buyNow: 'Kup teraz', readGuide: 'Czytaj poradnik', language: 'Język', officialLanguageNote: 'Angielski jest językiem oficjalnym. Inne wersje są tłumaczone dla globalnego SEO.', relatedPages: 'Powiązane strony' },
 		footer: { explore: 'Odkrywaj', help: 'Pomoc i prawo', tagline: 'Undetected ESP, wallhack, radar i Aimbot dla Valorant — checkout przez Zadeyo.' },
-		images: { hero: 'Hero cheatów Valorant z ESP i Aimbot', espWallhack: 'ESP wallhack Valorant cheats na playerach Valorant', aimbotCombat: 'Walka Aimbot cheatów Valorant', squadFight: 'Podgląd walki drużynowej Valorant cheats Aimbot', playerEsp: 'Overlay ESP wallhack playera Valorant dla Valorant', headerArt: 'Grafika nagłówka Valorant dla stron Valorant Cheats', cheatsPackage: 'Pakiet Valorant cheats ESP wallhack i Aimbot', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Walka Competitive missions Valorant dla undetected cheatów', openWorldTileset: 'Mapa Valorant dla tras ESP wallhack Valorant' },
+		images: { hero: 'Hero cheatów Valorant z ESP i Aimbot', espWallhack: 'ESP wallhack Valorant cheats na playerach Valorant', aimbotCombat: 'Walka Aimbot cheatów Valorant', squadFight: 'Podgląd walki drużynowej Valorant cheats Aimbot', playerEsp: 'Overlay ESP wallhack playera Valorant dla Valorant', headerArt: 'Grafika nagłówka Valorant dla stron Valorant Cheats', cheatsPackage: 'Pakiet Valorant cheats ESP wallhack i Aimbot', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Walka Competitive Valorant dla undetected cheatów', openWorldTileset: 'Mapa Valorant dla tras ESP wallhack Valorant' },
 	},
 	ru: {
 		nav: { home: 'Главная', aimbot: 'Aimbot', esp: 'ESP', features: 'Функции', pricing: 'Цены', setup: 'Установка', updates: 'Обновления', faq: 'FAQ', buyNow: 'Купить' },
@@ -125,7 +125,7 @@ export const uiStrings = {
 		reviews: { title: 'Что говорят игроки', subtitle: 'Недавние отзывы покупателей Valorant Cheats', outOf: 'из 5', countLabel: 'отзывов' },
 		common: { buyNow: 'Купить', readGuide: 'Читать гайд', language: 'Язык', officialLanguageNote: 'Английский — официальный язык. Другие версии переведены для глобального SEO.', relatedPages: 'Похожие страницы' },
 		footer: { explore: 'Обзор', help: 'Помощь и право', tagline: 'Undetected ESP, wallhack, radar и Aimbot для Valorant — оплата через Zadeyo.' },
-		images: { hero: 'Hero-арт читов Valorant с ESP и Aimbot', espWallhack: 'ESP wallhack Valorant cheats на Valorant', aimbotCombat: 'Бой Aimbot читов Valorant', squadFight: 'Превью боя отряда Valorant cheats Aimbot', playerEsp: 'ESP wallhack оверлей игрока Valorant', headerArt: 'Header-арт Valorant для страниц Valorant Cheats', cheatsPackage: 'Пакет Valorant cheats ESP wallhack и Aimbot', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Бой Competitive missions Valorant для undetected читов', openWorldTileset: 'Карта Valorant для маршрутов ESP wallhack Valorant' },
+		images: { hero: 'Hero-арт читов Valorant с ESP и Aimbot', espWallhack: 'ESP wallhack Valorant cheats на Valorant', aimbotCombat: 'Бой Aimbot читов Valorant', squadFight: 'Превью боя отряда Valorant cheats Aimbot', playerEsp: 'ESP wallhack оверлей игрока Valorant', headerArt: 'Header-арт Valorant для страниц Valorant Cheats', cheatsPackage: 'Пакет Valorant cheats ESP wallhack и Aimbot', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Бой Competitive Valorant для undetected читов', openWorldTileset: 'Карта Valorant для маршрутов ESP wallhack Valorant' },
 	},
 	tr: {
 		nav: { home: 'Ana sayfa', aimbot: 'Aimbot', esp: 'ESP', features: 'Özellikler', pricing: 'Fiyatlar', setup: 'Kurulum', updates: 'Güncellemeler', faq: 'SSS', buyNow: 'Satın al' },
@@ -135,6 +135,6 @@ export const uiStrings = {
 		reviews: { title: 'Oyuncular ne diyor', subtitle: 'Valorant Cheats alıcılarından son geri bildirimler', outOf: '/5', countLabel: 'yorum' },
 		common: { buyNow: 'Satın al', readGuide: 'Rehberi oku', language: 'Dil', officialLanguageNote: 'Resmi dil İngilizcedir. Diğer diller küresel SEO için çevrilmiştir.', relatedPages: 'İlgili sayfalar' },
 		footer: { explore: 'Keşfet', help: 'Yardım ve yasal', tagline: 'Valorant için undetected ESP, wallhack, radar ve Aimbot — Zadeyo checkout.' },
-		images: { hero: 'ESP ve Aimbot içeren Valorant hileleri hero görseli', espWallhack: 'Valorant operatörlerinde Valorant cheats ESP wallhack', aimbotCombat: 'Valorant hileleri Aimbot çatışması', squadFight: 'Valorant cheats Aimbot takım savaşı önizlemesi', playerEsp: 'Valorant için Valorant operatör ESP wallhack overlay', headerArt: 'Valorant Cheats sayfaları için Valorant header art', cheatsPackage: 'ESP wallhack ve Aimbot içeren Valorant cheats paketi', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Undetected hileler için Valorant Competitive missions çatışması', openWorldTileset: 'Valorant ESP wallhack rotaları için Valorant haritası' },
+		images: { hero: 'ESP ve Aimbot içeren Valorant hileleri hero görseli', espWallhack: 'Valorant operatörlerinde Valorant cheats ESP wallhack', aimbotCombat: 'Valorant hileleri Aimbot çatışması', squadFight: 'Valorant cheats Aimbot takım savaşı önizlemesi', playerEsp: 'Valorant için Valorant operatör ESP wallhack overlay', headerArt: 'Valorant Cheats sayfaları için Valorant header art', cheatsPackage: 'ESP wallhack ve Aimbot içeren Valorant cheats paketi', rebootFight: 'Valorant Spike Rush defense fight with aimbot cheats active', battleRoyale: 'Undetected hileler için Valorant Competitive çatışması', openWorldTileset: 'Valorant ESP wallhack rotaları için Valorant haritası' },
 	},
 };

@@ -1,7 +1,8 @@
 ---
 import '../styles/global.css';
 import { productInfo, siteConfig } from '../data/site';
-import { metaKeywordsContent } from '../data/seo';
+import { metaKeywordsContent, ogImageMime } from '../data/seo';
+import { pageSitemapMeta } from '../data/sitemap-meta';
 import I18nHead from '../components/I18nHead.astro';
 import LocaleSuggest from '../components/LocaleSuggest.astro';
 import { defaultLocale, localeMap, locales, type LocaleCode } from '../data/i18n/locales';
@@ -53,17 +54,19 @@ const canonicalURL = new URL(path === '//' ? '/' : path, siteConfig.url).href;
 const ogImageURL = new URL(ogImage, siteConfig.url).href;
 const logoURL = new URL(siteConfig.logoRaster, siteConfig.url).href;
 const ogImageIsLogo = ogImage === siteConfig.logo;
-const ogImageType = ogImage.endsWith('.webp') ? 'image/webp' : 'image/png';
+const ogImageType = ogImageMime(ogImage);
 const ogImageWidth = ogImageIsLogo ? '512' : '1920';
 const ogImageHeight = ogImageIsLogo ? '512' : '1080';
 const twitterCard = ogImageIsLogo ? 'summary' : 'summary_large_image';
 const robots = noindex
 	? 'noindex, nofollow'
-	: 'index, follow, max-image-preview:large';
+	: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 const siteDescription = `${productInfo.tagline}. ${productInfo.summary}`;
 const localeMeta = localeMap[locale];
 const schemaLanguage = localeMeta.ogLocale.replace('_', '-');
 const ogLocale = localeMeta.ogLocale;
+const dateModified = pageId ? pageSitemapMeta[pageId]?.lastmod : undefined;
+const alternateOgLocales = locales.filter((item) => item.ogLocale !== ogLocale).map((item) => item.ogLocale);
 
 const graph: Record<string, unknown>[] = [
 	{
@@ -74,9 +77,14 @@ const graph: Record<string, unknown>[] = [
 		description,
 		isPartOf: { '@id': `${siteConfig.url}/#website` },
 		inLanguage: schemaLanguage,
+		publisher: { '@id': `${siteConfig.url}/#organization` },
+		...(dateModified ? { dateModified, datePublished: dateModified } : {}),
 		primaryImageOfPage: {
 			'@type': 'ImageObject',
 			url: ogImageURL,
+			width: Number(ogImageWidth),
+			height: Number(ogImageHeight),
+			caption: ogImageAlt,
 		},
 	},
 	{
@@ -114,8 +122,11 @@ const graph: Record<string, unknown>[] = [
 			'Valorant aimbot',
 			'Valorant wallhack',
 			'Valorant radar hack',
+			'Valorant silent aim',
+			'Valorant triggerbot',
 			'Riot Vanguard',
 		],
+		brand: { '@type': 'Brand', name: siteConfig.name },
 	},
 ];
 
@@ -132,6 +143,10 @@ if (breadcrumbs && breadcrumbs.length > 0) {
 				: { item: canonicalURL }),
 		})),
 	});
+	const webpage = graph.find((node) => node['@type'] === 'WebPage') as Record<string, unknown> | undefined;
+	if (webpage) {
+		webpage.breadcrumb = { '@id': `${canonicalURL}#breadcrumb` };
+	}
 }
 
 if (extraGraph.length > 0) {
@@ -147,11 +162,13 @@ if (extraGraph.length > 0) {
 }
 
 const softwareNode = extraGraph.find((node) => node['@type'] === 'SoftwareApplication');
-if (softwareNode) {
-	const webpage = graph.find((node) => node['@type'] === 'WebPage') as Record<string, unknown> | undefined;
-	if (webpage) {
-		webpage.about = { '@id': softwareNode['@id'] };
-	}
+const productNode = extraGraph.find((node) => node['@type'] === 'Product');
+const webpage = graph.find((node) => node['@type'] === 'WebPage') as Record<string, unknown> | undefined;
+if (webpage && productNode?.['@id']) {
+	webpage.mainEntity = { '@id': productNode['@id'] };
+}
+if (webpage && softwareNode?.['@id']) {
+	webpage.about = { '@id': softwareNode['@id'] };
 }
 ---
 
@@ -163,13 +180,17 @@ if (softwareNode) {
 		<meta name="format-detection" content="telephone=no" />
 		<meta name="color-scheme" content="dark" />
 		<meta name="theme-color" content="#0f1923" />
+		<meta name="application-name" content={siteConfig.name} />
+		<meta name="apple-mobile-web-app-title" content={siteConfig.name} />
 		<meta name="robots" content={robots} />
 		<meta name="googlebot" content={robots} />
+		<meta name="bingbot" content={robots} />
 		<meta name="description" content={description} />
 		<meta name="keywords" content={keywords} />
 		<meta name="author" content={siteConfig.name} />
 		<link rel="canonical" href={canonicalURL} />
 		{pageId && <I18nHead pageId={pageId} locale={locale} />}
+		<link rel="manifest" href="/site.webmanifest" />
 		<link rel="icon" href="/favicon.ico" sizes="any" />
 		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -229,14 +250,18 @@ if (softwareNode) {
 		<meta property="og:image:height" content={ogImageHeight} />
 		<meta property="og:image:alt" content={ogImageAlt} />
 		<meta property="og:locale" content={ogLocale} />
+		{alternateOgLocales.map((altLocale) => (
+			<meta property="og:locale:alternate" content={altLocale} />
+		))}
 
 		<meta name="twitter:card" content={twitterCard} />
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
+		<meta name="twitter:url" content={canonicalURL} />
 		<meta name="twitter:image" content={ogImageURL} />
 		<meta name="twitter:image:alt" content={ogImageAlt} />
 
-		{!noindex && locale === defaultLocale && (
+		{!noindex && (
 			<script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })} />
 		)}
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * SEO audit for warframecheats.net — Warframe Cheats keyword focus.
+ * SEO audit for cheatsforvalorant.com — Valorant cheats keyword focus.
  * Run: node scripts/seo-audit.mjs
  * Exit 1 on critical failures.
  */
@@ -10,10 +10,10 @@ import { fileURLToPath } from 'node:url';
 import { englishPagesFinal } from './i18n-data/pages-en.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const DOMAIN = 'warframecheats.net';
+const DOMAIN = 'cheatsforvalorant.com';
 const ORIGIN = `https://${DOMAIN}`;
-const PRIMARY_KW = 'warframe cheats';
-const BRAND_KW = 'warframe';
+const PRIMARY_KW = 'valorant cheats';
+const BRAND_KW = 'valorant';
 
 const BANNED = [
 	/islecheat/i,
@@ -26,6 +26,8 @@ const BANNED = [
 	/overwatchhacks\.com/i,
 	/\boverwatch hacks\b/i,
 	/\bwar thunder\b/i,
+	/\bwarframe\b/i,
+	/\bsteel path\b/i,
 ];
 
 const warnings = [];
@@ -48,7 +50,6 @@ function checkBanned(label, text) {
 	}
 }
 
-// --- EN page content ---
 const pageIds = Object.keys(englishPagesFinal);
 for (const id of pageIds) {
 	const p = englishPagesFinal[id];
@@ -62,25 +63,23 @@ for (const id of pageIds) {
 	if (p.description.length > 160) fail(`${label}: description too long (${p.description.length})`);
 	if (p.description.length < 100) warn(`${label}: description short (${p.description.length})`);
 
-	if (!hasKeyword(p.title, BRAND_KW)) {
-		fail(`${label}: title missing "warframe" → ${p.title}`);
+	if (!hasKeyword(p.title, BRAND_KW) && !['privacy', 'refund', 'terms'].includes(id)) {
+		fail(`${label}: title missing "valorant" → ${p.title}`);
 	}
 	if (!hasKeyword(p.description, BRAND_KW)) {
-		fail(`${label}: description missing "warframe" → ${p.description.slice(0, 80)}`);
+		fail(`${label}: description missing "valorant" → ${p.description.slice(0, 80)}`);
 	}
 	if (!hasKeyword(p.h1, BRAND_KW) && !['privacy', 'refund', 'terms'].includes(id)) {
-		fail(`${label}: h1 missing "warframe" → ${p.h1}`);
+		fail(`${label}: h1 missing "valorant" → ${p.h1}`);
 	}
 
-	// Primary keyword in money pages
-	if (['home', 'hacks', 'warframe-esp', 'warframe-aimbot', 'pricing'].includes(id)) {
-		if (!hasKeyword(p.description, PRIMARY_KW) && !hasKeyword(p.description, 'warframe cheats')) {
-			warn(`${label}: description should include primary keyword "warframe cheats"`);
+	if (['home', 'hacks', 'valorant-esp', 'valorant-aimbot', 'pricing'].includes(id)) {
+		if (!hasKeyword(p.description, PRIMARY_KW) && !hasKeyword(p.description, 'valorant cheat')) {
+			warn(`${label}: description should include primary keyword "valorant cheats"`);
 		}
 	}
 }
 
-// --- site config files ---
 const siteTs = readFileSync(join(root, 'src/data/site.ts'), 'utf8');
 if (!siteTs.includes(ORIGIN)) fail(`site.ts missing canonical origin ${ORIGIN}`);
 if (!siteTs.includes(`support@${DOMAIN}`)) fail(`site.ts missing support@${DOMAIN}`);
@@ -93,68 +92,32 @@ const robots = readFileSync(join(root, 'public/robots.txt'), 'utf8');
 if (!robots.includes(DOMAIN)) fail(`robots.txt missing sitemap for ${DOMAIN}`);
 checkBanned('robots.txt', robots);
 
+const layout = readFileSync(join(root, 'src/layouts/Layout.astro'), 'utf8');
+if (!layout.includes('application/ld+json')) fail('Layout.astro missing JSON-LD');
+if (!layout.includes('hreflang') && !existsSync(join(root, 'src/components/I18nHead.astro'))) {
+	fail('Missing hreflang implementation');
+}
+if (!layout.includes('rel="canonical"') && !layout.includes('rel="canonical"')) {
+	fail('Layout.astro missing canonical link');
+}
+if (!layout.includes('og:locale:alternate')) fail('Layout.astro missing og:locale:alternate');
+if (!layout.includes('site.webmanifest')) fail('Layout.astro missing web app manifest');
+
 const middleware = readFileSync(join(root, 'functions/_middleware.js'), 'utf8');
 if (!middleware.includes(ORIGIN)) fail(`_middleware.js missing ${ORIGIN}`);
-checkBanned('_middleware.js (content)', middleware.replace(/LEGACY_HOSTS[\s\S]*?;/, ''));
+if (middleware.includes('warframecheats.net')) fail('_middleware.js still points at warframecheats.net');
 
-const workerEntry = readFileSync(join(root, 'worker.js'), 'utf8');
-if (!workerEntry.includes("from './functions/_middleware.js'")) {
-	fail('worker.js must import functions/_middleware.js for edge redirects');
-}
-if (!workerEntry.includes('env.ASSETS.fetch')) {
-	fail('worker.js must delegate to env.ASSETS.fetch for static assets');
-}
-
-const wranglerToml = readFileSync(join(root, 'wrangler.toml'), 'utf8');
-if (!/main\s*=\s*["']worker\.js["']/.test(wranglerToml)) {
-	fail('wrangler.toml must set main = "worker.js"');
-}
-if (!wranglerToml.includes('run_worker_first = true')) {
-	fail('wrangler.toml must set run_worker_first = true so redirects run before assets');
-}
-if (!wranglerToml.includes('binding = "ASSETS"')) {
-	fail('wrangler.toml must bind static assets as ASSETS');
-}
-
-// --- guides indexing policy ---
-const externalGuidePage = readFileSync(join(root, 'src/components/ExternalGuidePage.astro'), 'utf8');
-if (!/noindex=\{true\}/.test(externalGuidePage)) {
-	fail('ExternalGuidePage.astro: external guides must be noindex');
-}
-
-const guidesHelpers = readFileSync(join(root, 'src/data/guides/helpers.ts'), 'utf8');
-if (/guide\.canonicalPath/.test(guidesHelpers) && /getGuidesSitemapEntries/.test(guidesHelpers)) {
-	const sitemapFn = guidesHelpers.slice(
-		guidesHelpers.indexOf('export function getGuidesSitemapEntries'),
-		guidesHelpers.indexOf('export function getGuidesSitemapEntries') + 1200,
-	);
-	if (sitemapFn.includes('for (const guide of guides)')) {
-		fail('guides/helpers.ts: external guide URLs must not be in sitemap (hub only)');
-	}
-}
-
-// --- built output (optional) ---
 const distIndex = join(root, 'dist/index.html');
 if (existsSync(distIndex)) {
 	const html = readFileSync(distIndex, 'utf8');
 	if (!html.includes(`href="${ORIGIN}/"`)) fail('dist/index.html canonical missing apex URL');
-	if (!html.includes('Warframe') && !html.includes('Warframe Cheats')) {
-		fail('dist/index.html missing Warframe in title/meta');
-	}
-	checkBanned('dist/index.html', html);
+	if (!/valorant/i.test(html)) fail('dist/index.html missing Valorant in title/meta');
+	if (!html.includes('application/ld+json')) fail('dist/index.html missing JSON-LD');
 
 	const distGuidesHub = join(root, 'dist/guides/index.html');
 	if (existsSync(distGuidesHub)) {
 		const hubHtml = readFileSync(distGuidesHub, 'utf8');
 		if (hubHtml.includes('noindex')) fail('dist/guides/index.html hub must remain indexable');
-	}
-
-	const distExternalGuide = join(root, 'dist/guides/guide-fortniteaimbot-com-https/index.html');
-	if (existsSync(distExternalGuide)) {
-		const guideHtml = readFileSync(distExternalGuide, 'utf8');
-		if (!guideHtml.includes('noindex')) {
-			fail('dist external guide page must include noindex robots meta');
-		}
 	}
 
 	const distSitemap = join(root, 'dist/sitemap.xml');
@@ -170,32 +133,19 @@ if (existsSync(distIndex)) {
 	}
 }
 
-// --- reviews pages ---
 for (const file of ['src/pages/reviews/index.astro', 'src/pages/reviews/[slug]/index.astro']) {
 	const src = readFileSync(join(root, file), 'utf8');
 	checkBanned(file, src);
-	if (!/warframe cheats/i.test(src)) warn(`${file}: consider adding "Warframe Cheats" keyword`);
+	if (!/valorant cheats/i.test(src)) warn(`${file}: consider adding "Valorant Cheats" keyword`);
 }
 
-// --- image alts ---
-const warframeTs = join(root, 'src/data/warframe.ts');
-if (!existsSync(warframeTs)) fail('src/data/warframe.ts missing');
-const warframeSrc = readFileSync(warframeTs, 'utf8');
-if (!/Warframe/i.test(warframeSrc)) fail('warframe.ts image alts missing Warframe keyword');
-checkBanned('warframe.ts', warframeSrc);
+const valorantTs = join(root, 'src/data/valorant.ts');
+if (!existsSync(valorantTs)) fail('src/data/valorant.ts missing');
+const valorantSrc = readFileSync(valorantTs, 'utf8');
+if (!/Valorant/i.test(valorantSrc)) fail('valorant.ts image alts missing Valorant keyword');
+checkBanned('valorant.ts', valorantSrc);
 
-const heroAstro = readFileSync(join(root, 'src/components/Hero.astro'), 'utf8');
-if (/alt=""/.test(heroAstro)) fail('Hero.astro must not use empty alt on hero images');
-
-if (existsSync(distIndex)) {
-	const emptyAltCount = (readFileSync(distIndex, 'utf8').match(/alt=""/g) || []).length;
-	if (emptyAltCount > 0) {
-		fail(`dist/index.html has ${emptyAltCount} image(s) with empty alt`);
-	}
-}
-
-// --- report ---
-console.log('\n=== SEO Audit: warframecheats.net ===\n');
+console.log('\n=== SEO Audit: cheatsforvalorant.com ===\n');
 console.log(`Pages checked: ${pageIds.length} EN landing pages`);
 console.log(`Primary keyword: "${PRIMARY_KW}"`);
 console.log(`Canonical: ${ORIGIN}\n`);

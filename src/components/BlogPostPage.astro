@@ -39,17 +39,25 @@ const blogHref = getBlogBasePath(locale);
 const related = getRelatedPosts(locale, post, 3);
 
 const articleUrl = absoluteBlogUrl(locale, t.slug);
+const articleImage = new URL(post.imageSrc, siteConfig.url).href;
 const articleSchema = {
-	'@type': 'Article',
+	'@type': 'BlogPosting',
 	'@id': `${articleUrl}#article`,
 	headline: t.title,
 	description: t.metaDescription,
 	datePublished: post.published,
 	dateModified: post.updated,
-	image: new URL(post.imageSrc, siteConfig.url).href,
+	image: {
+		'@type': 'ImageObject',
+		url: articleImage,
+		width: 1200,
+		height: 675,
+		caption: t.imageAlt,
+	},
 	inLanguage: locale,
 	author: { '@type': 'Organization', name: siteConfig.name, url: siteConfig.url },
 	publisher: {
+		'@id': `${siteConfig.url}/#organization`,
 		'@type': 'Organization',
 		name: siteConfig.name,
 		url: siteConfig.url,

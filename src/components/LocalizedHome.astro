@@ -37,9 +37,7 @@ const canonicalPath = getCanonicalPath('home', locale);
 const canonicalURL = new URL(canonicalPath, siteConfig.url).href;
 const heroImage = new URL(valorantImages.hero, siteConfig.url).href;
 
-const extraGraph: Record<string, unknown>[] =
-	locale === defaultLocale
-		? [
+const extraGraph: Record<string, unknown>[] = [
 	{
 		'@type': 'Product',
 		'@id': `${canonicalURL}#product`,
@@ -47,6 +45,7 @@ const extraGraph: Record<string, unknown>[] =
 		description: productInfo.summary,
 		image: heroImage,
 		brand: { '@type': 'Brand', name: productInfo.brand },
+		category: 'Valorant cheats',
 		url: canonicalURL,
 		offers: buildAggregateOffer(canonicalURL),
 		aggregateRating: {
@@ -71,8 +70,17 @@ const extraGraph: Record<string, unknown>[] =
 	},
 	buildSoftwareApplicationSchema(canonicalURL, heroImage),
 	buildFaqSchemaNode(canonicalURL, homeFaqs),
-]
-		: [];
+	{
+		'@type': 'VideoObject',
+		'@id': `${canonicalURL}#hero-video`,
+		name: `${siteConfig.name} — undetected Valorant cheats`,
+		description: productInfo.summary,
+		thumbnailUrl: new URL(valorantImages.heroPoster, siteConfig.url).href,
+		contentUrl: new URL(valorantImages.heroVideo, siteConfig.url).href,
+		uploadDate: '2026-08-03',
+		inLanguage: locale,
+	},
+];
 ---
 
 <Layout

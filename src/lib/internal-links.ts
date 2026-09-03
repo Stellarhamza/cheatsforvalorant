@@ -59,6 +59,7 @@ export const reviewTagLinks: Record<string, string> = {
 	'Soft aim': '/valorant-aimbot/',
 	Extraction: '/valorant-esp/',
 	'Map Rotations': '/valorant-esp/',
+	Rotates: '/valorant-esp/',
 	'Competitive': '/valorant-aimbot/',
 	'Cloud DMA': '/valorant-cheats/',
 	Controller: '/valorant-aimbot/',

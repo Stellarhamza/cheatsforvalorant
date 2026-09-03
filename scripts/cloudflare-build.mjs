@@ -108,7 +108,7 @@ writeFileSync(
 		{
 			builtAt: new Date().toISOString(),
 			commit: buildId,
-			site: 'https://warframecheats.net',
+			site: 'https://cheatsforvalorant.com',
 		},
 		null,
 		2,
