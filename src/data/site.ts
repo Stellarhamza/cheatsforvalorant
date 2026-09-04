@@ -9,7 +9,7 @@ export const siteConfig = {
 	logoRasterWidth: 192,
 	logoRasterHeight: 192,
 	logoAlt: 'CheatsForValorant — undetected Valorant cheats for PC',
-	checkoutUrl: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fvalorant',
+	checkoutUrl: 'https://zadeyo.com/go/PRO?to=%2Fproducts%2Fvalorant',
 	defaultOgImage: '/images/valorant-cheat-esp-corridor.jpg',
 } as const;
 
